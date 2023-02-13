@@ -1,0 +1,64 @@
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -250px;
+  width: 600px;
+  height: 500px;
+  background: linear-gradient(45deg, #f677b9, #924cba, #4d3e96);
+  border-radius: 5%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.box .box-title {
+  text-align: center;
+  margin-top: 20px;
+}
+.box .box-title p {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #020024;
+}
+.box .box-text {
+  width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+.box .box-text p {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: pink;
+}/*# sourceMappingURL=style.css.map */
+.btn-link a {
+  text-decoration: none;
+  color: white;
+}
+.btn-link {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border-color: white;
+  font-size: 30px;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 0;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  background: rgb(171,0,255);
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(171,0,255,1) 45%, rgba(121,9,109,0.5382528011204482) 100%);
+}
+
+.btn-link:hover {
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  color: black;
+  background: rgb(121,9,109);
+  background: linear-gradient(90deg, rgba(121,9,109,0.5382528011204482) 0%, rgba(171,0,255,1) 45%, rgba(171,0,255,1) 100%);
+}
