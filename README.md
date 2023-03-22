@@ -1,2 +1,3 @@
 # BLazzeD21.github.io
-Portfolio
+
+You can view the site [here](https://blazzed21.github.io/)
