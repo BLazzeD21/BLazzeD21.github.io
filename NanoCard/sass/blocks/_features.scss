@@ -1,0 +1,61 @@
+.features {
+  overflow: hidden;
+  position: relative;
+  min-height: 800px;
+  padding: 95px 0px 0px 0px;
+  &__title {
+    margin-left: 150px;
+    color: #333;
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  .wrapper {
+    margin-top: 120px;
+    margin-bottom: 287px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    height: 280px;
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &_icon {
+      img {
+        height: 60px;
+      }
+    }
+    &_title {
+      margin-top: 40px;
+      color: #000;
+      font-size: 28px;
+      line-height: 36.4px;
+    }
+    &_descr {
+      max-width: 474px;
+      margin-top: 22px;
+      color: rgba(0, 0, 0, 0.60);
+      font-size: 18px;
+    }
+  }
+  &__back {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -280px; 
+    img {
+      width: 1150px;
+    }
+  }
+  &__key {
+    position: relative;
+    bottom: -30px;
+    margin-left: 10%;
+  }
+  &__card {
+    position: absolute;
+    bottom: -293px;
+    right: 20%;
+  }
+}

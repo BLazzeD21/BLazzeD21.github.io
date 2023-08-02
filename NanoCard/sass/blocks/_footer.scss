@@ -1,0 +1,46 @@
+.footer {
+  min-height: 548px;
+  background: #1E2024;
+  padding: 39px 100px 70px 100px;
+  transition: 1s all;
+  &__key {
+    margin-left: 120px;
+    color: #000;
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+  &__title {
+    display: block;
+    margin: 0 auto;
+    width: 476px;
+    margin-top: 71px;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+  }
+  &__link {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    a {
+      color: #FFF;
+    }
+  }
+  .wrapper {
+    margin: 107px 120px 0px 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: #FFF;
+    font-size: 29px;
+    letter-spacing: 0.5px;
+  }
+  &__rights {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    letter-spacing: 0.32px;
+  }
+}
