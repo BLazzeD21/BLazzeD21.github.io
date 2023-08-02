@@ -1,0 +1,15 @@
+@font-face {
+    /* font-family: 'Raleway' */
+    font-family: "Raleway"; 
+    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+    } 
+
+@font-face {
+    /* font-family: 'Nanum Gothic' */
+    font-family: "Nanum Gothic"; 
+    src: url("../fonts/Nanum_Gothic/NanumGothic-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+    } 
