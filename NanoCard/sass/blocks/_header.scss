@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  min-height: 600px;
+  background: url("../img/background/header.jpg") center (center / cover) no-repeat;
+  padding: 0px 38px 30px 24px;
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        list-style-type: none;
+        position: relative;
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 14px;
+          text-transform: uppercase;
+          &:after {
+            content: "";
+            bottom: -1px;
+            display: block;
+            height: 1px;
+            right: 0;
+            position: absolute;
+            background: #000;
+            transition: .5s all;
+            width: 0;
+          }
+          &:hover:after {
+              width: 100%;
+              right: 0;
+          }
+        }
+      }
+    }
+  }
+  &__logo {
+    color: #000;
+    font-size: 29px;
+    letter-spacing: 0.5px;
+  }
+  &__title {
+    width: 525px;
+    margin-top: 71px;
+    color: #000;
+    font-size: 43px;
+    letter-spacing: 1.22px;
+  }
+  &__subtitle {
+    width: 526px;
+    margin-top: 29px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Outfit;
+    font-size: 22px;
+  }
+  &__descr {
+    margin-top: 192px;
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 14px;
+  }
+  &__img {
+    position: absolute;
+    bottom: 10px;
+    right: 17%;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.wallets {
+  .wrapper { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 200px 149px;
+  }
+  &__box {
+    width: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: stretch;
+    height: 240px;
+    &_item {
+      width: 96px;
+      height: 96px;
+      border-radius: 10px;
+      background-color: #F0F0F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 60px;
+      }
+    }
+  }
+  &__info {
+    margin-left: 128px;
+    width: 331px;
+    &_title {
+      margin-top: 45px;
+      color: #333;
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
+    &_descr {
+      margin-top: 12px;
+      color: rgba(0, 0, 0, 0.60);
+      font-size: 18px;
+    }
+  }
+}
