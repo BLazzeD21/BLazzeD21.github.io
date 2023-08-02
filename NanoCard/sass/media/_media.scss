@@ -1,0 +1,54 @@
+@media screen and (max-width: 1200px) {
+  .header {
+    &__img {
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .reasons {
+    &__block {
+      margin-top: 62px;
+      width: 350px;
+      justify-content: space-around;
+    }
+  }
+  .wallets {
+    .wrapper { 
+      padding: 0px 0px 200px 0px;
+      justify-content: center;
+    }
+  }
+  .signup {
+    overflow: hidden;
+    &__shadow {
+      right: -40%;
+      img {
+        width: 67.6%;
+      }
+    }
+    &__card {
+      left: -10%;
+      img {
+        width: 67.6%;
+      }
+    }
+  }
+  .features {
+    .wrapper {
+      padding: 0px 5%;
+    }
+    &__card {
+      img {
+        width: 70%;
+      }
+      right: -5%;
+    }
+  }
+  .footer {
+    padding: 39px 0 70px 0;
+  }
+}

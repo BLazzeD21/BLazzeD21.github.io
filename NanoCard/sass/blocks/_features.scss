@@ -50,12 +50,14 @@
   }
   &__key {
     position: relative;
-    bottom: -30px;
-    margin-left: 10%;
+    left: 10%;
+    img {
+      height: 64px;
+    }
   }
   &__card {
     position: absolute;
-    bottom: -293px;
-    right: 20%;
+    bottom: 0;
+    right: 25%;
   }
 }

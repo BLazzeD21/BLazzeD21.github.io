@@ -1,10 +1,10 @@
 .footer {
   min-height: 548px;
   background: #1E2024;
-  padding: 39px 100px 70px 100px;
+  padding: 39px 0 70px 0;
   transition: 1s all;
   &__key {
-    margin-left: 120px;
+    margin-left: 10%;
     color: #000;
     font-size: 28px;
     line-height: 36.4px;
@@ -42,5 +42,7 @@
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     letter-spacing: 0.32px;
+    display: flex;
+    align-items: center;
   }
 }
