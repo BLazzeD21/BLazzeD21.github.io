@@ -2,7 +2,7 @@
   position: relative;
   min-height: 600px;
   background: url("../img/background/header.jpg") center (center / cover) no-repeat;
-  padding: 0px 38px 30px 24px;
+  padding: 0px 24px 30px 24px;
   nav {
     height: 80px;
     display: flex;
@@ -46,14 +46,14 @@
     letter-spacing: 0.5px;
   }
   &__title {
-    width: 525px;
+    max-width: 525px;
     margin-top: 71px;
     color: #000;
     font-size: 43px;
     letter-spacing: 1.22px;
   }
   &__subtitle {
-    width: 526px;
+    max-width: 526px;
     margin-top: 29px;
     color: rgba(0, 0, 0, 0.60);
     font-family: Outfit;

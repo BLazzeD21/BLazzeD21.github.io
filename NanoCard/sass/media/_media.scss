@@ -52,3 +52,119 @@
     padding: 39px 0 70px 0;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .header {
+    overflow: hidden;
+    &__img {
+      position: absolute;
+      bottom: 8%;
+      right: -10%;
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .reasons {
+    padding: 80px 41px 90px 31px;
+    &__block {
+      margin-top: 62px;
+      width: 340px;
+      justify-content: space-around;
+    }
+  }
+  .slider {
+    &_second {
+      padding-bottom: 180px;
+    }
+  }
+  .wallets {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 0px 100px 0;
+    }
+    &__box {
+      max-width: 400px;
+      height: 56px;
+      &_item {
+        width: 56px;
+        height: 56px;
+        margin-left: 10px;
+        img {
+          height: 30px;
+        }
+      }
+    }
+    &__info {
+      max-width: 400px;
+      text-align: center;
+      margin-left: 0;
+      &_title {
+        margin-top: 15px;
+      }
+    }
+  }
+  .signup {
+    &__shadow {
+      top: 0;
+      right: -30%;
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+    &__card {
+      left: -30%;
+      bottom: 0;
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+  }
+  .features {
+    padding: 55px 0px 0px 0px;
+    &__title {
+      margin-left: 0;
+      text-align: center;
+    }
+    .wrapper {
+      padding: 0px;
+      margin-top: 50px;
+      margin-bottom: 90px;
+      justify-content: space-around;
+    }
+    &__box {
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+      &_icon {
+        img {
+          height: 50px;
+        }
+      }
+      &_title {
+        margin-top: 30px;
+        font-size: 28px;
+        line-height: 29px;
+      }
+      &_descr {
+        max-width: 300px;
+        margin-top: 15px;
+        font-size: 17px;
+      }
+    }
+    &__card {
+      img {
+        width: 60%;
+      }
+      right: -20%;
+    }
+  }
+}
+
+// @media screen and (max-width: 767px) {}
+// @media screen and (max-width: 575px) {}
+// @media screen and (max-width: 319px) {}
+// @media screen and (max-width: 319px) {} // ! for 280px
