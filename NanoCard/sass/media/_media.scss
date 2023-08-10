@@ -169,6 +169,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .button {
+    &:hover {
+      color: #fff;
+      background: #000;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-shadow: 0;
+      box-shadow: 0;
+      border: 0;
+    }
+  }
   .header {
     // min-height: 400px;
     text-align: center;
