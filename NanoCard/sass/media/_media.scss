@@ -52,7 +52,6 @@
     padding: 39px 0 70px 0;
   }
 }
-
 @media screen and (max-width: 991px) {
   .header {
     overflow: hidden;
@@ -167,7 +166,6 @@
     }
   }
 }
-
 @media screen and (max-width: 767px) {
   .button {
     &:hover {
@@ -243,7 +241,6 @@
     }
   }
 }
-
 @media screen and (max-width: 575px) {
   .header {
     .hamburger {
@@ -481,6 +478,31 @@
       font-size: 12px;
     }
   }
+  .modal {
+    padding: 20px 10px 10px 10px;
+    width: 270px;
+    height: 325px;
+    &__close {
+      cursor: pointer;
+      font-size: 35px;
+      position: absolute;
+      top: -15px;
+      right: -8%;
+    }
+    &__title {
+      font-size: 27px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    .form-feed {
+      width: 240px;
+      button {
+        width: 240px;
+        font-size: 14px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 319px) {
   .wallets {
@@ -507,6 +529,21 @@
   .footer {
     &__rights {
       font-size: 9px;
+    }
+  }
+  .modal {
+    width: 240px;
+    &__title {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 12px;
+    }
+    .form-feed {
+      width: 210px;
+      button {
+        width: 210px;
+      }
     }
   }
 } // ! for 280px

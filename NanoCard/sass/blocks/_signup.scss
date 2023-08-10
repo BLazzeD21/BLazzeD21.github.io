@@ -5,7 +5,7 @@
   background: url("../img/background/signup.jpg") center (center / cover) no-repeat;
   &__title {
     position: relative;
-    z-index: 1000;
+    z-index: 600;
     margin: 0 auto;
     width: 538px;
     color: #333;
@@ -15,7 +15,7 @@
   }
   &__btn {
     position: relative;
-    z-index: 1000;
+    z-index: 600;
     display: block;
     margin: 0 auto;
     margin-top: 22px;

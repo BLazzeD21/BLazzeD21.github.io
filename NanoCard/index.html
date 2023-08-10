@@ -34,7 +34,7 @@
       </nav>
       <h1 class="header__title">Spend your crypto right from your personal wallet</h1>
       <div class="header__subtitle">Card designed for all your needs to help you manage your spendings and reinvest money.</div>
-      <button class="header__btn button">Order a card</button>
+      <button class="header__btn button order">Order a card</button>
       <div class="header__img">
         <img src="img/card.png" alt="card">
       </div>
@@ -230,7 +230,7 @@
   <section class="signup">
     <div class="container">
       <h2 class="signup__title">Sign up and enjoy most versatile wallet in crypto space.</h2>
-      <button class="signup__btn button button_margin">Sign up</button>
+      <button class="signup__btn button button_margin order">Order a card</button>
       <div class="signup__shadow">
         <img src="img/card_shadow.png" alt="shadow">
       </div>
@@ -282,6 +282,20 @@
       </div>
     </div>
   </footer>
+  <div class="overlay">
+    <div class="modal" id="order">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">NanoCard</div>
+      <div class="modal__descr">We will answer you within 10 minutes</div>
+      <form action="#" class="form-feed">
+        <input required name="name" placeholder="Your name" type="text">
+        <input required name="phone" placeholder="Your phone">
+        <input required name="email" placeholder="Your e-mail" type="email">
+        <button>Order a card</button>
+      </form>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
