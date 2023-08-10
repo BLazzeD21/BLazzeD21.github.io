@@ -1,7 +1,7 @@
 .signup {
   position: relative;
   padding: 114px 0 53px 0;
-  height: 358px;
+  min-height: 358px;
   background: url("../img/background/signup.jpg") center (center / cover) no-repeat;
   &__title {
     position: relative;

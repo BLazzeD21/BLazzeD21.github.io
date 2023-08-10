@@ -1,7 +1,7 @@
 .features {
   overflow: hidden;
   position: relative;
-  max-height: 800px;
+  min-height: 800px;
   padding: 95px 0px 0px 0px;
   &__title {
     margin-left: 150px;
@@ -51,6 +51,7 @@
   &__key {
     position: relative;
     left: 10%;
+    bottom: 0;
     img {
       height: 64px;
     }
