@@ -18,7 +18,7 @@
     right: -10%;
     color: #bbbffe;
   }
-  border-radius: 3%;
+  border-radius: 10px;
   padding: 30px 10px 10px 10px;
   position: absolute;
   top: 50%;
@@ -74,5 +74,37 @@
   &__active {
     transition: all 1s;
     visibility: visible;
+  }
+}
+
+.modal_success {
+  visibility: hidden;
+  &__close {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: -15px;
+    right: -10%;
+    color: #bbbffe;
+  }
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100px;
+  width: 300px;
+  background: url("../img/background/header.jpg") center;
+  &__title {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: .5px;
+    text-align: center;
+  }
+  &__descr {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
   }
 }
