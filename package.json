@@ -4,7 +4,7 @@
   "description": "My portfolio",
   "main": ".eslintrc.js",
   "scripts": {
-    "gulp": "gulp"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
