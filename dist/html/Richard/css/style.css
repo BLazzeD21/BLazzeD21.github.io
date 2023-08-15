@@ -1,0 +1,624 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 800px;
+    padding-top: 29px;
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+}
+
+.nav {
+    display: flex;
+}
+
+.header nav {
+    margin-top: 11px;
+    margin-left: 830px;
+}
+
+nav a {
+    margin-right: 30px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header_img {
+    position: absolute;
+    top: 91px;
+    left: 760px;
+}
+
+.header .header_title {
+    margin-top: 226px;
+    margin-bottom: 0px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    
+}
+
+.header .header_subtitle {
+    margin-top: 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.header .header_btn {
+    margin-top: 25px;
+    width: 170px;
+    height: 66px;
+    background: #FC0A7E;
+    border-radius: 3px;
+    border-color: #FC0A7E;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 207px;
+}
+
+.gate {
+    padding-top: 100px;
+    height: 957px;
+    background: #1B1B1B;
+}
+
+.gate .gate_text {
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+    margin-bottom: 30px;
+}
+
+.gate .gate_title {
+    margin-bottom: 55px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.gate .gate_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.app_aenean {
+    margin-top: 80px;
+}
+
+.wrapper_app {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_aenean .aenean_content {
+    width: 306px;
+    margin-right: 195px;
+}
+
+.app_aenean .aenean_text {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+
+.app_aenean .aenean_title {
+    margin-top: 30px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #000000; 
+}
+
+.app_aenean .aenean_text2 {
+    margin-top: 22px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+
+.app_aenean .consect_content {
+    width: 306px;
+    margin-right: 195px;
+}
+
+.app_consect {
+    margin-top: 160px;
+}
+
+.app_consect .consect_content {
+    width: 306px;
+    margin-left: 144px;
+}
+
+.app_consect .consect_text, .app_porta .porta_text {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+
+.app_consect .consect_title , .app_porta .porta_title {
+    margin-top: 25px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #000000; 
+}
+
+.app_consect .consect_text2, .app_porta .porta_text2 {
+    margin-top: 27px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+
+.app_porta {
+    margin-top: 160px;
+    padding-left: 102px;
+    margin-right: 102px;
+}
+
+.app_porta .porta_content {
+    width: 306px;
+    margin-right: 195px;
+}
+
+.benefits_list {
+    margin-top: 159px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefits_list .benefits_item {
+    height: 209px;
+    width: 371px;
+}
+
+.benefits_list .benefits_item .benefits_img {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits_list .benefits_item .benefits_title {
+    margin-top: 40px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.benefits_list .benefits_item .benefits_text {
+    margin-top: 17px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.numbers_list {
+    margin-top: 163px;
+    margin-left: 170px;
+    margin-right: 184px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.numbers_list .number {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 90px;
+    text-align: center;
+    color: #333333;
+}
+
+.numbers_list .number_name {
+    margin-top: 10px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.food .food_row {
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.contant_food-right {
+    width: 330px;
+    margin-right: 82px;
+}
+
+.contant_food-left {
+    width: 330px;
+    margin-left: 77px;
+}
+
+.food .food_text {
+    margin-top: 17px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+}   
+
+.food .food_title {
+    margin-top: 30px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.food .food_text2 {
+    margin-top: 22px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+
+.food .bold-underline {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.quote {
+    margin-top: 162px;
+}
+
+.quote .quotes {
+    display: block;
+    margin: 0 auto;
+}
+
+.quote .quote_text {
+    display: block;
+    margin: 0 auto;
+    margin-top: 65px;
+    width: 700px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.description_quote {
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote .author_quote-text {
+    margin-right: 20px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.quote .city_quote {
+    margin-left: 20px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.quote .line {
+    width: 30px;
+    height: 1px;
+    left: calc(50% - 30px/2 - 10px);
+    top: calc(50% - 1px/2 - 4.88px);
+    background: #D3D3D3;
+    border-radius: 0px;
+}
+
+.btn-switch_quote {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-switch_quote .first_btn {
+    margin-right: 16px;
+}
+
+.btn-switch_quote .btn_quote {
+    border: none;
+    width: 7px;
+    height: 7px;
+}
+
+.btn-switch_quote .active-btn {
+    background: #222222;
+}
+
+.btn-switch_quote .disabled-btn {
+    background: rgba(34, 34, 34, 0.4);
+}
+
+.promo {
+    margin-top: 140px;
+}
+
+.promo .promo_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.phones {
+    height: 519px;
+    margin-top: 118px;
+}
+
+.download {
+    margin-top: 0px;
+    padding-top: 165px;
+    height: 475px;
+    background: url(../img/Vector.png),
+    linear-gradient(121deg, 
+    rgba(221,22,107,1) 8%, rgba(113,0,179,1) 97%);
+    background-size: 100%;
+}
+
+.download_menu .question_download-text {
+    text-align: center;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.download_btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.download_btns .download-btn {
+    height: 66px;
+    width: 190px;
+    background: #FC0A7E;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border-color:  #FC0A7E;
+}
+
+.download_btns .first_btn {
+    margin-right: 10px;
+}
+
+.download_btns .touch-btn {
+    height: 66px;
+    width: 190px;
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 2px solid #B04BB3;
+}
+
+button {
+    cursor: pointer;
+}
+
+.subscribe {
+    padding-top: 129px;
+    padding-bottom: 126px;
+    height: 463px;
+    background: #1B1B1B;
+}
+
+.subscribe .sub_title {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe .sub_text {
+    margin-top: 20px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px; 
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.subscribe .sub_inputbox {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe .sub_inputbox .sub_input #email {
+    height: 70px;
+    width: 311px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px #FC0A7E;
+    border-radius: 3px 0px 0px 3px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 25px;
+}
+
+.subscribe .sub_inputbox .sub_btn .subscribe_btn {
+    height: 70px;
+    width: 154px;
+    background: #FC0A7E;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 69px;
+    height: 242px;
+    background: #1B1B1B;
+}
+
+.footer .footer_logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer .footer_menu {
+    max-width: 545px;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+.footer .footer_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer_item {
+    margin-right: 30px;
+}
+
+.footer .footer_item:last-child {
+    margin-right: 0;
+}
+
+.footer .footer_item {
+    list-style-type: none;
+}
+
+.footer .footer_link {
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #6B6B6B;
+    text-decoration: none;
+}
+

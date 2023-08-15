@@ -1,0 +1,31 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick.min";
+@import "libs/slick-theme.min";
+@import "libs/animate.min";
+
+@import "base/variables";
+@import "base/fonts";
+@import "base/mixins";
+@import "base/animation";
+@import "base/container";
+
+@import "blocks/buttons";
+@import "blocks/titles";
+@import "blocks/forms";
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/slider";
+@import "blocks/catalog";
+@import "blocks/reviews";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+
+@import "media/_mediaExtraLarge.scss";
+@import "media/_mediaLarge.scss";
+@import "media/_mediaMedium.scss";
+@import "media/_mediaSmall.scss";
+@import "media/_mediaExtraSmall.scss";

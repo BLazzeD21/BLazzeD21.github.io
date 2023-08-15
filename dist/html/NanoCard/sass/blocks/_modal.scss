@@ -1,0 +1,110 @@
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba($color: #000000, $alpha: 0.55);
+}
+
+.modal {
+  visibility: hidden;
+  &__close {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: -15px;
+    right: -10%;
+    color: #bbbffe;
+  }
+  border-radius: 10px;
+  padding: 30px 10px 10px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 300px;
+  background: url("../img/background/header.jpg") center;
+  &__title {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: .5px;
+    text-align: center;
+  }
+  &__descr {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+  }
+  .form-feed {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    input {
+      padding: 0 20px;
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 12px;
+      &:nth-child(3) {
+        margin-bottom: 20px;
+      }
+    }
+    button {
+      cursor: pointer;
+      background: #fff;
+      width: 260px;
+      height: 40px;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      border-radius: 5px;
+      border: none;
+      text-transform: uppercase;
+    }
+  }
+  &__active {
+    transition: all 1s;
+    visibility: visible;
+  }
+}
+
+.modal_success {
+  visibility: hidden;
+  &__close {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: -15px;
+    right: -10%;
+    color: #bbbffe;
+  }
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100px;
+  width: 300px;
+  background: url("../img/background/header.jpg") center;
+  &__title {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: .5px;
+    text-align: center;
+  }
+  &__descr {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+  }
+}
