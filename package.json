@@ -30,9 +30,8 @@
 		"sass": "^1.63.3"
 	},
 	"browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
+		"last 2 chrome versions",
+		"last 2 firefox versions",
+		"last 2 ios versions"
 	]
 }
