@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px) {
+  .header {
+    margin: 0 20px;
+  }
+  .promo{
+    &__wrapper {
+      margin-right: 20px;
+    }
+  }
+  .consultation {
+    padding-left: 40px;
+  }
+}

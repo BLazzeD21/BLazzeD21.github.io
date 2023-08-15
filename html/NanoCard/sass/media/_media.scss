@@ -1,0 +1,549 @@
+@media screen and (max-width: 1280px) {
+  .header {
+    &__img {
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .reasons {
+    &__block {
+      margin-top: 62px;
+      width: 350px;
+      justify-content: space-around;
+    }
+  }
+  .wallets {
+    .wrapper { 
+      padding: 0px 0px 200px 0px;
+      justify-content: center;
+    }
+  }
+  .signup {
+    overflow: hidden;
+    &__shadow {
+      right: -40%;
+      img {
+        width: 67.6%;
+      }
+    }
+    &__card {
+      left: -10%;
+      img {
+        width: 67.6%;
+      }
+    }
+  }
+  .features {
+    .wrapper {
+      padding: 0px 5%;
+    }
+    &__card {
+      img {
+        width: 70%;
+      }
+      right: -5%;
+    }
+  }
+  .footer {
+    padding: 39px 0 70px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    overflow: hidden;
+    &__img {
+      position: absolute;
+      bottom: 8%;
+      right: -10%;
+      img {
+        width: 70%;
+      }
+    }
+  }
+  .reasons {
+    padding: 80px 41px 90px 31px;
+    &__block {
+      margin-top: 62px;
+      width: 340px;
+      justify-content: space-around;
+    }
+  }
+  .slider {
+    &_second {
+      padding-bottom: 180px;
+    }
+  }
+  .wallets {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 0px 100px 0;
+    }
+    &__box {
+      max-width: 400px;
+      height: 56px;
+      &_item {
+        width: 56px;
+        height: 56px;
+        margin-left: 10px;
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        img {
+          height: 30px;
+        }
+      }
+    }
+    &__info {
+      max-width: 400px;
+      text-align: center;
+      margin-left: 0;
+      &_title {
+        margin-top: 15px;
+      }
+    }
+  }
+  .signup {
+    &__shadow {
+      top: 0;
+      right: -30%;
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+    &__card {
+      left: -30%;
+      bottom: 0;
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
+    }
+  }
+  .features {
+    min-height: 600px;
+    padding: 55px 0px 0px 0px;
+    &__title {
+      margin-left: 0;
+      text-align: center;
+    }
+    .wrapper {
+      padding: 0px;
+      margin-top: 50px;
+      margin-bottom: 90px;
+      justify-content: space-around;
+    }
+    &__box {
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+      &_icon {
+        img {
+          height: 50px;
+        }
+      }
+      &_title {
+        margin-top: 30px;
+        font-size: 28px;
+        line-height: 29px;
+      }
+      &_descr {
+        max-width: 300px;
+        margin-top: 15px;
+        font-size: 17px;
+      }
+    }
+    &__card {
+      img {
+        width: 60%;
+      }
+      right: -20%;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .button {
+    &:hover {
+      color: #fff;
+      background: #000;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-shadow: 0;
+      box-shadow: 0;
+      border: 0;
+    }
+  }
+  .header {
+    // min-height: 400px;
+    text-align: center;
+    &__descr {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    &__title {
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-top: 50px;
+      font-size: 35px;
+    }
+    &__subtitle {
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    &__img {
+      width: 100%;
+      position: static;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .button {
+    margin-top: 20px;
+    width: 151px;
+    height: 48px;
+    font-size: 12px;
+  }
+  .signup {
+    max-height: 308px;
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .features {
+    &__card {
+      img {
+        width: 40%;
+      }
+      right: -40%;
+    }
+  }
+  .footer {
+    padding: 29px 0 40px 0;
+    .wrapper {
+      margin: 107px 80px 0px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__logo {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .header {
+    .hamburger {
+      display: block;
+      margin-left: 20px;
+      nav {
+        position: relative;
+      }
+      cursor: pointer;
+      width: 26px;
+      transition: 0.5s all;
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+        margin-bottom: 5px;
+        transition: 0.5s all;
+        &:nth-child(3) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .menu_active {
+      span {
+        margin-bottom: -2px;
+        &:nth-child(1) {
+          transform: rotate(-45deg)
+        }
+        &:nth-child(2) {
+          display: none
+        }
+        &:nth-child(3) {
+          transform: rotate(45deg)
+        }
+      }
+    }
+    padding: 0px 0 30px 0;
+    &__logo {
+      margin-right: 20px;
+    }
+    nav {
+      .menu-items {
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+        background-color: rgba(253, 253, 255, .9);
+        position: absolute;
+        transform: translate(-100%);
+        top: 80px;
+        width: 100vw;
+        height: 175px;
+        display: flex;
+        ul {
+          padding-left: 0;
+          width: 100vw;
+          flex-direction: column;
+          li {
+            margin-bottom: 10px;
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+        &_active {
+          transform: translate(0);
+        }
+      }
+    }
+    &__title {
+      width: 90%;
+      margin-top: 60px;
+      font-size: 25px;
+      letter-spacing: 1.22px;
+    }
+    &__subtitle {
+      width: 90%;
+      margin-top: 19px;
+      font-size: 15px;
+    }
+    &__descr {
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+  }
+  .reasons {
+    padding: 50px 20px 120px 20px;
+    &__title {
+      font-size: 24px;
+    }
+    &__block {
+      margin-top: 32px;
+      &_title {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      &_descr {
+        margin-top: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  .multichain {
+    &__info {
+      padding-left: 20px;
+      &_title {
+        font-size: 25px;
+      }
+      &_descr {
+        font-size: 14px;
+      }
+    }
+  }
+  .wallets {
+    .wrapper {
+      padding: 0px 10px 100px 10px;
+    }
+    &__box {
+      width: 200px;
+      height: 130px;
+      &_item {
+        width: 56px;
+        height: 56px;
+        margin-left: 10px;
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        &:nth-child(4) {
+          margin-left: 0;
+        }
+        img {
+          height: 30px;
+        }
+      }
+    }
+    &__info {
+      max-width: 300px;
+      font-size: 20px;
+      &_title {
+        font-size: 25px;
+      }
+      &_descr {
+        margin-top: 12px;
+        font-size: 16px;
+      }
+    }
+  }
+  .signup {
+    padding: 70px 0 53px 0;
+    &__title {
+      max-width: 300px;
+      font-size: 25px;
+    }
+    &__shadow {
+      right: -10%;
+    }
+    &__card {
+      left: -10%;
+    }
+  }
+  .features {
+    padding: 30px 0px 0px 0px;
+    &__title {
+      font-size: 20px;
+    }
+    .wrapper {
+      margin: 0px 10px;
+      padding: 0px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__box {
+      width: 310px;
+      height: 250px;
+      flex-direction: column;
+      align-items: center;
+      &_icon {
+        img {
+          height: 30px;
+        }
+      }
+      &_title {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+      }
+      &_descr {
+        max-width: 300px;
+        margin-top: 12px;
+        font-size: 17px;
+        text-align: center;
+      }
+    }
+    &__card {
+      img {
+        width: 20vh;
+      }
+      right: 0;
+    }
+    &__key {
+      padding-top: 50px;
+      img {
+        height: 40px;
+      }
+    }
+  }
+  .footer {
+    min-height: 300px;
+    padding: 20px 0 60px 0;
+    transition: 1s all;
+    &__key {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    &__title {
+      margin: 0 10px;
+      margin-top: 50px;
+      font-size: 20px;
+    }
+    &__link {
+      margin-top: 25px;
+    }
+    .wrapper {
+      margin: 70px 20px 0px 20px;
+    }
+    &__logo {
+      font-size: 30px;
+    }
+    &__rights {
+      font-size: 12px;
+    }
+  }
+  .modal {
+    padding: 20px 10px 10px 10px;
+    width: 270px;
+    height: 325px;
+    &__close {
+      cursor: pointer;
+      font-size: 35px;
+      position: absolute;
+      top: -15px;
+      right: -8%;
+    }
+    &__title {
+      font-size: 27px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    .form-feed {
+      width: 240px;
+      button {
+        width: 240px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 319px) {
+  .wallets {
+    &__info {
+      max-width: 260px;
+    }
+  }
+  .signup {
+    &__title {
+      max-width: 270px;
+    }
+    &__shadow {
+      right: -20%;
+    }
+    &__card {
+      left: -20%;
+    }
+  }
+  .features {
+    &__box {
+      width: 260px;
+    }
+  }
+  .footer {
+    &__rights {
+      font-size: 9px;
+    }
+  }
+  .modal {
+    width: 240px;
+    &__title {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 12px;
+    }
+    .form-feed {
+      width: 210px;
+      button {
+        width: 210px;
+      }
+    }
+  }
+} // ! for 280px

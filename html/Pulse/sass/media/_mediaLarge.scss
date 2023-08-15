@@ -1,0 +1,28 @@
+@media screen and (max-width: 991px) {
+  .consultation{
+    .title {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+  }
+  .slider {
+    &__inner {
+      width: 500px;
+    }
+  }
+  .catalog__content {   
+    justify-content: space-around;
+  }
+  .reviews {
+    margin: 0 15px;
+    &-item {
+      &__img {
+        img{
+          height: 140px;
+        }
+      }
+    }
+  }
+}

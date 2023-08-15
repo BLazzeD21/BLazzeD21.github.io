@@ -1,0 +1,35 @@
+.reasons {
+  padding: 80px 41px 160px 31px;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title {
+    color: #333;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  &__block {
+    margin-top: 52px;
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title {
+      margin-top: 15px;
+      color: #333;
+      text-align: center;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+    &_descr {
+      margin-top: 16px;
+      color: rgba(0, 0, 0, 0.60);
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
