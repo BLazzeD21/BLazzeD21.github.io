@@ -1,0 +1,40 @@
+.promo {
+  position: relative;
+  padding-top: 205px;
+  &__title {
+    max-width: 535px;
+    margin-top: 10px;
+  }
+  &__name {
+    z-index: 1;
+    padding-left: 10px;
+    position: relative;
+    @include before_circle;
+  }
+  &__btns {
+    margin-top: 25px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+  &__link {
+    font-size: 15px;
+    font-weight: 700;
+    a {
+      transition: all 0.8s;
+      color: $white-color;
+      text-decoration: none;
+      &:hover {
+        color: $pink-color;
+        text-decoration: none;
+      }
+    }
+    &:nth-child(1) {
+      a:hover {
+          transition: all 0.8s;
+          color: $gray-color;
+      }
+    }
+  }
+}

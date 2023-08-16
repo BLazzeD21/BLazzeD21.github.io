@@ -3,9 +3,9 @@ canvas {
 }
 
 #particles-js {
+  position: absolute;
   overflow: hidden;
-  position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #581b98;
+  background-color: $navy-blue-color;
 }
