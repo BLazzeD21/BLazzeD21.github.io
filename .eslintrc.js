@@ -14,5 +14,6 @@ module.exports = {
     'eol-last': 'warn',
     'no-unused-vars': 'warn',
     'quotes': ['warn', "single"],
+    'linebreak-style': ['error', 'windows'],
   },
 };
