@@ -1,4 +1,5 @@
 @mixin before_circle {
+  position: relative;
   &:before {
     content: "";
     position: absolute;
@@ -9,5 +10,12 @@
     height: 36px;
     border-radius: 100%;
     background-color: $dark-pink-color;
+  }
+}
+
+@mixin navy-blue_circle {
+  z-index: 1;
+  &:before {
+    background-color: $navy-blue-color;
   }
 }
