@@ -9,7 +9,6 @@
   &__name {
     z-index: 1;
     padding-left: 10px;
-    position: relative;
     @include before_circle;
   }
   &__btns {

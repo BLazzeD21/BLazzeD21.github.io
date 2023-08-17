@@ -1,8 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 
+@import 'base/variables';
 @import 'base/fonts';
 @import 'base/general';
-@import 'base/variables';
 @import 'base/mixins';
 
 @import 'blocks/menu';
@@ -11,3 +11,4 @@
 @import 'blocks/buttons';
 @import 'blocks/promo';
 @import 'blocks/sidepanel';
+@import 'blocks/about';
