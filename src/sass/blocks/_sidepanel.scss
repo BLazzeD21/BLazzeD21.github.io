@@ -11,6 +11,10 @@
   &__link {
     img {
       width: 35px;
+      transition: all .66s;
+      &:hover {
+        transform: rotate(-90deg);
+      }
     }
   }
   &__devider {
