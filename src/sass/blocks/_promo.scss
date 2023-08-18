@@ -3,7 +3,7 @@
   position: relative;
   padding-top: 205px;
   &__title {
-    max-width: 535px;
+    max-width: 835px;
     margin-top: 10px;
   }
   &__name {
@@ -19,7 +19,8 @@
     align-items: center;    
   }
   &__link {
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 22px;
     font-weight: 700;
     a {
       transition: all 0.8s;

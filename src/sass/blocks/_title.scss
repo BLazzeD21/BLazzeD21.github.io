@@ -1,20 +1,29 @@
 .title {
   color: $white-color;
-  font-size: 48px;
   font-weight: 700;
-  &__fz16 {
-    font-size: 16px;
+  &__fz18 {
+    font-size: 18px;
+  }
+  &__fz22 {
+    font-size: 22px;
   }
   &__fz48 {
     font-size: 48px;
+  }
+  &__fz56 {
+    font-size: 56px;
     line-height: 60px;
+  }
+  &__fz72 {
+    font-size: 72px;
+    line-height: 80px;
   }
   &__fz36 {
     font-size: 36px;
     line-height: 60px;
   }
-  &__fz14 {
-    font-size: 14px;
+  &__fz16 {
+    font-size: 16px;
   }
 
 }

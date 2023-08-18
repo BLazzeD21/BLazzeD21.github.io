@@ -7,7 +7,7 @@
     grid-template-rows: minmax(245px, auto) minmax(255px, auto);
     grid-auto-rows: minmax(245px, auto);
     column-gap: 70px;
-    row-gap: 40px;
+    row-gap: 2  0px;
   }
   &__photo {
     img {
@@ -29,22 +29,24 @@
   }
   &__text {
     margin-top: 20px;
-    font-size: 20px;
-    line-height: 21px;
+    font-size: 24px;
+    line-height: 30px;
     color: $gray-color;
   }
   &__skills {
+    margin-top: 20px;
     display: grid;
-    grid-template: repeat(2, minmax(115px, 1fr)) / repeat(2, 260px);
+    grid-template: repeat(2, minmax(115px, 1fr)) / repeat(2, 330px);
     grid-auto-rows: 1fr;
-    column-gap: 50px;
-    row-gap: 20px;
+    column-gap: 30px;
+    row-gap: 8px;
     &-item {
       display: grid;
-      grid-template-columns: 40px 200px;
-      column-gap: 20px;
+      grid-template-columns: 40px 280px;
+      column-gap: 10px;
       img {
-        width: 25px;
+        margin-top: 7px;
+        width: 30px;
       }
     }
     &-img {
@@ -52,13 +54,13 @@
       @include navy-blue_circle;
       &:before {
         top: -5px;
-        left: -5px; 
+        left: -10px; 
       }
     }
     &-text {
-      margin-top: 6px;
-      font-size: 12px;
-      line-height: 18px;
+      margin-top: 8px;
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 }
