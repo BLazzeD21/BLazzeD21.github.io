@@ -1,5 +1,6 @@
 @mixin before_circle {
   position: relative;
+  z-index: 1;
   &:before {
     content: "";
     position: absolute;
