@@ -69,6 +69,45 @@
       @include skills_circle;
     }
   }
+  &__ratings {
+    margin-top: 50px;
+    display: grid;
+    grid-template: repeat(2, 80px) / repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    column-gap: 45px;
+    row-gap: 35px;
+    &-item {
+      display: grid;
+      grid-template: minmax(21px, auto) 14px / 240px 45px;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    &-title {
+      padding-left: 12px;
+      @include before_circle;
+      @include navy-blue_circle;
+      &:before {
+        top: -4px;
+      }
+    }
+    &-counter {
+      font-size: 20px;
+      color: $white-color;
+    }
+    &-line {
+      width: 350px;
+      height: 14px;
+      border-radius: 4px;
+      background: #E8E4DE;
+      grid-column: 1 / 3;
+      span {
+        display: block;
+        height: 100%;
+        border-radius: 4px;
+        background: $pink-color;
+      }
+    }
+  }
 }
 
 .advanced_skill {
