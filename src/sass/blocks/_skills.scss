@@ -29,19 +29,21 @@
     border-radius: 15px;
     padding: 25px;
     background-color: rgba($color: $navy-blue-color, $alpha: .4);
-    transition: all .6s ease;
+    transition: all .7s ease;
     &:hover {
       box-shadow: 10px 10px 10px rgba($color: $pink-color, $alpha: .6);
       transform: scale(1.05);
       img {
-        transition: all .3s ease;
+        transition: all .7s ease;
         transform: rotate(-10deg);
         height: 115px;
       }
     }
     &__img {
       img {
+        transition: all .7s ease;
         height: 120px;
+        transform: rotate(0);
       }
     }
     &__title {
