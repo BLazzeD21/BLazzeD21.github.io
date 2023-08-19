@@ -14,6 +14,6 @@ module.exports = {
     'eol-last': 'warn',
     'no-unused-vars': 'warn',
     'quotes': ['warn', "single"],
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ["error", (require("os").EOL === "\r\n" ? "windows" : "unix")],
   },
 };
