@@ -4,7 +4,6 @@ const close = document.querySelector('.menu__close');
 const socialItems = document.querySelectorAll('.menu_social_link');
 const itemsOfMenu = document.querySelectorAll('.menu__link');
 
-
 const openMenu = (button) => {
   button.addEventListener('click', () => {
     menu.classList.add('active');
@@ -46,3 +45,9 @@ for (const smoothLink of smoothLinks) {
   });
 };
 
+const counter = document.querySelectorAll('.skills__ratings-counter');
+const lines = document.querySelectorAll('.skills__ratings-line span');
+
+counter.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
