@@ -15,39 +15,72 @@
     text-align: center;
   }
   &__wrapper {
-    padding: 60px 11px 120px 11px;
+    max-width: 1060px;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0 120px 0;
     display: grid;
-    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
-    grid-auto-rows: minmax(270px, auto);
-    gap: 13px;
+    grid-template: repeat(2, 250px) / repeat(4, 250px);
+    grid-auto-rows: 250px;
+    gap: 20px;
   }
   &-item {
     border: 1px solid $white-color;
+    border-radius: 15px;
     padding: 25px;
+    background-color: rgba($color: $navy-blue-color, $alpha: .4);
+    transition: all .6s ease;
+    &:hover {
+      box-shadow: 10px 10px 10px rgba($color: $pink-color, $alpha: .6);
+      transform: scale(1.05);
+      img {
+        transition: all .3s ease;
+        transform: rotate(-10deg);
+        height: 115px;
+      }
+    }
     &__img {
       img {
-        height: 70px;
+        height: 120px;
       }
     }
     &__title {
       position: relative;
-      margin-top: 6px;
+      margin-top: 15px;
       color: $white-color;
       font-size: 20px;
       font-weight: 600;
       &:before {
         content: '';
         position: absolute;
-        top: 30px;
+        top: 33px;
         height: 1px;
         width: 100%;
         background-color: $white-color;
       }
     }
     &__descr {
-      margin-top: 6px;
+      margin-top: 10px;
       color: $white-color;
       font-size: 16px;
+      padding-left: 30px;
+      @include skills_circle;
     }
   }
+}
+
+.advanced_skill {
+  @include advanced_skill;
+}
+
+.intermediate_skill {
+  @include intermediate_skill;
+}
+
+.advanced_beginner {
+  @include advanced_beginner;
+}
+
+.beginner {
+  @include beginner;
 }
