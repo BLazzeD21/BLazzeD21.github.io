@@ -22,6 +22,7 @@
     gap: 5px;
   }
   &__item {
+    position: relative;
     overflow: hidden;
     border-radius: 15px;
     width: 100%;
@@ -29,11 +30,28 @@
     img {
       transition: all .7s ease;
     }
+  }
+  &__link {
     &:hover {
       img {
         transform: scale(1.2);
         filter: contrast(120%);
         transition: all .7s ease;
+      }
+    }
+  }
+  &__github {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    img {
+      height: 60px;
+    }
+    &:hover {
+      img {
+        transition: all .89s ease;
+        transform: rotateY(180deg);
       }
     }
   }
