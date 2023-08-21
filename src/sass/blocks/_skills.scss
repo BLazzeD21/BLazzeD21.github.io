@@ -6,7 +6,7 @@
     @include before_circle;
     @include navy-blue_circle;
     &:before {
-      top: -4px;
+      top: -5px;
       left: 50%;
       transform: translateX(-50%);
     }
