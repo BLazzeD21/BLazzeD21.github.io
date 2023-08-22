@@ -7,6 +7,34 @@
   .container {
     max-width: 960px;
   }
+  .title {
+    &_fz22 {
+      font-size: 18px;
+    }
+  }
+  .about {
+    &__wrapper {
+      padding: 0 30px;
+      grid-template-columns: 380px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+      column-gap: 20px;
+      &-item {
+        grid-template-columns: 40px 195px;
+        column-gap: 15px;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
 }
 @media screen and (max-width: 991px) {
   .container {
@@ -20,6 +48,24 @@
   .title {
     &_fz72 {
       font-size: 52px;
+    }
+    &_fz48 {
+      font-size: 35px;
+    }
+  }
+  .about {
+    &__wrapper {
+      padding: 0 20px;
+      grid-template-columns: 300px 380px;
+      column-gap: 40px;
+    }
+    &__skills {
+      grid-template-columns: 380px;
+      grid-auto-rows: minmax(115px, auto);
+      &-item {
+        column-gap: 10px;
+        grid-template-columns: 40px 310px;
+      }
     }
   }
 }
@@ -39,6 +85,33 @@
     }
     &_fz18 {
       font-size: 16px;
+    }
+  }
+  .about {
+    padding: 60px 0;
+    &__title {
+      margin-top: 45px;
+    }
+    &__subtitle {
+      margin-top: 15px;
+    }
+    &__wrapper {
+      grid-template: 500px auto auto / 1fr;
+      column-gap: 30px;
+    }
+    &__photo {
+      grid-row: unset;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__skills {
+      &-item {
+        grid-template-columns: 30px 420px;
+        column-gap: 20px;
+      }
     }
   }
 }
@@ -64,6 +137,36 @@
     &_fz72 {
       font-size: 26px;
     }
+    &_fz48 {
+      font-size: 30px;
+    }
+    &_fz22 {
+      font-size: 16px;
+    }
+  }
+  .about {
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__photo {
+      width: 250px;
+      place-self: center;
+    }
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+      padding: 0 5px;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+      &-item {
+        grid-template-columns: 30px auto;
+        column-gap: 15px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
   }
 }
 @media screen and (max-width: 319px) {
@@ -75,6 +178,9 @@
   .title {
     &_fz72 {
       font-size: 22px;
+    }
+    &_fz48 {
+      font-size: 26px;
     }
   }
 } // ! for 280px
