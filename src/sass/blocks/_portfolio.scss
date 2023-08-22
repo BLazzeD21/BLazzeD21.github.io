@@ -1,5 +1,6 @@
 .portfolio {
-  padding: 120px 0;
+  position: relative;
+  padding: 120px 0 0 0;
   background-color: $navy-blue-color;
   &__title {
     text-align: center;
@@ -66,4 +67,8 @@
   .opacity {
     opacity: 0.35;
   }
+  // &__footer {
+  //   position: absolute;
+  //   bottom: 0;
+  // }
 }
