@@ -30,6 +30,9 @@
     transition: all .7s ease;
     img {
       transition: all .7s ease;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
   }
   &__link {
