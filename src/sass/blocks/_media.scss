@@ -275,9 +275,6 @@
       width: 250px;
       grid-template: repeat(2, 250px) / 250px;
       padding: 60px 0;
-      // &-item {
-      //   width: 250px;
-      // }
     }
     &__ratings {
       padding: 0;
@@ -303,6 +300,7 @@
     }
     &_fz20 {
       font-size: 16px;
+      line-height: 29px;
     }
   }
   .experience {
@@ -313,6 +311,14 @@
       &-location {
         font-size: 9px;
         line-height: 18px;
+      }
+    }
+  }
+  .skills {
+    &__ratings {
+      grid-template: repeat(2, 80px) / repeat(1, 1fr);
+      &-item {
+        grid-template-columns: 200px auto;
       }
     }
   }
