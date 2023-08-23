@@ -3,6 +3,7 @@ const browserSync = require('browser-sync');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const htmlmin = require('gulp-htmlmin');
 
@@ -67,6 +68,7 @@ gulp.task('fonts', function() {
 gulp.task('icons', function() {
   return gulp
     .src('src/icons/**/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('dist/icons'))
     .pipe(browserSync.stream());
 });
@@ -74,6 +76,7 @@ gulp.task('icons', function() {
 gulp.task('images', function() {
   return gulp
     .src('src/img/**/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('dist/img'))
     .pipe(browserSync.stream());
 });
