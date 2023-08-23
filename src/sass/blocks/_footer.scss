@@ -1,6 +1,7 @@
 .footer {
   padding: 20px 0 40px 0;
   background-color: $dark-pink-color;
+  position: relative;
   &__quote {
     text-align: center;
     color: #fff;
@@ -10,9 +11,10 @@
   &__social {
     margin: 0 auto;
     margin-top: 38px;
-    width: 370px;
+    max-width: 370px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     &-item {
       img {
         width: 40px;
@@ -29,7 +31,7 @@
   &__btns {
     margin: 0 auto;
     margin-top: 30px;
-    width: 320px;
+    max-width: 320px;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -55,10 +57,11 @@
   &__menu {
     margin: 0 auto;
     margin-top: 30px;
-    width: 600px;
+    max-width: 600px;
     &-list {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     &-item {
       list-style-type: none;
