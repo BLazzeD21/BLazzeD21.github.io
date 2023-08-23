@@ -83,7 +83,11 @@
     <div class="container">
       <div class="about__wrapper">
         <div class="about__photo">
-          <img src="img/me.jpg" alt="photo">
+          <picture>
+            <source media="(max-width: 574px)" srcset="img/me.jpg">
+            <source media="(max-width: 766px)" srcset="img/me-min.jpg">
+            <img src="img/me.jpg" alt="photo">
+          </picture>
         </div>
         <div class="about__descr">
           <div class="title title_fz18 about__title">About me</div>
