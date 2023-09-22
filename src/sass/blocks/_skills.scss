@@ -36,12 +36,14 @@
       img {
         transition: all .7s ease;
         transform: rotate(-10deg);
+        width: 80%;
         height: 115px;
       }
     }
     &__img {
       img {
         transition: all .7s ease;
+        width: 60%;
         height: 120px;
         transform: rotate(0);
       }
