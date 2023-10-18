@@ -28,21 +28,19 @@
     border: 1px solid $white-color;
     border-radius: 15px;
     padding: 25px;
-    background-color: rgba($color: $navy-blue-color, $alpha: .4);
-    transition: all .7s ease;
+    background-color: rgba($color: $navy-blue-color, $alpha: 0.4);
+    transition: all 0.7s ease;
     &:hover {
-      box-shadow: 10px 10px 10px rgba($color: $pink-color, $alpha: .6);
+      box-shadow: 10px 10px 10px rgba($color: $pink-color, $alpha: 0.6);
       transform: scale(1.05);
       img {
-        transition: all .7s ease;
+        transition: all 0.7s ease;
         transform: rotate(-10deg);
-        width: 80%;
-        height: 115px;
       }
     }
     &__img {
       img {
-        transition: all .7s ease;
+        transition: all 0.7s ease;
         width: 60%;
         height: 120px;
         transform: rotate(0);
@@ -55,7 +53,7 @@
       font-size: 20px;
       font-weight: 600;
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 33px;
         height: 1px;
@@ -100,7 +98,7 @@
       width: 100%;
       height: 14px;
       border-radius: 4px;
-      background: #E8E4DE;
+      background: #e8e4de;
       grid-column: 1 / 3;
       span {
         display: block;
