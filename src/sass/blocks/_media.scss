@@ -60,7 +60,7 @@
       grid-auto-rows: 280px;
       justify-content: space-around;
       row-gap: 30px;
-      .horizontal, .vertical {
+      .horizontal, .vertical-1, .vertical-2 {
         grid-row: unset;
         grid-column: unset;
       }
