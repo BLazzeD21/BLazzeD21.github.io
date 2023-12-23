@@ -9,7 +9,7 @@ const htmlmin = require('gulp-htmlmin');
 gulp.task('server', function() {
   browserSync({
     server: {
-      baseDir: 'dist',
+      baseDir: 'build',
     },
   });
   gulp.watch('src/*.html').on('change', browserSync.reload);
@@ -22,7 +22,7 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min', prefix: ''}))
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(browserSync.stream());
 });
 
@@ -40,41 +40,41 @@ gulp.task('index', function() {
   return gulp
     .src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('build/'));
 });
 
 // gulp.task('html', function() {
 //   return gulp
 //     .src('src/html/**/*')
-//     .pipe(gulp.dest('dist/html'))
+//     .pipe(gulp.dest('build/html'))
 //     .pipe(browserSync.stream());
 // });
 
 gulp.task('scripts', function() {
   return gulp
     .src('src/js/**/*.js')
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('fonts', function() {
   return gulp
     .src('src/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('build/fonts'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('icons', function() {
   return gulp
     .src('src/icons/**/*')
-    .pipe(gulp.dest('dist/icons'))
+    .pipe(gulp.dest('build/icons'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('images', function() {
   return gulp
     .src('src/img/**/*')
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('build/img'))
     .pipe(browserSync.stream());
 });
 
