@@ -53,18 +53,13 @@ $(document).ready(function() {
       return;
     }
 
-    $.ajax({
-      type: 'POST',
-      url: 'mailer/smart.php',
-      data: $(this).serialize(),
-    }).done(function() {
-      $(this).find('input').value('');
-      $('#consultation, #order').fadeOut();
-      $('.overlay, #thanks').fadeIn('slow');
+    // Here you can add code to submit the form data to the server
 
-      $('form').trigger('reset');
-    });
-    return false;
+    $(this).find('input').val('');
+    $('#consultation, #order').fadeOut();
+    $('.overlay, #thanks').fadeIn('slow');
+
+    $(this).trigger('reset');
   });
 
   new WOW().init();
