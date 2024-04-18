@@ -25,9 +25,9 @@
     transition: all .66s;
     margin-top: 60px;
     display: grid;
-    grid-template: repeat(2, 280px) / repeat(4, 280px);
+    grid-template: repeat(2, 276px) / repeat(4, 276px);
     grid-template-rows: 280px;
-    gap: 5px;
+    gap: 11px;
   }
   &__item {
     position: relative;
