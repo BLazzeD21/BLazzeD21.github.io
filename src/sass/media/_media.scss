@@ -44,8 +44,8 @@
   }
   .skills {
     &__wrapper {
-      width: 790px;
-      grid-template: repeat(2, 250px) / repeat(3, 250px);
+      width: 860px;
+      grid-template: repeat(2, 200px) / repeat(4, 200px);
     }
 
     &__ratings {
@@ -117,8 +117,8 @@
   }
   .skills {
     &__wrapper {
-      width: 520px;
-      grid-template: repeat(2, 250px) / repeat(2, 250px);
+      width: 640px;
+      grid-template: repeat(2, 200px) / repeat(3, 200px);
     }
   }
   .portfolio {
@@ -190,6 +190,8 @@
     padding: 60px 0;
     &__wrapper {
       padding: 60px 0;
+      width: 420px;
+      grid-template: repeat(2, 200px) / repeat(2, 200px);
     }
     &__ratings {
       padding: 0 20px;
@@ -315,10 +317,11 @@
   .skills {
     padding: 60px 0;
     &__wrapper {
-      width: 250px;
-      grid-template: repeat(2, 250px) / 250px;
+      width: 200px;
+      grid-template: repeat(2, 200px) / 200px;
       padding: 60px 0;
     }
+  
     &__ratings {
       padding: 0 10px;
       grid-template: repeat(2, 80px) / repeat(1, 1fr);
