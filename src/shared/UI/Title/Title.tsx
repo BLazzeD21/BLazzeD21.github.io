@@ -15,15 +15,25 @@ const sizeClasses = {
 	"72": styles.fz72,
 };
 
-export const Title = ({ children, size = "18", circle = false, className, ...props }: subTitleProps) => {
+export const Title = ({
+	children,
+	size = "18",
+	darkPinkCircle = false,
+	navyBlueCircle = false,
+	className,
+	Tag = "h2",
+	...props
+}: subTitleProps) => {
 	return (
-		<h2
+		<Tag
 			className={classNames(styles.title, sizeClasses[size], className, {
-				[styles.beforeCircle]: circle,
+				[styles.beforeCircle]: darkPinkCircle || navyBlueCircle,
+				[styles.darkPinkCircle]: darkPinkCircle,
+				[styles.navyBlueCircle]: navyBlueCircle,
 			})}
 			{...props}
 		>
 			{children}
-		</h2>
+		</Tag>
 	);
 };

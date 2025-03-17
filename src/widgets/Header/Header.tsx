@@ -8,12 +8,12 @@ export const Header = () => {
 	return (
 		<>
 			<ParticlesBlock value={100} />
-			<header className={styles.wrapper}>
+			<header className={styles.wrapper} id="header">
 				<div className="container">
-					<Title size="18" circle>
+					<Title size="18" darkPinkCircle>
 						My name is Sekerin Alexandr
 					</Title>
-					<Title size="72" className={styles.title}>
+					<Title size="72" Tag="h1" className={styles.title}>
 						I&apos;m web-developer from Saint-Petersburg
 					</Title>
 					<div className={styles.buttons}>

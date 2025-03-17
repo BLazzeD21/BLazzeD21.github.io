@@ -38,7 +38,6 @@ canvas {
 }
 
 .divider {
-	margin: 25px auto 0;
 	width: 100px;
 	height: 3px;
 	background-color: var(--navy-blue-color);

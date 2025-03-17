@@ -9,18 +9,25 @@
 	padding-left: 10px;
 	position: relative;
 	z-index: 1;
+}
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: -20%;
-		left: 0;
-		z-index: -1;
-		width: 36px;
-		height: 36px;
-		border-radius: 100%;
-		background-color: var(--dark-pink-color);
-	}
+.beforeCircle::before {
+	content: "";
+	position: absolute;
+	top: -20%;
+	left: 0;
+	z-index: -1;
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+}
+
+.darkPinkCircle::before {
+	background-color: var(--dark-pink-color);
+}
+
+.navyBlueCircle::before {
+	background-color: var(--navy-blue-color);
 }
 
 .fz18 {

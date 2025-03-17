@@ -1,0 +1,30 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	column-gap: 10px;
+
+	img {
+		margin-top: 7px;
+	}
+}
+
+.image {
+	position: relative;
+	z-index: 1;
+}
+
+.image::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -10px;
+	z-index: -1;
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	background-color: var(--navy-blue-color);
+}
+
+.description {
+	margin-top: 10px;
+}

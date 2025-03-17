@@ -1,0 +1,25 @@
+.photo {
+	position: relative;
+	z-index: 1;
+	grid-row: 1/3;
+}
+
+.photo::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: var(--navy-blue-color);
+	top: -25px;
+	left: -25px;
+	border-radius: 15px;
+}
+
+.photo img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	border: 1px solid #fff;
+}

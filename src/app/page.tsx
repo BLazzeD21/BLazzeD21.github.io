@@ -1,9 +1,10 @@
-import { Header } from "@/widgets";
+import { AboutMe, Header } from "@/widgets";
 
 export default function Home() {
 	return (
 		<>
 			<Header />
+			<AboutMe />
 		</>
 	);
 }
