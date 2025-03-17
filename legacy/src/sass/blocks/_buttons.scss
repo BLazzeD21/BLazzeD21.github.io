@@ -1,0 +1,17 @@
+.btn {
+	text-align: center;
+	width: 135px;
+	height: 45px;
+	border: none;
+	cursor: pointer;
+	padding: 12px 25px;
+	border-radius: 12px;
+	background-color: $dark-pink-color;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	&_navy-blue {
+		background-color: $navy-blue-color;
+	}
+	&_contact {
+		width: 150px;
+	}
+}
