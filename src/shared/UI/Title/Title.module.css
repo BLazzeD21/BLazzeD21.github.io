@@ -1,0 +1,60 @@
+.title {
+	color: var(--white-color);
+	font-weight: 700;
+	position: relative;
+	z-index: 1;
+}
+
+.beforeCircle {
+	padding-left: 10px;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -20%;
+		left: 0;
+		z-index: -1;
+		width: 36px;
+		height: 36px;
+		border-radius: 100%;
+		background-color: var(--dark-pink-color);
+	}
+}
+
+.fz18 {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.fz22 {
+	font-size: 22px;
+}
+
+.fz20 {
+	font-size: 20px;
+}
+
+.fz48 {
+	font-size: 48px;
+}
+
+.fz56 {
+	font-size: 56px;
+	line-height: 60px;
+}
+
+.fz72 {
+	font-size: 72px;
+	line-height: 80px;
+}
+
+.fz36 {
+	font-size: 36px;
+	line-height: 60px;
+}
+
+.fz16 {
+	font-size: 16px;
+}

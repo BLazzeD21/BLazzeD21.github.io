@@ -1,0 +1,39 @@
+.link {
+	z-index: 1;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--white-color);
+	transition: all 0.8s;
+}
+
+.link:hover {
+	color: var(--pink-color);
+}
+
+.button {
+	padding: 12px 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+}
+
+.navyBlue {
+	background-color: var(--navy-blue-color);
+}
+
+.navyBlue:hover {
+	transition: all 0.8s ease;
+	box-shadow: 3px 3px 3px var(--pink-color);
+}
+
+.darkPink {
+	background-color: var(--dark-pink-color);
+}
+
+.darkPink:hover {
+	color: var(--gray-color);
+}
