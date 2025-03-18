@@ -2,15 +2,11 @@ import Image from "next/image";
 
 import styles from "./skillsBlock.module.css";
 
+import { SkillBlockProps } from "./skillBlock.props";
+
 import { P, Title } from "@/shared/UI";
 
-type Props = {
-	title: string;
-	imageSrc: string;
-	description: string;
-};
-
-export const SkillBlock = ({ title, imageSrc, description }: Props) => {
+export const SkillBlock = ({ title, imageSrc, description }: SkillBlockProps) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.image}>
