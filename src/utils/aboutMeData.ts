@@ -1,5 +1,5 @@
 export const descriptionAboutMe =
-	"What&apos;s up! My name is Alexander and I am a web developer. I have been programming since 2017 and have implemented such projects as websites, bots, desktop applications for Windows and game servers. Now I develop exclusively in web development and learn more and more new technologies to become better.";
+	"What's up! My name is Alexander and I am a web developer. I have been programming since 2017 and have implemented such projects as websites, bots, desktop applications for Windows and game servers. Now I develop exclusively in web development and learn more and more new technologies to become better.";
 
 export const skillsList = [
 	{
@@ -7,7 +7,7 @@ export const skillsList = [
 		title: "Web-development",
 		imageSrc: "/icons/skills/web-development.svg",
 		description:
-			"It'm a front-end web developer with experience in HTML, CSS, CSS-preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers.",
+			"I'm a front-end web developer with experience in HTML, CSS, CSS-preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers.",
 	},
 	{
 		id: 2,
