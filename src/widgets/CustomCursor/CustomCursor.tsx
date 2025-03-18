@@ -36,6 +36,8 @@ export const CustomCursor = () => {
 		};
 	}, []);
 
+	if (position.x === 0 || position.y === 0) return <></>;
+
 	return (
 		<div
 			className={`${styles.customCursor} ${isHovered ? styles.hovered : ""}`}
