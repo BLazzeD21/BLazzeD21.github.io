@@ -1,0 +1,45 @@
+.sidepanel {
+	position: fixed;
+	top: 205px;
+	left: 30px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 3;
+}
+
+.link img {
+	transition: all 0.66s;
+}
+
+.link img:hover {
+	transform: rotate(-90deg);
+}
+
+.devider {
+	width: 2px;
+	height: 70px;
+	background-color: var(--white-color);
+}
+
+.text {
+	height: 25px;
+	width: 150px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white-color);
+}
+
+.text span {
+	display: block;
+	width: 150px;
+	transform: rotate(-90deg) translate(-22%, -10%);
+}
+
+@media screen and (width <= 1439px) {
+	.sidepanel {
+		display: none;
+	}
+}
