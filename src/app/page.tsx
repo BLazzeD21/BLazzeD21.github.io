@@ -1,4 +1,4 @@
-import { AboutMe, Header, Sidepanel } from "@/widgets";
+import { AboutMe, Header, PageUp, Sidepanel } from "@/widgets";
 
 export default function Home() {
 	return (
@@ -6,6 +6,7 @@ export default function Home() {
 			<Sidepanel />
 			<Header />
 			<AboutMe />
+			<PageUp />
 		</>
 	);
 }
