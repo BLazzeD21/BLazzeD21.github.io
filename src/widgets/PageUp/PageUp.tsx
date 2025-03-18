@@ -19,7 +19,7 @@ export const PageUp = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.screenY > window.innerHeight) {
+			if (window.scrollY > window.innerHeight) {
 				setIsVisible(true);
 			} else {
 				setIsVisible(false);
