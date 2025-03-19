@@ -2,9 +2,9 @@ import styles from "./education.module.css";
 
 import { Title } from "@/shared/UI";
 
-import { EducationBlock } from "@/widgets";
+import { EducationBlock } from "@/widgets/Blocks";
 
-import { higherEducation, additionalEducation } from "@/constants";
+import { additionalEducation, higherEducation } from "@/constants";
 
 export const Education = () => {
 	return (
@@ -39,7 +39,7 @@ export const Education = () => {
 						</div>
 						<div className={styles.column}>
 							<Title size="20" Tag="h4">
-							Additional Education
+								Additional Education
 							</Title>
 							<ul>
 								<li>

@@ -1,4 +1,6 @@
-import { AboutMe, CustomCursor, Education, Header, PageUp, Sidepanel } from "@/widgets";
+import { PageUp, Sidepanel } from "@/widgets";
+
+import { AboutMe, Education, Header } from "@/widgets/Sections";
 
 export default function Home() {
 	return (

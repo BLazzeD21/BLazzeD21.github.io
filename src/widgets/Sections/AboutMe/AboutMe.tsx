@@ -1,8 +1,8 @@
 import styles from "./aboutMe.module.css";
 
-import { P, Title } from "@/shared/UI";
+import { P, Photo, Title } from "@/shared/UI";
 
-import { Photo, SkillBlock } from "@/widgets";
+import { SkillBlock } from "@/widgets/Blocks";
 
 import { description, skillsList } from "@/constants";
 
