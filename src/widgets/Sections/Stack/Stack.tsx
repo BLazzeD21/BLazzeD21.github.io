@@ -2,9 +2,9 @@ import styles from "./stack.module.css";
 
 import { Title } from "@/shared/UI";
 
-import { StackAccordion } from "@/widgets";
+import { Rating, StackAccordion } from "@/widgets";
 
-import { stack } from "@/constants";
+import { ratings, stack } from "@/constants";
 
 export const Stack = () => {
 	return (
@@ -20,6 +20,7 @@ export const Stack = () => {
 					<div className="divider"></div>
 					<StackAccordion stack={stack} />
 				</div>
+				<Rating ratings={ratings} />
 			</div>
 		</section>
 	);

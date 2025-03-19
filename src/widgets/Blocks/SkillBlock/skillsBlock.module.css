@@ -2,10 +2,10 @@
 	display: grid;
 	grid-template-columns: 40px 1fr;
 	column-gap: 10px;
+}
 
-	img {
-		margin-top: 7px;
-	}
+.wrapper img {
+	margin-top: 7px;
 }
 
 .image {
