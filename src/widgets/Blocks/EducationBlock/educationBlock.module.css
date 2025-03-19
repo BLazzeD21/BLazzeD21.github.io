@@ -1,73 +1,3 @@
-.education {
-	padding: 120px 0;
-	background-color: var(--navy-blue-color);
-}
-
-.flex {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.title {
-	margin: 20px 0;
-}
-
-.wrapper {
-	padding: 60px 65px 0;
-	display: grid;
-	grid-template-columns: repeat(2, 425px);
-	column-gap: 135px;
-}
-
-.column h4 {
-	position: relative;
-	padding-left: 35px;
-}
-
-.column h4::before {
-	content: "";
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	left: -7px;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 100%;
-	background: var(--dark-pink-color);
-}
-
-.column ul {
-	list-style-type: none;
-}
-
-.column ul li {
-	position: relative;
-}
-
-.column ul li::after {
-	content: "";
-	width: 1px;
-	height: calc(100% + 16px);
-	position: absolute;
-	top: -15px;
-	left: 0;
-	background-color: var(--white-color);
-}
-
-.item {
-	position: relative;
-}
-
-.item::before {
-	content: "";
-	height: 1px;
-	width: 45px;
-	position: absolute;
-	background-color: $white-color;
-	top: 73px;
-}
-
 .header {
 	position: relative;
 	padding: 45px 0 0 100px;
@@ -115,3 +45,16 @@
 	line-height: 25px;
 	color: var(--white-color);
 }
+
+.item {
+	position: relative;
+}
+
+.item::before {
+	content: "";
+	height: 1px;
+	width: 45px;
+	position: absolute;
+	background-color: var(--white-color);
+	top: 73px;
+}	
