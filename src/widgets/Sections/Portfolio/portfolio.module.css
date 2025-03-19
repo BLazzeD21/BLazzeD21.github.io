@@ -1,0 +1,22 @@
+.portfolio {
+	position: relative;
+	padding: 120px 0;
+	background-color: var(--navy-blue-color);
+}
+
+.portfolio img {
+	width: 100%;
+}
+
+.title {
+	margin: 20px 0;
+}
+
+.wrapper {
+	transition: all 0.66s;
+	margin-top: 60px;
+	display: grid;
+	grid-template: repeat(2, 276px) / repeat(4, 276px);
+	grid-template-rows: 280px;
+	gap: 11px;
+}
