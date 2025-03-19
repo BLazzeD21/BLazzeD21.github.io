@@ -6,6 +6,7 @@
 }
 
 .beforeCircle {
+	letter-spacing: 3px;
 	padding-left: 10px;
 	position: relative;
 	z-index: 1;
@@ -56,6 +57,7 @@
 
 .fz48 {
 	font-size: 48px;
+	letter-spacing: 2px;
 }
 
 .fz56 {

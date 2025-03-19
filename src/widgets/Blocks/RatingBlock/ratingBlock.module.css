@@ -4,6 +4,10 @@
 	place-content: space-between space-between;
 }
 
+.item .title {
+	letter-spacing: 1px;
+}
+
 .line {
 	width: 100%;
 	height: 14px;
