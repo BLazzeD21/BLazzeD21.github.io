@@ -10,6 +10,8 @@
 
 * {
 	/* cursor: none !important; */
+
+	scroll-behavior: smooth;
 	user-select: none;
 	font-family: var(--font-quicksand), sans-serif;
 	margin: 0;
