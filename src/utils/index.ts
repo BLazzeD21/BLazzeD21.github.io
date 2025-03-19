@@ -1,2 +1,1 @@
-export * from "./aboutMeData";
-export * from "./socialLinksData";
+export * from "./getLineBreaks";
