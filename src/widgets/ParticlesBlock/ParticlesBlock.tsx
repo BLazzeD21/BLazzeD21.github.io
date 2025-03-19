@@ -26,6 +26,7 @@ export const ParticlesBlock = ({ speed = 4, value = 175 }: ParticlesBlockProps) 
 
 	const options: ISourceOptions = useMemo(
 		() => ({
+			fullScreen: false,
 			background: {
 				color: {
 					value: "#574b90",

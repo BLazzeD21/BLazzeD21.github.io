@@ -1,8 +1,8 @@
-import { ParticlesBlock } from "@/widgets";
-
 import styles from "./header.module.css";
 
 import { LinkButton, Title } from "@/shared/UI";
+
+import { ParticlesBlock } from "@/widgets";
 
 export const Header = () => {
 	return (

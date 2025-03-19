@@ -20,6 +20,7 @@ export const Title = ({
 	size = "18",
 	darkPinkCircle = false,
 	navyBlueCircle = false,
+	isCircleCenter = false,
 	className,
 	Tag = "h2",
 	...props
@@ -30,6 +31,7 @@ export const Title = ({
 				[styles.beforeCircle]: darkPinkCircle || navyBlueCircle,
 				[styles.darkPinkCircle]: darkPinkCircle,
 				[styles.navyBlueCircle]: navyBlueCircle,
+				[styles.center]: isCircleCenter,
 			})}
 			{...props}
 		>

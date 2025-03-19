@@ -30,6 +30,17 @@
 	background-color: var(--navy-blue-color);
 }
 
+.center {
+	padding-left: 0;
+	text-align: center;
+}
+
+.center::before {
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .fz18 {
 	font-size: 18px;
 	line-height: 25px;

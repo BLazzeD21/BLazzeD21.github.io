@@ -45,7 +45,8 @@ export const CustomCursor = () => {
 			style={{
 				left: `${position.x + 6}px`,
 				top: `${position.y + 25}px`,
-			}}>
+			}}
+		>
 			<Cursor />
 		</div>
 	);

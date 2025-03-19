@@ -1,10 +1,10 @@
-import { Photo, SkillBlock } from "@/widgets";
-
 import styles from "./aboutMe.module.css";
 
 import { P, Title } from "@/shared/UI";
 
-import { descriptionAboutMe, skillsList } from "@/utils";
+import { Photo, SkillBlock } from "@/widgets";
+
+import { description, skillsList } from "@/constants";
 
 export const AboutMe = () => {
 	return (
@@ -21,7 +21,7 @@ export const AboutMe = () => {
 						</Title>
 						<div className="divider"></div>
 						<P className={styles.descriptionText} color="gray" size="24">
-							{descriptionAboutMe}
+							{description}
 						</P>
 					</div>
 					<div className={styles.skills}>

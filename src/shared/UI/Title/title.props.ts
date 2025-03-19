@@ -6,4 +6,5 @@ export interface subTitleProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivE
 	Tag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 	darkPinkCircle?: boolean;
 	navyBlueCircle?: boolean;
+	isCircleCenter?: boolean;
 }

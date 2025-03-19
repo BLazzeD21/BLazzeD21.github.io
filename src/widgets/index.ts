@@ -6,3 +6,5 @@ export * from "./Photo/Photo";
 export * from "./Sidepanel/Sidepanel";
 export * from "./PageUp/PageUp";
 export * from "./CustomCursor/CustomCursor";
+export * from "./Education/Education";
+export * from "./EducationBlock/EducationBlock";

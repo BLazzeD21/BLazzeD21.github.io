@@ -5,7 +5,7 @@ import styles from "./sidepanel.module.css";
 
 import { SocialLinkProps } from "./sidepanel.props";
 
-import { socialLinksData } from "@/utils";
+import { socialLinks } from "@/constants";
 
 export const SocialLink = ({ item }: SocialLinkProps) => {
 	return (
@@ -18,7 +18,7 @@ export const SocialLink = ({ item }: SocialLinkProps) => {
 export const Sidepanel = ({}) => {
 	return (
 		<aside className={styles.sidepanel}>
-			{socialLinksData.map((socialItem) => {
+			{socialLinks.map((socialItem) => {
 				return <SocialLink key={socialItem.id} item={socialItem} />;
 			})}
 			<div className={styles.devider}></div>
