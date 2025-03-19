@@ -36,7 +36,8 @@ export const CustomCursor = () => {
 		};
 	}, []);
 
-	if (position.x === 0 || position.y === 0) return <></>;
+	const isCursorHidden = position.x === 0 || position.y === 0 || window.innerWidth - 7 < position.x;
+	if (isCursorHidden) return <></>;
 
 	return (
 		<div
@@ -44,8 +45,7 @@ export const CustomCursor = () => {
 			style={{
 				left: `${position.x + 6}px`,
 				top: `${position.y + 25}px`,
-			}}
-		>
+			}}>
 			<Cursor />
 		</div>
 	);

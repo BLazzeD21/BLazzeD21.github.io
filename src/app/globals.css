@@ -16,7 +16,7 @@
 	padding: 0;
 
 	::-webkit-scrollbar {
-		width: 0.6rem;
+		width: 7px;
 	}
 
 	::-webkit-scrollbar-track {
