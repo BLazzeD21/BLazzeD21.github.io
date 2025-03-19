@@ -1,6 +1,6 @@
 import { PageUp, Sidepanel } from "@/widgets";
 
-import { AboutMe, Education, Header } from "@/widgets/Sections";
+import { AboutMe, Education, Header, Stack } from "@/widgets/Sections";
 
 export default function Home() {
 	return (
@@ -10,6 +10,7 @@ export default function Home() {
 			<Header />
 			<AboutMe />
 			<Education />
+			<Stack />
 			<PageUp />
 		</>
 	);

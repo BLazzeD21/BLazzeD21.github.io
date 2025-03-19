@@ -10,7 +10,7 @@ export const Education = () => {
 	return (
 		<section className={styles.education} id="education">
 			<div className="container">
-				<div className={styles.flex}>
+				<div className="flex">
 					<Title Tag="h3" size="18" darkPinkCircle isCircleCenter>
 						Education
 					</Title>

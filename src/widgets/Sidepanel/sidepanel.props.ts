@@ -1,7 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export type SocialItem = {
-	id: number;
+	id: string;
 	link: string;
 	name: string;
 	icon: string;

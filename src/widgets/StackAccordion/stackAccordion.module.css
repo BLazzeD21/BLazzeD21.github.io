@@ -1,0 +1,59 @@
+.accordion {
+	width: 100%;
+	margin: 60px auto 0;
+}
+
+.category {
+	margin-bottom: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.header {
+	color: var(--white-color);
+	background-color: var(--navy-blue-color);
+	width: 100%;
+	padding: 15px;
+	border: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+
+.header h2 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.header .arrow {
+	transition: transform 0.3s ease;
+}
+
+.arrow.open {
+	transform: rotate(180deg);
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition:
+		max-height 0.3s ease,
+		padding 0.3s ease;
+}
+
+.content.open {
+	max-height: 1000px;
+	padding: 15px;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 30px 0;
+	display: grid;
+	grid-template: repeat(1, 200px) / repeat(5, 200px);
+	grid-auto-rows: 200px;
+	gap: 20px;
+}
