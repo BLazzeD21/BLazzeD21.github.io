@@ -3,3 +3,4 @@ export * from "./PageUp/PageUp";
 export * from "./CustomCursor/CustomCursor";
 export * from "./StackAccordion/StackAccordion";
 export * from "./Rating/Rating";
+export * from "./SocialLink/SocialLink";

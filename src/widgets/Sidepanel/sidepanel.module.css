@@ -2,19 +2,20 @@
 	position: fixed;
 	top: 205px;
 	left: 30px;
-	height: 350px;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	z-index: 3;
+	gap: 10px;
 }
 
-.link img {
+.sidepanel a img {
 	transition: all 0.66s;
 }
 
-.link img:hover {
+.sidepanel a img:hover {
 	transform: rotate(-90deg);
 }
 

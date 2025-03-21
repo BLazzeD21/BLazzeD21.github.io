@@ -17,7 +17,7 @@ export const Header = () => {
 						I&apos;m web-developer from Saint-Petersburg
 					</Title>
 					<div className={styles.buttons}>
-						<LinkButton link="#portfolio" linkType="darkPink">
+						<LinkButton link="#portfolio" buttonStyle="darkPink">
 							Portfolio
 						</LinkButton>
 						<LinkButton link="#about">About me</LinkButton>
