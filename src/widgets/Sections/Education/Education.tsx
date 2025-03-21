@@ -1,12 +1,12 @@
 import styles from "./education.module.css";
 
+import { EducationProps } from "./education.props";
+
 import { Title } from "@/shared/UI";
 
 import { EducationBlock } from "@/widgets/Blocks";
 
-import { additionalEducation, higherEducation } from "@/constants";
-
-export const Education = () => {
+export const Education = ({ higherEducation, additionalEducation }: EducationProps) => {
 	return (
 		<section className={styles.education} id="education">
 			<div className="container">
@@ -25,9 +25,9 @@ export const Education = () => {
 							</Title>
 							<ul>
 								<li>
-									{higherEducation.map((education) => (
+									{higherEducation.map((education, index) => (
 										<EducationBlock
-											key={education.id}
+											key={`higherEducation-${index}`}
 											imageUrl={education.imageUrl}
 											name={education.name}
 											location={education.location}
@@ -43,9 +43,9 @@ export const Education = () => {
 							</Title>
 							<ul>
 								<li>
-									{additionalEducation.map((education) => (
+									{additionalEducation.map((education, index) => (
 										<EducationBlock
-											key={education.id}
+											key={`additionalEducation-${index}`}
 											imageUrl={education.imageUrl}
 											name={education.name}
 											location={education.location}

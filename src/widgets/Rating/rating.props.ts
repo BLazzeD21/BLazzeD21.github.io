@@ -1,7 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
-import { Rating } from "@/types";
+import { RatingType } from "@/types";
 
 export interface RatingProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-	ratings: Rating[];
+	ratings: RatingType[];
 }

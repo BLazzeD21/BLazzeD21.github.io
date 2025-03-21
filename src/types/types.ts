@@ -1,0 +1,62 @@
+export interface PortfolioItemType {
+	githubLink?: string;
+	projectLink?: string;
+	imageSrc: string;
+	altText: string;
+	gridColumn?: string;
+	gridRow?: string;
+}
+
+export interface RatingType {
+	percentage: number;
+	name: string;
+}
+
+export interface SocialLinkType {
+	link: string;
+	name: string;
+	asideIcon: string;
+	contactsIcon: string;
+}
+
+export type SkillLevel = "Basic" | "Intermediate" | "Advanced";
+
+export type SkillType = {
+	name: string;
+	imageSrc: string;
+	level: SkillLevel;
+};
+
+export type SkillCategory = SkillType[];
+
+export type StackType = {
+	Databases: SkillCategory;
+	Languages: SkillCategory;
+	"Frameworks, Platforms and Libraries": SkillCategory;
+	Other: SkillCategory;
+};
+
+export interface SkillsListType {
+	title: string;
+	imageSrc: string;
+	description: string;
+}
+
+export interface EducationType {
+	imageUrl: string;
+	name: string;
+	location: string;
+	body: string;
+}
+
+export interface InternalLinkType {
+	href: string;
+	name: string;
+}
+
+export interface SocialLinkType {
+	link: string;
+	name: string;
+	asideIcon: string;
+	contactsIcon: string;
+}

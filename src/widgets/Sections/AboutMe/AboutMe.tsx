@@ -1,12 +1,12 @@
 import styles from "./aboutMe.module.css";
 
+import { AboutMeProps } from "./aboutMe.props";
+
 import { P, Photo, Title } from "@/shared/UI";
 
 import { SkillBlock } from "@/widgets/Blocks";
 
-import { description, skillsList } from "@/constants";
-
-export const AboutMe = () => {
+export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
 	return (
 		<section className={styles.about} id="about">
 			<div className="container">
@@ -25,10 +25,10 @@ export const AboutMe = () => {
 						</P>
 					</div>
 					<div className={styles.skills}>
-						{skillsList.map((skill) => {
+						{skillsList.map((skill, index) => {
 							return (
 								<SkillBlock
-									key={skill.id}
+									key={`skillsList-${index}`}
 									title={skill.title}
 									imageSrc={skill.imageSrc}
 									description={skill.description}

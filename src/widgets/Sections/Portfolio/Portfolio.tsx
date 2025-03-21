@@ -1,12 +1,12 @@
 import styles from "./portfolio.module.css";
 
+import { PortfolioProps } from "./portfolio.props";
+
 import { Title } from "@/shared/UI";
 
 import { PortfolioBlock } from "@/widgets/Blocks";
 
-import { portfolioItems } from "@/constants";
-
-export const Portfolio = () => {
+export const Portfolio = ({ portfolioItems }: PortfolioProps) => {
 	return (
 		<section className={styles.portfolio} id="portfolio">
 			<div className="container">

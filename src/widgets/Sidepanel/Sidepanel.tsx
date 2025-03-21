@@ -1,10 +1,10 @@
 import styles from "./sidepanel.module.css";
 
-import { socialLinks } from "@/constants";
+import { SidepanelProps } from "./sidepanel.props";
 
-import { SocialLink } from "../SocialLink/SocialLink";
+import { SocialLink } from "@/widgets";
 
-export const Sidepanel = ({}) => {
+export const Sidepanel = ({ socialLinks }: SidepanelProps) => {
 	return (
 		<aside className={styles.sidepanel}>
 			{socialLinks.map((socialItem, index) => {

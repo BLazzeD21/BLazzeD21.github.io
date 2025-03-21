@@ -1,4 +1,6 @@
-export const ratings = [
+import { RatingType } from "@/types";
+
+export const ratings: RatingType[] = [
 	{ percentage: 95, name: "Website development" },
 	{ percentage: 75, name: "Build applications" },
 	{ percentage: 90, name: "SEO" },

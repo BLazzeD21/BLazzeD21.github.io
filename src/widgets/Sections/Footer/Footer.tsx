@@ -2,13 +2,13 @@ import Link from "next/link";
 
 import styles from "./footer.module.css";
 
+import { FooterProps } from "./footer.props";
+
 import { LinkButton } from "@/shared/UI";
 
 import { SocialLink } from "@/widgets";
 
-import { internalLinks, socialLinks } from "@/constants";
-
-export const Footer = () => {
+export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 	return (
 		<>
 			<div className={styles.wave}>

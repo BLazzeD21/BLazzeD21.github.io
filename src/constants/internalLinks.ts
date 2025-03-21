@@ -1,4 +1,6 @@
-export const internalLinks = [
+import { InternalLinkType } from "@/types";
+
+export const internalLinks: InternalLinkType[] = [
 	{
 		href: "#about",
 		name: "About me",

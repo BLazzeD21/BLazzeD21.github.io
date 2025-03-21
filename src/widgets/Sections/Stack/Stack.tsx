@@ -1,12 +1,12 @@
 import styles from "./stack.module.css";
 
+import { StackProps } from "./stack.props";
+
 import { Title } from "@/shared/UI";
 
 import { Rating, StackAccordion } from "@/widgets";
 
-import { ratings, stack } from "@/constants";
-
-export const Stack = () => {
+export const Stack = ({ ratings, stack }: StackProps) => {
 	return (
 		<section className={styles.stack} id="stack">
 			<div className="container">
