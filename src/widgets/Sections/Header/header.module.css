@@ -1,5 +1,5 @@
 .wrapper {
-	height: calc(100vh - 205px);
+	height: calc(100vh - 150px);
 	position: relative;
 	padding-top: 205px;
 }
@@ -15,4 +15,9 @@
 	justify-content: flex-start;
 	gap: 40px;
 	align-items: center;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
 }
