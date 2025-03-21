@@ -1,6 +1,6 @@
 import { Rating } from "@/widgets";
 
-export type Rating = {
+export interface Rating {
 	percentage: number;
 	name: string;
-};
+}

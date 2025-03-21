@@ -8,6 +8,8 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.66s;
+	display: flex;
+	flex-direction: row;
 }
 
 .active {
@@ -24,19 +26,23 @@
 	padding-top: 140px;
 	padding-left: 40px;
 	transition: all 0.66s;
-	z-index: 10;
+	z-index: 502;
 }
 
 .wave {
-	height: 100vh;
-	position: absolute;
-	transform: rotateX(90deg);
+	height: 100%;
+	z-index: 501;
+}
+
+.wave svg {
+	height: 100%;
+	width: auto;
 }
 
 .close {
 	position: absolute;
 	top: 25px;
-	right: 25px;
+	right: -10px;
 }
 
 .list {
@@ -88,6 +94,7 @@
 }
 
 .overlay {
+	z-index: 500;
 	position: fixed;
 	top: 0;
 	left: 0;

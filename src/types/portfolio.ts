@@ -1,4 +1,4 @@
-export interface PortfolioItem {
+export interface PortfolioItemType {
 	githubLink?: string;
 	projectLink?: string;
 	imageSrc: string;

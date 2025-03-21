@@ -1,6 +1,6 @@
-import { PortfolioItem } from "@/types";
+import { PortfolioItemType } from "@/types";
 
-export const portfolioItems: PortfolioItem[] = [
+export const portfolioItems: PortfolioItemType[] = [
 	{
 		githubLink: "https://github.com/BLazzeD21/Figma-UBER",
 		projectLink: "https://uber-partners.vercel.app",
