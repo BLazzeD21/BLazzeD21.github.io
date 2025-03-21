@@ -2,11 +2,14 @@ import styles from "./header.module.css";
 
 import { LinkButton, Title } from "@/shared/UI";
 
+import { Burger } from "@/widgets";
+
 import { ParticlesBlock } from "@/widgets/Blocks";
 
 export const Header = () => {
 	return (
 		<>
+			<Burger />
 			<ParticlesBlock value={100} />
 			<header className={styles.wrapper} id="header">
 				<div className="container">

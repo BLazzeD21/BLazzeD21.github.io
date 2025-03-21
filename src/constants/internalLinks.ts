@@ -8,7 +8,7 @@ export const internalLinks = [
 		name: "Education",
 	},
 	{
-		href: "#skills",
+		href: "#stack",
 		name: "My stack",
 	},
 	{
