@@ -29,16 +29,6 @@
 	z-index: 502;
 }
 
-.wave {
-	height: 100%;
-	z-index: 501;
-}
-
-.wave svg {
-	height: 100%;
-	width: auto;
-}
-
 .close {
 	position: absolute;
 	top: 25px;

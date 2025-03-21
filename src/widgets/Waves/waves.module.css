@@ -1,0 +1,38 @@
+.headerWave {
+	position: absolute;
+	bottom: 0;
+}
+
+.footerWave {
+	padding-top: 40px;
+	background-color: var(--navy-blue-color);
+	line-height: 0;
+}
+
+.menuWave {
+	height: 100%;
+	z-index: 501;
+}
+
+.menuWave svg {
+	height: 100%;
+	width: auto;
+}
+
+.darkPink path {
+	fill: var(--dark-pink-color);
+}
+
+.navyBlue path {
+	fill: var(--navy-blue-color);
+}
+
+.navyWaveBackground {
+	background-color: var(--navy-blue-color);
+	line-height: 0;
+}
+
+.darkWaveBackground {
+	background-color: var(--dark-pink-color);
+	line-height: 0;
+}
