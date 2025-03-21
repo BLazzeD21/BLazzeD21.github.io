@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 
-export interface LinkButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+export interface LinkButtonProps extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {
 	link?: string;
 	children: React.ReactNode;
-	linkType?: "transparent" | "navyBlue" | "darkPink";
+	buttonStyle?: "transparent" | "navyBlue" | "darkPink";
 }
