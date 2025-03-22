@@ -37,3 +37,10 @@
 .darkPink:hover {
 	color: var(--gray-color);
 }
+
+@media screen and (width <= 767px) {
+	.button {
+		padding: 10px 20px;
+		border-radius: 12px;
+	}
+}

@@ -13,7 +13,7 @@
 	z-index: 1;
 }
 
-.image::before {
+.imagle::before {
 	content: "";
 	position: absolute;
 	top: -5px;
@@ -27,4 +27,34 @@
 
 .description {
 	margin-top: 10px;
+}
+
+@media screen and (width <= 1280px) {
+	.wrapper {
+		grid-template-columns: 30px 1fr;
+		column-gap: 15px;
+	}
+}
+
+@media screen and (width <= 991px) {
+	.wrapper {
+		column-gap: 10px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.wrapper {
+		column-gap: 10px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.wrapper {
+		grid-template-columns: 30px auto;
+		column-gap: 15px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
 }

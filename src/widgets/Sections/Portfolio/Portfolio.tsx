@@ -5,11 +5,13 @@ import { PortfolioProps } from "./portfolio.props";
 import { Title } from "@/shared/UI";
 
 import { PortfolioBlock } from "@/widgets/Blocks";
+import { FooterWave, StackWave } from "@/widgets/Waves";
 
 export const Portfolio = ({ portfolioItems }: PortfolioProps) => {
 	return (
-		<section className={styles.portfolio} id="portfolio">
-			<div className="container">
+		<section className={styles.portfolio}>
+			<StackWave />
+			<div className="container" id="portfolio">
 				<div className="flex">
 					<Title Tag="h3" size="18" darkPinkCircle isCircleCenter>
 						Portfolio
@@ -25,6 +27,7 @@ export const Portfolio = ({ portfolioItems }: PortfolioProps) => {
 					</div>
 				</div>
 			</div>
+			<FooterWave />
 		</section>
 	);
 };

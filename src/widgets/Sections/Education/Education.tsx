@@ -5,12 +5,13 @@ import { EducationProps } from "./education.props";
 import { Title } from "@/shared/UI";
 
 import { EducationBlock } from "@/widgets/Blocks";
-import { EducationWave } from "@/widgets/Waves";
+import { AboutMeWave } from "@/widgets/Waves";
 
 export const Education = ({ higherEducation, additionalEducation }: EducationProps) => {
 	return (
-		<section className={styles.education} id="education">
-			<div className="container">
+		<section className={styles.education}>
+			<AboutMeWave />
+			<div className="container" id="education">
 				<div className="flex">
 					<Title Tag="h3" size="18" darkPinkCircle isCircleCenter>
 						Education
@@ -59,7 +60,6 @@ export const Education = ({ higherEducation, additionalEducation }: EducationPro
 					</div>
 				</div>
 			</div>
-			<EducationWave />
 		</section>
 	);
 };

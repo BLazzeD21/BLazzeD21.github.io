@@ -16,3 +16,41 @@
 	gap: 40px;
 	align-items: center;
 }
+
+@media screen and (width <= 991px) {
+	.wrapper {
+		height: calc(100vh - 200px);
+	}
+
+	.title {
+		width: 600px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.wrapper {
+		height: calc(100vh - 240px);
+	}
+
+	.title {
+		width: 420px;
+		line-height: 50px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.title {
+		margin-top: 12px;
+		width: 300px;
+		line-height: 50px;
+	}
+
+	.block {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+}

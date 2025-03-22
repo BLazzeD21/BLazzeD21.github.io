@@ -1,7 +1,17 @@
 .footer {
-	padding: 0 0 40px;
+	padding: 5px 0 40px;
 	background-color: var(--dark-pink-color);
 	position: relative;
+}
+
+.footer::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: -3px;
+	background-color: var(--dark-pink-color);
+	z-index: 1000;
 }
 
 .quote {
@@ -81,4 +91,80 @@
 	text-align: center;
 	color: var(--white-color);
 	font-size: 20px;
+}
+
+@media screen and (width <= 991px) {
+	.quote {
+		font-size: 30px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.copyright {
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	.menu {
+		max-width: 500px;
+	}
+
+	.social {
+		gap: 25px;
+		margin-top: 25px;
+	}
+
+	.buttons {
+		margin-top: 25px;
+	}
+
+	.menuItem a {
+		font-size: 16px;
+	}
+
+	.list {
+		justify-content: space-around;
+		gap: 10px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.quote {
+		font-size: 20px;
+	}
+
+	.copyright {
+		max-width: 200px;
+		width: 100%;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	.social {
+		gap: 5px;
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.social .socialLink img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.menu {
+		max-width: 400px;
+	}
+
+	.menuItem a {
+		font-size: 14px;
+	}
+
+	.buttons {
+		max-width: 260px;
+	}
+
+	.buttons a {
+		width: 100px;
+		padding: 8px 10px;
+	}
 }

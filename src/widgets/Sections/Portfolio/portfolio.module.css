@@ -1,5 +1,5 @@
 .portfolio {
-	padding-top: 40px;
+	padding-bottom: 5px;
 	position: relative;
 	background-color: var(--navy-blue-color);
 }
@@ -19,4 +19,28 @@
 	grid-template: repeat(2, 276px) / repeat(4, 276px);
 	grid-template-rows: 280px;
 	gap: 11px;
+}
+
+@media screen and (width <= 1280px) {
+	.wrapper {
+		width: 100%;
+		grid-template-columns: repeat(auto-fit, 280px);
+		grid-auto-rows: 280px;
+		justify-content: space-around;
+		row-gap: 30px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.wrapper {
+		margin-top: 30px;
+		max-width: 420px;
+		grid-template: repeat(auto-fill, 200px) / repeat(auto-fill, 200px);
+		grid-auto-rows: 200px;
+		gap: 20px;
+	}
+
+	.title {
+		text-align: center;
+	}
 }

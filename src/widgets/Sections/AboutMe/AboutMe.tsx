@@ -5,7 +5,6 @@ import { AboutMeProps } from "./aboutMe.props";
 import { P, Photo, Title } from "@/shared/UI";
 
 import { SkillBlock } from "@/widgets/Blocks";
-import { AboutMeWave } from "@/widgets/Waves";
 
 export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
 	return (
@@ -39,7 +38,6 @@ export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
 					</div>
 				</div>
 			</div>
-			<AboutMeWave />
 		</section>
 	);
 };

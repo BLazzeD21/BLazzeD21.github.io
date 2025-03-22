@@ -27,3 +27,9 @@
 .visible {
 	opacity: 0;
 }
+
+@media screen and (width <= 575px) {
+	.hamburger {
+		right: 20px;
+	}
+}

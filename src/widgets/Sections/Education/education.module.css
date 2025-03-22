@@ -1,5 +1,5 @@
 .education {
-	padding-top: 40px;
+	padding-bottom: 5px;
 	background-color: var(--navy-blue-color);
 }
 
@@ -47,4 +47,44 @@
 	top: -15px;
 	left: 0;
 	background-color: var(--white-color);
+}
+
+@media screen and (width <= 1280px) {
+	.wrapper {
+		padding: 60px 25px 0;
+		grid-template-columns: repeat(2, 405px);
+		column-gap: 100px;
+	}
+}
+
+@media screen and (width <= 991px) {
+	.wrapper {
+		padding: 60px 15px 0;
+		grid-template-columns: repeat(2, 325px);
+		column-gap: 40px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.wrapper {
+		padding: 60px 15px 0;
+		grid-template-columns: 1fr;
+		row-gap: 40px;
+	}
+
+	.column {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.wrapper {
+		padding: 30px 15px 0;
+		grid-template-columns: 1fr;
+		column-gap: 40px;
+	}
+
+	.column {
+		margin-top: 20px;
+	}
 }

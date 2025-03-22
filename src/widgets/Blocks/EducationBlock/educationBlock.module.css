@@ -58,3 +58,47 @@
 	background-color: var(--white-color);
 	top: 73px;
 }
+
+@media screen and (width <= 991px) {
+	.body {
+		padding: 12px 0 0 43px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.header {
+		position: relative;
+		padding: 45px 0 0 80px;
+	}
+
+	.item::before {
+		width: 25px;
+	}
+
+	.head {
+		padding: 45px 0 0 80px;
+	}
+
+	.body {
+		padding: 15px 0 0 23px;
+	}
+
+	.icon {
+		position: absolute;
+		top: 55px;
+		left: 25px;
+	}
+
+	.icon img {
+		position: absolute;
+		left: 17px;
+		top: 14px;
+	}
+
+	.location {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}

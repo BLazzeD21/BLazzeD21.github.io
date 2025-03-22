@@ -20,6 +20,8 @@
 }
 
 .github {
+	width: 60px;
+	height: 60px;
 	z-index: 1;
 	position: absolute;
 	right: 10px;
@@ -37,4 +39,28 @@
 
 .opacity {
 	opacity: 0.6;
+}
+
+@media screen and (width <= 1280px) {
+	.item {
+		grid-row: unset !important;
+		grid-column: unset !important;
+	}
+
+	.opacity {
+		display: none;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.github {
+		width: 40px;
+		height: 40px;
+		right: 5px;
+		bottom: 5px;
+	}
+
+	.item .github img {
+		width: 40px;
+	}
 }

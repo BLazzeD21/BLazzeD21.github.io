@@ -78,3 +78,92 @@
 .fz16 {
 	font-size: 16px;
 }
+
+@media screen and (width <= 1280px) {
+	.fz18 {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	.fz22 {
+		font-size: 18px;
+	}
+
+	.fz20 {
+		font-size: 18px;
+	}
+
+	.fz48 {
+		font-size: 46px;
+		letter-spacing: 2px;
+	}
+
+	.fz56 {
+		font-size: 52px;
+		line-height: 60px;
+	}
+
+	.fz72 {
+		font-size: 66px;
+		line-height: 66px;
+	}
+
+	.fz36 {
+		font-size: 32px;
+		line-height: 45px;
+	}
+}
+
+@media screen and (width <= 991px) {
+	.fz72 {
+		font-size: 52px;
+	}
+
+	.fz48 {
+		font-size: 32px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.beforeCircle {
+		letter-spacing: 1px;
+		padding-left: -10px;
+	}
+
+	.beforeCircle::before {
+		top: -25%;
+		left: 0;
+	}
+
+	.fz72 {
+		font-size: 38px;
+	}
+
+	.fz18 {
+		font-size: 16px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.fz72 {
+		font-size: 26px;
+	}
+
+	.fz48 {
+		font-size: 30px;
+	}
+
+	.fz22 {
+		font-size: 16px;
+	}
+
+	.fz16 {
+		font-size: 13px;
+	}
+}
+
+@media screen and (width <= 362px) {
+	.fz48 {
+		font-size: 25px;
+	}
+}

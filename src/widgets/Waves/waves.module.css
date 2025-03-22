@@ -1,17 +1,26 @@
 .headerWave {
 	position: absolute;
 	bottom: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 .footerWave {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
 	padding-top: 40px;
 	background-color: var(--navy-blue-color);
-	line-height: 0;
 }
 
 .menuWave {
 	height: 100%;
 	z-index: 501;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .menuWave svg {
@@ -28,11 +37,27 @@
 }
 
 .navyWaveBackground {
-	background-color: var(--navy-blue-color);
 	line-height: 0;
+	margin: 0;
+	padding: 0;
+	clip-path: inset(-1px 0 -1px 0);
 }
 
 .darkWaveBackground {
-	background-color: var(--dark-pink-color);
 	line-height: 0;
+	margin: 0;
+	padding: 0;
+	clip-path: inset(-1px 0 -1px 0);
+}
+
+.transformDown {
+	transform: translateY(5px);
+}
+
+.transformUp {
+	transform: translateY(-5px);
+}
+
+.transformLeft {
+	transform: translateX(-5px);
 }

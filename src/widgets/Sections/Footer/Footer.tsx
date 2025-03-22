@@ -8,19 +8,16 @@ import { LinkButton } from "@/shared/UI";
 
 import { SocialLink } from "@/widgets";
 
-import { FooterWave } from "@/widgets/Waves";
-
 export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 	return (
 		<>
-			<FooterWave />
 			<footer className={styles.footer} id="footer">
 				<div className="container flex">
 					<p className={styles.quote}>Living, learning, & leveling up one day at a time.</p>
 					<div className="divider"></div>
 					<div className={styles.social}>
 						{socialLinks.map((socilLink, index) => (
-							<SocialLink key={`footerLink-${index}`} item={socilLink} />
+							<SocialLink key={`footerLink-${index}`} item={socilLink} className={styles.socialLink} />
 						))}
 					</div>
 					<div className={styles.buttons}>

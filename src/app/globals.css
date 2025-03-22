@@ -31,8 +31,18 @@
 	}
 }
 
+body {
+	background-color: var(--dark-pink-color);
+}
+
 canvas {
 	display: block;
+}
+
+#education,
+#stack,
+#portfolio {
+	scroll-margin-top: 40px;
 }
 
 .container {
@@ -54,4 +64,30 @@ canvas {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+@media screen and (width <= 1280px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media screen and (width <= 991px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media screen and (width <= 767px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media screen and (width <= 575px) {
+	.container {
+		max-width: 100%;
+		width: calc(100% - 20px);
+		padding: 0 10px;
+	}
 }

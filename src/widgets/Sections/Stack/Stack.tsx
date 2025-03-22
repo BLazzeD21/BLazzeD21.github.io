@@ -6,12 +6,13 @@ import { Title } from "@/shared/UI";
 
 import { Rating, StackAccordion } from "@/widgets";
 
-import { StackWave } from "@/widgets/Waves";
+import { EducationWave } from "@/widgets/Waves";
 
 export const Stack = ({ ratings, stack }: StackProps) => {
 	return (
-		<section className={styles.stack} id="stack">
-			<div className="container">
+		<section className={styles.stack}>
+			<EducationWave />
+			<div className="container" id="stack">
 				<div className="flex">
 					<Title Tag="h3" size="18" navyBlueCircle isCircleCenter>
 						Stack
@@ -24,7 +25,6 @@ export const Stack = ({ ratings, stack }: StackProps) => {
 				</div>
 				<Rating ratings={ratings} />
 			</div>
-			<StackWave />
 		</section>
 	);
 };
