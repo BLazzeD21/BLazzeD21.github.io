@@ -54,4 +54,15 @@
 		width: 280px;
 		place-self: center;
 	}
+
+	.photo::before {
+		top: -10px;
+		left: -10px;
+	}
+}
+
+@media screen and (width <= 390px) {
+	.photo {
+		width: 250px;
+	}
 }
