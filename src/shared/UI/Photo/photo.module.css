@@ -4,7 +4,17 @@
 	grid-row: 1/3;
 }
 
-.photo::before {
+.photo img {
+	object-fit: cover;
+	border-radius: 15px;
+	border: 1px solid #fff;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.wrapper::before {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -16,23 +26,15 @@
 	border-radius: 15px;
 }
 
-.photo img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	border-radius: 15px;
-	border: 1px solid #fff;
-}
-
-@media screen and (width <= 767px) {
+@media screen and (width <= 991px) {
 	.photo {
+		width: 400px;
+		place-self: center;
 		margin: 40px 0;
 		grid-row: 3/3;
 	}
 
 	.photo img {
-		width: 100%;
-		height: 100%;
 		object-fit: cover;
 	}
 
@@ -52,7 +54,6 @@
 @media screen and (width <= 575px) {
 	.photo {
 		width: 280px;
-		place-self: center;
 	}
 
 	.photo::before {

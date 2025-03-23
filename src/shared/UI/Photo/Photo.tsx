@@ -1,13 +1,19 @@
 import styles from "./photo.module.css";
+import Image from "next/image";
 
-export const Photo = ({}) => {
+export const Photo = () => {
 	return (
 		<div className={styles.photo}>
-			<picture>
-				<source media="(max-width: 574px)" srcSet="img/me.jpg" />
-				<source media="(max-width: 766px)" srcSet="img/me-min.jpg" />
-				<img src="img/me.jpg" alt="photo" />
-			</picture>
+			<div className={styles.wrapper}>
+			<Image
+					src="/img/me.jpg"
+					alt="me"
+					layout="responsive"
+					width={853}
+					height={1280}
+					quality={100}
+				/>
+			</div>
 		</div>
 	);
 };
