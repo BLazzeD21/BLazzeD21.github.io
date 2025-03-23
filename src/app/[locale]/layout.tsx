@@ -37,12 +37,14 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 
 	const text = await getTranslations({ locale, namespace: "MetaData" });
 
+	const textAboutMe = await getTranslations({ locale, namespace: "About" });
+
 	return GetMetadata({
 		applicationName: text("applicationName"),
 		keywords: text("keywords").split(","),
 		name: text("name"),
 		title: text("pageTitle"),
-		description: text("description"),
+		description: textAboutMe("description"),
 		domain: text("domain"),
 	});
 }

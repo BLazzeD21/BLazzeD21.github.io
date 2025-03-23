@@ -1,3 +1,5 @@
+export type Locate<T> = { en: T[]; ru: T[] };
+
 export interface PortfolioItemType {
 	githubLink?: string;
 	projectLink?: string;

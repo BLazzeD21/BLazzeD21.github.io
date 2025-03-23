@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import styles from "./education.module.css";
 
 import { EducationProps } from "./education.props";
@@ -8,53 +10,53 @@ import { EducationBlock } from "@/widgets/Blocks";
 import { AboutMeWave } from "@/widgets/Waves";
 
 export const Education = ({ higherEducation, additionalEducation }: EducationProps) => {
+	const educationText = useTranslations("Education");
+
 	return (
 		<section className={styles.education}>
 			<AboutMeWave />
 			<div className="container" id="education">
 				<div className="flex">
 					<Title Tag="h3" size="18" darkPinkCircle isCircleCenter>
-						Education
+						{educationText("label")}
 					</Title>
 					<Title Tag="h3" size="48" className={styles.title}>
-						My education
+						{educationText("title")}
 					</Title>
 					<div className="divider darkPink"></div>
 					<div className={styles.wrapper}>
 						<div className={styles.column}>
 							<Title size="20" Tag="h4">
-								Higher education
+								{educationText("higherEducation.title")}
 							</Title>
 							<ul>
-								<li>
-									{higherEducation.map((education, index) => (
+								{higherEducation.map((education, index) => (
+									<li key={`higherEducation-${index}`}>
 										<EducationBlock
-											key={`higherEducation-${index}`}
 											imageUrl={education.imageUrl}
 											name={education.name}
 											location={education.location}
 											body={education.body}
 										/>
-									))}
-								</li>
+									</li>
+								))}
 							</ul>
 						</div>
 						<div className={styles.column}>
 							<Title size="20" Tag="h4">
-								Additional Education
+								{educationText("additionalEducation.title")}
 							</Title>
 							<ul>
-								<li>
-									{additionalEducation.map((education, index) => (
+								{additionalEducation.map((education, index) => (
+									<li key={`additionalEducation-${index}`}>
 										<EducationBlock
-											key={`additionalEducation-${index}`}
 											imageUrl={education.imageUrl}
 											name={education.name}
 											location={education.location}
 											body={education.body}
 										/>
-									))}
-								</li>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>

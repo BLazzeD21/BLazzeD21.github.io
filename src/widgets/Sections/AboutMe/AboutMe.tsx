@@ -8,11 +8,8 @@ import { P, Photo, Title } from "@/shared/UI";
 
 import { SkillBlock } from "@/widgets/Blocks";
 
-export const AboutMe = ({}: AboutMeProps) => {
+export const AboutMe = ({ skillsList }: AboutMeProps) => {
 	const text = useTranslations("About");
-	const skillsText = useTranslations("Skills");
-
-	const skillsList = ["webDevelopment", "softwareEngineering", "multitasking", "softSkills"];
 
 	return (
 		<section className={styles.about} id="about">
@@ -36,9 +33,9 @@ export const AboutMe = ({}: AboutMeProps) => {
 							return (
 								<SkillBlock
 									key={`skillsList-${index}`}
-									title={skillsText(`${skill}.title`)}
-									imageSrc={skillsText(`${skill}.imageSrc`)}
-									description={skillsText(`${skill}.description`)}
+									title={skill.title}
+									imageSrc={skill.imageSrc}
+									description={skill.description}
 								/>
 							);
 						})}
