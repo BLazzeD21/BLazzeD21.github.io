@@ -1,5 +1,6 @@
-import { Metadata } from "next";
+import { Metadata, Viewport,  } from "next";
 import { Quicksand } from "next/font/google";
+
 
 import "./globals.css";
 
@@ -10,6 +11,11 @@ const quicksand = Quicksand({
 	variable: "--font-quicksand",
 	weight: ["300", "400", "500", "600", "700"],
 });
+
+ 
+export const viewport: Viewport = {
+  themeColor: 'white',
+}
 
 export const metadata: Metadata = portfolioMetadata;
 

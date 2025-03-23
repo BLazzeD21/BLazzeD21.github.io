@@ -34,7 +34,6 @@ export const portfolioMetadata: Metadata = {
 		],
 	},
 	manifest: "/icons/favicon/manifest.json",
-	themeColor: "#ffffff",
 	openGraph: {
 		type: "website",
 		url: domain,
