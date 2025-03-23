@@ -1,0 +1,12 @@
+{
+	"LocaleSwitcher": {
+		"label": "Изменить язык",
+		"locale": "{locale, select, ru {RU} en {EN} other {Unknown}}"
+	},
+	"Header": {
+		"welcome": "Меня зовут Секерин Александр",
+		"title": "Я веб-разработчик из Санкт-Петербурга",
+		"portfolioButton": "Портфолио",
+		"aboutMeButton": "Обо мне"
+	}
+}

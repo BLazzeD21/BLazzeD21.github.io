@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import styles from "./header.module.css";
 
 import { LinkButton, Title } from "@/shared/UI";
@@ -8,6 +10,8 @@ import { ParticlesBlock } from "@/widgets/Blocks";
 import { HeaderWave } from "@/widgets/Waves";
 
 export const Header = () => {
+	const text = useTranslations("Header");
+
 	return (
 		<>
 			<Burger />
@@ -16,16 +20,16 @@ export const Header = () => {
 				<div className="container">
 					<div className={styles.block}>
 						<Title size="18" darkPinkCircle>
-							My name is Sekerin Alexandr
+							{text("welcome")}
 						</Title>
 						<Title size="72" Tag="h1" className={styles.title}>
-							I&apos;m web-developer from Saint-Petersburg
+							{text("title")}
 						</Title>
 						<div className={styles.buttons}>
 							<LinkButton link="#portfolio" buttonStyle="darkPink">
-								Portfolio
+								{text("portfolioButton")}
 							</LinkButton>
-							<LinkButton link="#about">About me</LinkButton>
+							<LinkButton link="#about">{text("aboutMeButton")}</LinkButton>
 						</div>
 					</div>
 				</div>

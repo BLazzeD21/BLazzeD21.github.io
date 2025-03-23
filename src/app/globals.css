@@ -6,13 +6,22 @@
 	--white-color: #fff;
 	--scrollbar-track-color: #b659b3;
 	--scrollbar-thumb-color: var(--pink-color);
+	--font-quicksand: "Quicksand", sans-serif;
+	--font-ruda: "Ruda", sans-serif;
+}
+
+.quicksand {
+	font-family: var(--font-quicksand);
+}
+
+.ruda {
+	font-family: var(--font-ruda);
 }
 
 * {
 	/* cursor: none !important; */
 	scroll-behavior: smooth;
 	user-select: none;
-	font-family: var(--font-quicksand), sans-serif;
 	margin: 0;
 	padding: 0;
 

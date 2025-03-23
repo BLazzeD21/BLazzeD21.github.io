@@ -10,6 +10,7 @@ import { MenuProps } from "./menu.props";
 
 import { SocialLink } from "@/widgets";
 
+import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
 
 import { internalLinks, socialLinks } from "@/constants";
@@ -60,7 +61,7 @@ export const Menu = ({ isShow, setIsShow }: MenuProps) => {
 							))}
 						</ul>
 					</nav>
-
+					<LocaleSwitcher />
 					<div className={styles.social}>
 						{socialLinks.map((socialLink, index) => (
 							<SocialLink item={socialLink} key={`menuSocialLinks-${index}`} iconType="circle" />

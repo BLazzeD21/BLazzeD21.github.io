@@ -1,0 +1,12 @@
+{
+	"LocaleSwitcher": {
+		"label": "Change language",
+		"locale": "{locale, select, ru {RU} en {EN} other {Unknown}}"
+	},
+	"Header": {
+		"welcome": "My name is Sekerin Alexandr",
+		"title": "I'm web-developer from Saint-Petersburg",
+		"portfolioButton": "Portfolio",
+		"aboutMeButton": "About me"
+	}
+}

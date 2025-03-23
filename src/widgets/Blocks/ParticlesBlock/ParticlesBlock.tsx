@@ -1,6 +1,6 @@
 "use client";
 
-import { type Container, type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
+import { type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
@@ -20,8 +20,8 @@ export const ParticlesBlock = ({ speed = 4, value = 175 }: ParticlesBlockProps) 
 		});
 	}, []);
 
-	const particlesLoaded = async (container?: Container): Promise<void> => {
-		console.log(container);
+	const particlesLoaded = async (): Promise<void> => {
+		return;
 	};
 
 	const options: ISourceOptions = useMemo(

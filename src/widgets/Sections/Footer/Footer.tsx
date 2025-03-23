@@ -23,13 +23,14 @@ export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 						))}
 					</div>
 					<div className={styles.buttons}>
-						<LinkButton buttonStyle="navyBlue" link="https://t.me/BlazzeD21" target="">
+						<LinkButton buttonStyle="navyBlue" link="https://t.me/BlazzeD21" target="_blank">
 							Contact us
 						</LinkButton>
 						<LinkButton
 							buttonStyle="navyBlue"
 							link="mailto:sekerin.alexandr@gmail.com?subject=Your Name - Title&body=Description of your offer"
-							target="_blank">
+							target="_blank"
+						>
 							E-mail
 						</LinkButton>
 					</div>
