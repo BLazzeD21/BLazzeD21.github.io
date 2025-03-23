@@ -135,6 +135,12 @@
 		left: 0;
 	}
 
+	.center::before {
+		top: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	.fz72 {
 		font-size: 38px;
 	}
