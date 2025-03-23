@@ -9,6 +9,8 @@ import { LinkButton } from "@/shared/UI";
 import { SocialLink } from "@/widgets";
 
 export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
+	const year = new Date().getFullYear();
+
 	return (
 		<>
 			<footer className={styles.footer} id="footer">
@@ -27,8 +29,7 @@ export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 						<LinkButton
 							buttonStyle="navyBlue"
 							link="mailto:sekerin.alexandr@gmail.com?subject=Your Name - Title&body=Description of your offer"
-							target="_blank"
-						>
+							target="_blank">
 							E-mail
 						</LinkButton>
 					</div>
@@ -41,7 +42,7 @@ export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 							))}
 						</ul>
 					</div>
-					<div className={styles.copyright}>&copy; Sekerin Alexandr, 2023. All Rights Reserved.</div>
+					<div className={styles.copyright}>&copy; Sekerin Alexandr, {year}. All Rights Reserved.</div>
 				</div>
 			</footer>
 		</>
