@@ -10,19 +10,25 @@ export const description: string =
 export const skillsList: SkillsListType[] = [
 	{
 		title: "Web-development",
-		imageSrc: "/icons/skills/web-development.svg",
+		imageSrc: "/icons/skills/web.svg",
 		description:
-			"I'm a front-end web developer with experience in HTML, CSS, CSS-preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers.",
+			"I'm a front-end web developer with experience in HTML, CSS, Preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers, SSR",
 	},
 	{
 		title: "Software Engineering",
-		imageSrc: "/icons/skills/software-engineering.png",
+		imageSrc: "/icons/skills/software.svg",
 		description:
 			"I have developed WPF and WinForms applications using a MySQL database, creating user-friendly and functional data management apps.",
 	},
 	{
+		title: "Multitasking",
+		imageSrc: "/icons/skills/multitasking.svg",
+		description:
+			"Experience in project management, refining design mockups, leading teams, and coordinating tasks for effective collaboration.",
+	},
+	{
 		title: "Soft skills",
-		imageSrc: "/icons/skills/soft-skills.png",
+		imageSrc: "/icons/skills/soft.svg",
 		description:
 			"My personal qualities include effective time management, developed creative thinking, high communication skills, readiness for cooperation and ease of adaptation.",
 	},

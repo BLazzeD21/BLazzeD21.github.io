@@ -29,8 +29,7 @@
 	display: grid;
 	grid-template: repeat(2, minmax(115px, 1fr)) / repeat(2, 1fr);
 	grid-auto-rows: 1fr;
-	gap: 8px 30px;
-	row-gap: 8px;
+	gap: 20px 30px;
 }
 
 @media screen and (width <= 1280px) {
@@ -56,6 +55,7 @@
 	.skills {
 		grid-template-columns: 1fr;
 		grid-auto-rows: minmax(115px, auto);
+		gap: 0;
 	}
 }
 
@@ -71,7 +71,7 @@
 	.skills {
 		margin-top: 10px;
 		grid-template: repeat(3, minmax(80px, 1fr)) / repeat(1, 1fr);
-		row-gap: 20px;
+		gap: 20px;
 	}
 }
 
