@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import styles from "./aboutMe.module.css";
 
 import { AboutMeProps } from "./aboutMe.props";
@@ -6,7 +8,12 @@ import { P, Photo, Title } from "@/shared/UI";
 
 import { SkillBlock } from "@/widgets/Blocks";
 
-export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
+export const AboutMe = ({}: AboutMeProps) => {
+	const text = useTranslations("About");
+	const skillsText = useTranslations("Skills");
+
+	const skillsList = ["webDevelopment", "softwareEngineering", "multitasking", "softSkills"];
+
 	return (
 		<section className={styles.about} id="about">
 			<div className="container">
@@ -14,14 +21,14 @@ export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
 					<Photo />
 					<div className={styles.description}>
 						<Title navyBlueCircle Tag="h2">
-							About me
+							{text("label")}
 						</Title>
 						<Title size="48" Tag="h3" className={styles.title}>
-							I&apos;m web-developer
+							{text("title")}
 						</Title>
 						<div className="divider"></div>
 						<P className={styles.descriptionText} color="gray" size="24">
-							{description}
+							{text("description")}
 						</P>
 					</div>
 					<div className={styles.skills}>
@@ -29,9 +36,9 @@ export const AboutMe = ({ description, skillsList }: AboutMeProps) => {
 							return (
 								<SkillBlock
 									key={`skillsList-${index}`}
-									title={skill.title}
-									imageSrc={skill.imageSrc}
-									description={skill.description}
+									title={skillsText(`${skill}.title`)}
+									imageSrc={skillsText(`${skill}.imageSrc`)}
+									description={skillsText(`${skill}.description`)}
 								/>
 							);
 						})}

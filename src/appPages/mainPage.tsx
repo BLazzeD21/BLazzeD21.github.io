@@ -4,12 +4,10 @@ import { AboutMe, Education, Footer, Header, Portfolio, Stack } from "@/widgets/
 
 import {
 	additionalEducation,
-	description,
 	higherEducation,
 	internalLinks,
 	portfolioItems,
 	ratings,
-	skillsList,
 	socialLinks,
 	stack,
 } from "@/constants";
@@ -20,7 +18,7 @@ export function MainPage() {
 			{/* <CustomCursor /> */}
 			<Sidepanel socialLinks={socialLinks} />
 			<Header />
-			<AboutMe description={description} skillsList={skillsList} />
+			<AboutMe />
 			<Education additionalEducation={additionalEducation} higherEducation={higherEducation} />
 			<Stack ratings={ratings} stack={stack} />
 			<Portfolio portfolioItems={portfolioItems} />
