@@ -6,13 +6,13 @@ export const skillsList: Locate<SkillsListType> = {
 			title: "Web-development",
 			imageSrc: "/icons/skills/web.svg",
 			description:
-				"I'm a front-end web developer with experience in HTML, CSS, Preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers, SSR",
+				"I'm a front-end web developer with experience in HTML, CSS, Preprocessors, module bundlers, CSS-framework, CSS Architecture (BEM), JS, TS, React, state Containers, SSR, Express, REST API, WebSocket.",
 		},
 		{
 			title: "Software Engineering",
 			imageSrc: "/icons/skills/software.svg",
 			description:
-				"I have developed WPF and WinForms applications using a MySQL database, creating user-friendly and functional data management apps.",
+				"I have developed WPF and WinForms applications using MySQL and PostgreSQL databases, creating user-friendly and functional data management applications.",
 		},
 		{
 			title: "Multitasking",
@@ -32,13 +32,13 @@ export const skillsList: Locate<SkillsListType> = {
 			title: "Веб-разработка",
 			imageSrc: "/icons/skills/web.svg",
 			description:
-				"Я фронтенд-разработчик с опытом работы с HTML, CSS, препроцессорами, сборщиками модулей, CSS-фреймворками, CSS-архитектурой (BEM), JS, TS, React, state-контейнерами, SSR.",
+				"Я фронтенд-разработчик с опытом работы с HTML, CSS, препроцессорами, сборщиками модулей, CSS-фреймворками, CSS-архитектурой (BEM), JS, TS, React, state-контейнерами, SSR, Express, REST API, WebSocket.",
 		},
 		{
 			title: "Программная инженерия",
 			imageSrc: "/icons/skills/software.svg",
 			description:
-				"Я разрабатывал приложения на WPF и WinForms с использованием базы данных MySQL, создавая удобные и функциональные приложения для управления данными.",
+				"Я разрабатывал приложения WPF и WinForms с использованием баз данных MySQL и PostgreSQL, создавая удобные и функциональные приложения для управления данными.",
 		},
 		{
 			title: "Мультизадачность",
