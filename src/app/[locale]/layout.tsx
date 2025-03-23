@@ -1,13 +1,13 @@
-import { Metadata, Viewport } from "next";
+import { Viewport } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Quicksand, Ruda } from "next/font/google";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 
 import "../globals.css";
 
-import { portfolioMetadata } from "@/config";
+import { GetMetadata } from "@/config";
 
 import { routing } from "@/i18n";
 
@@ -31,7 +31,20 @@ const ruda = Ruda({
 export const viewport: Viewport = {
 	themeColor: "white",
 };
-export const metadata: Metadata = portfolioMetadata;
+
+export async function generateMetadata(props: Omit<Props, "children">) {
+	const { locale } = await props.params;
+
+	const text = await getTranslations({ locale, namespace: "AboutMe" });
+
+	return GetMetadata({
+		applicationName: text("applicationName"),
+		keywords: text("keywords").split(","),
+		name: text("name"),
+		title: text("pageTitle"),
+		description: text("description"),
+	});
+}
 
 export default async function LocaleLayout({ children, params }: Props) {
 	const { locale } = await params;

@@ -7,5 +7,12 @@
 		"title": "I'm web-developer from Saint-Petersburg",
 		"portfolioButton": "Portfolio",
 		"aboutMeButton": "About me"
+	},
+	"AboutMe": {
+		"pageTitle": "Alexandr Sekerin | Portfolio",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portfolio",
+		"applicationName": "Portfolio",
+		"name": "Alexandr Sekerin",
+		"description": "What's up! My name is Alexander and I am a web developer. I have been programming since 2017 and have implemented projects such as websites, bots, desktop applications for Windows and game servers. Now I am deeply developing in web development and learning more and more new technologies to become better."
 	}
 }
