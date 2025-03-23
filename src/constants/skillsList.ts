@@ -35,7 +35,7 @@ export const skillsList: Locate<SkillsListType> = {
 				"Я фронтенд-разработчик с опытом работы с HTML, CSS, препроцессорами, сборщиками модулей, CSS-фреймворками, CSS-архитектурой (BEM), JS, TS, React, state-контейнерами, SSR, Express, REST API, WebSocket.",
 		},
 		{
-			title: "Программная инженерия",
+			title: "Разработка ПО",
 			imageSrc: "/icons/skills/software.svg",
 			description:
 				"Я разрабатывал приложения WPF и WinForms с использованием баз данных MySQL и PostgreSQL, создавая удобные и функциональные приложения для управления данными.",
