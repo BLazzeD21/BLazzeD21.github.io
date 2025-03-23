@@ -5,12 +5,12 @@ import { PageUp, Sidepanel } from "@/widgets";
 import { AboutMe, Education, Footer, Header, Portfolio, Stack } from "@/widgets/Sections";
 
 import {
+	skillsList,
 	additionalEducation,
 	higherEducation,
 	internalLinks,
 	portfolioItems,
 	ratings,
-	skillsList,
 	socialLinks,
 	stack,
 } from "@/constants";
