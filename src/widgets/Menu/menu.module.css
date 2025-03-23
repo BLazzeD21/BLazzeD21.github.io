@@ -20,7 +20,8 @@
 
 .menu {
 	position: relative;
-	width: 345px;
+	max-width: 345px;
+	width: 100%;
 	background-color: var(--dark-pink-color);
 	height: 100%;
 	padding-top: 140px;
@@ -78,10 +79,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.social a img {
-	width: 30px;
+	gap: 10px;
 }
 
 .overlay {
@@ -97,7 +95,20 @@
 
 @media screen and (width <= 575px) {
 	.menu {
-		width: 250px;
+		max-width: 250px;
 		padding-left: 20px;
+	}
+
+	.social {
+		width: 150px;
+		position: absolute;
+		bottom: 180px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 5px;
+		flex-wrap: wrap;
 	}
 }

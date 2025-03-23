@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { description, domain, pageTitle } from "@/constants";
 
 export const portfolioMetadata: Metadata = {
+	metadataBase: new URL(domain),
 	applicationName: "Portfolio",
 	keywords: ["BLazzeD", "Sekerin", "Sekerin Alexandr", "Portfolio"],
 	authors: { name: "Alexandr Sekerin", url: domain },

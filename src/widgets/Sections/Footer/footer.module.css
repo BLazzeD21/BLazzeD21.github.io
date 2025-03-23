@@ -31,12 +31,10 @@
 }
 
 .social a img {
-	width: 40px;
-	transition: all 0.89s ease;
+	transition: transform 0.89s ease;
 }
 
 .social a img:hover {
-	transition: all 0.89s ease;
 	transform: rotateY(180deg);
 }
 
@@ -141,14 +139,11 @@
 	}
 
 	.social {
-		gap: 5px;
-		max-width: 300px;
+		gap: 15px;
+		max-width: 320px;
 		width: 100%;
-	}
-
-	.social .socialLink img {
-		width: 25px;
-		height: 25px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.menu {
@@ -166,5 +161,12 @@
 	.buttons a {
 		width: 100px;
 		padding: 8px 10px;
+	}
+}
+
+@media screen and (width <= 400px) {
+	.social {
+		gap: 10px;
+		max-width: 200px;
 	}
 }

@@ -11,7 +11,7 @@ export const SocialLink = ({ item, iconType = "contacts", ...props }: SocialLink
 				alt={item.name}
 				width={35}
 				height={35}
-				priority
+				unoptimized
 			/>
 		</Link>
 	);
