@@ -7,7 +7,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 10001;
+	z-index: 9999;
 	gap: 10px;
 }
 

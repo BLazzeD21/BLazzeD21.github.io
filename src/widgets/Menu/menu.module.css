@@ -4,7 +4,7 @@
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	z-index: 10;
+	z-index: 10000;
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.66s;
@@ -27,7 +27,7 @@
 	padding-left: 40px;
 	padding-right: 5px;
 	transition: all 0.66s;
-	z-index: 502;
+	z-index: 10000;
 }
 
 .close {

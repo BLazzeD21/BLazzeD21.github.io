@@ -43,8 +43,8 @@ export const CustomCursor = () => {
 		<div
 			className={`${styles.customCursor} ${isHovered ? styles.hovered : ""}`}
 			style={{
-				left: `${position.x + 6}px`,
-				top: `${position.y + 25}px`,
+				left: `${position.x + 17}px`,
+				top: `${position.y + 21}px`,
 			}}
 		>
 			<Cursor />

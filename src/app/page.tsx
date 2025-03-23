@@ -1,4 +1,4 @@
-import { PageUp, Sidepanel } from "@/widgets";
+import { CustomCursor, PageUp, Sidepanel } from "@/widgets";
 
 import { AboutMe, Education, Footer, Header, Portfolio, Stack } from "@/widgets/Sections";
 
@@ -17,7 +17,7 @@ import {
 export default function Home() {
 	return (
 		<>
-			{/* <CustomCursor /> */}
+			<CustomCursor />
 			<Sidepanel socialLinks={socialLinks} />
 			<Header />
 			<AboutMe description={description} skillsList={skillsList} />
