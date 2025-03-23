@@ -1,7 +1,7 @@
 export interface PortfolioItemType {
 	githubLink?: string;
 	projectLink?: string;
-	imageSrc: string;
+	imageSrc?: string;
 	altText: string;
 	gridColumn?: string;
 	gridRow?: string;

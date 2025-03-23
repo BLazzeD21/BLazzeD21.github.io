@@ -28,7 +28,6 @@ export const portfolioItems: PortfolioItemType[] = [
 		gridRow: "1/3",
 	},
 	{
-		imageSrc: "/img/portfolio/soon1x2.jpg",
 		altText: "soon",
 		gridColumn: "1",
 		gridRow: "2/4",
@@ -48,11 +47,9 @@ export const portfolioItems: PortfolioItemType[] = [
 		altText: "dodo pizza",
 	},
 	{
-		imageSrc: "/img/portfolio/soon1x1.jpg",
 		altText: "soon",
 	},
 	{
-		imageSrc: "/img/portfolio/soon1x1.jpg",
 		altText: "soon",
 	},
 ];
