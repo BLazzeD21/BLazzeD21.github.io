@@ -1,0 +1,13 @@
+.button {
+	padding: 10px 25px;
+	margin-top: 20px;
+	border-radius: 20px;
+	background-color: var(--navy-blue-color);
+	border: none;
+	transition: all 0.8s;
+}
+
+.button:hover {
+	transition: all 0.8s ease;
+	box-shadow: 3px 3px 3px var(--pink-color);
+}

@@ -1,4 +1,3 @@
-import { routing } from "@/i18n/routing";
 import { Metadata, Viewport } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -9,6 +8,8 @@ import { ReactNode } from "react";
 import "../globals.css";
 
 import { portfolioMetadata } from "@/config";
+
+import { routing } from "@/i18n";
 
 type Props = {
 	children: ReactNode;
