@@ -1,16 +1,22 @@
 import { Metadata } from "next";
 
-import { domain } from "@/constants";
-
 type GetMetaDataProps = {
 	applicationName: string;
 	keywords: string[];
 	name: string;
 	title: string;
 	description: string;
+	domain: string;
 };
 
-export const GetMetadata = ({ applicationName, keywords, name, title, description }: GetMetaDataProps): Metadata => {
+export const GetMetadata = ({
+	applicationName,
+	keywords,
+	name,
+	title,
+	description,
+	domain,
+}: GetMetaDataProps): Metadata => {
 	return {
 		metadataBase: new URL(domain),
 		applicationName: applicationName,

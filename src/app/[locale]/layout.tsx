@@ -35,7 +35,7 @@ export const viewport: Viewport = {
 export async function generateMetadata(props: Omit<Props, "children">) {
 	const { locale } = await props.params;
 
-	const text = await getTranslations({ locale, namespace: "AboutMe" });
+	const text = await getTranslations({ locale, namespace: "MetaData" });
 
 	return GetMetadata({
 		applicationName: text("applicationName"),
@@ -43,6 +43,7 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 		name: text("name"),
 		title: text("pageTitle"),
 		description: text("description"),
+		domain: text("domain"),
 	});
 }
 
