@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 
 import styles from "./header.module.css";
 
+import { HeaderProps } from "./header.props";
+
 import { LinkButton, Title } from "@/shared/UI";
 
 import { Burger } from "@/widgets";
@@ -9,12 +11,12 @@ import { Burger } from "@/widgets";
 import { ParticlesBlock } from "@/widgets/Blocks";
 import { HeaderWave } from "@/widgets/Waves";
 
-export const Header = () => {
+export const Header = ({ internalLinks, socialLinks }: HeaderProps) => {
 	const text = useTranslations("Header");
 
 	return (
 		<>
-			<Burger />
+			<Burger internalLinks={internalLinks} socialLinks={socialLinks} />
 			<ParticlesBlock value={100} />
 			<header className={styles.wrapper} id="header">
 				<div className="container">

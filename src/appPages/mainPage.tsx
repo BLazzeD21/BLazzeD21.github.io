@@ -22,12 +22,12 @@ export function MainPage() {
 		<>
 			{/* <CustomCursor /> */}
 			<Sidepanel socialLinks={socialLinks} />
-			<Header />
+			<Header socialLinks={socialLinks} internalLinks={internalLinks[locate]} />
 			<AboutMe skillsList={skillsList[locate]} />
 			<Education higherEducation={higherEducation[locate]} additionalEducation={additionalEducation[locate]} />
 			<Stack ratings={ratings[locate]} stack={stack} />
 			<Portfolio portfolioItems={portfolioItems} />
-			<Footer internalLinks={internalLinks} socialLinks={socialLinks} />
+			<Footer internalLinks={internalLinks[locate]} socialLinks={socialLinks} />
 			<PageUp />
 		</>
 	);

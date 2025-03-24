@@ -13,11 +13,9 @@ import { SocialLink } from "@/widgets";
 import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
 
-import { internalLinks, socialLinks } from "@/constants";
-
 /* eslint-disable react-hooks/exhaustive-deps */
 
-export const Menu = ({ isShow, setIsShow }: MenuProps) => {
+export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProps) => {
 	const modalRef = useRef<HTMLDivElement>(null);
 
 	const handleClickOutside = (event: MouseEvent): void => {
