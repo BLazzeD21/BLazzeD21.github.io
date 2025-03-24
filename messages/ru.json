@@ -29,5 +29,20 @@
 		"additionalEducation": {
 			"title": "Дополнительное образование"
 		}
+	},
+	"Stack": {
+		"label": "Стек",
+		"title": "Мои навыки"
+	},
+	"StackTitles": {
+		"Databases": "Базы данных",
+		"Languages": "Языки программирования",
+		"Frameworks, Platforms and Libraries": "Фреймворки, платформы и библиотеки",
+		"Other": "Другое"
+	},
+	"Skills": {
+		"Intermediate": "Средний",
+		"Basic": "Базовый",
+		"Advanced": "Продвинутый"
 	}
 }

@@ -1,5 +1,11 @@
 export type Locate<T> = { en: T[]; ru: T[] };
 
+export enum Levels {
+	Intermediate = "Intermediate",
+	Basic = "Basic",
+	Advanced = "Advanced",
+}
+
 export interface PortfolioItemType {
 	githubLink?: string;
 	projectLink?: string;
@@ -21,12 +27,10 @@ export interface SocialLinkType {
 	contactsIcon: string;
 }
 
-export type SkillLevel = "Basic" | "Intermediate" | "Advanced";
-
 export type SkillType = {
 	name: string;
 	imageSrc: string;
-	level: SkillLevel;
+	level: Levels;
 };
 
 export type SkillCategory = SkillType[];

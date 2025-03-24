@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import styles from "./stack.module.css";
 
 import { StackProps } from "./stack.props";
@@ -9,16 +11,18 @@ import { Rating, StackAccordion } from "@/widgets";
 import { EducationWave } from "@/widgets/Waves";
 
 export const Stack = ({ ratings, stack }: StackProps) => {
+	const text = useTranslations("Stack");
+
 	return (
 		<section className={styles.stack}>
 			<EducationWave />
 			<div className="container" id="stack">
 				<div className="flex">
 					<Title Tag="h3" size="18" navyBlueCircle isCircleCenter>
-						Stack
+						{text("label")}
 					</Title>
 					<Title Tag="h3" size="48" className={styles.title}>
-						My skills
+						{text("title")}
 					</Title>
 					<div className="divider"></div>
 					<StackAccordion stack={stack} />

@@ -1,10 +1,20 @@
-import { RatingType } from "@/types";
+import { Locate, RatingType } from "@/types";
 
-export const ratings: RatingType[] = [
-	{ percentage: 95, name: "Website development" },
-	{ percentage: 75, name: "Build applications" },
-	{ percentage: 90, name: "SEO" },
-	{ percentage: 90, name: "Creativity" },
-	{ percentage: 80, name: "UX/UI design" },
-	{ percentage: 94, name: "Soft skills" },
-];
+export const ratings: Locate<RatingType> = {
+	en: [
+		{ percentage: 95, name: "Website development" },
+		{ percentage: 75, name: "Build applications" },
+		{ percentage: 90, name: "SEO" },
+		{ percentage: 90, name: "Creativity" },
+		{ percentage: 80, name: "UX/UI design" },
+		{ percentage: 94, name: "Soft skills" },
+	],
+	ru: [
+		{ percentage: 95, name: "Разработка сайтов" },
+		{ percentage: 75, name: "Создание ПО" },
+		{ percentage: 90, name: "SEO-оптимизация" },
+		{ percentage: 90, name: "Креативность" },
+		{ percentage: 80, name: "UX/UI дизайн" },
+		{ percentage: 94, name: '"Мягкие" навыки' },
+	],
+};

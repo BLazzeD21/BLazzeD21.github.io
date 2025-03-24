@@ -29,5 +29,20 @@
 		"additionalEducation": {
 			"title": "Additional Education"
 		}
+	},
+	"Stack": {
+		"label": "Stack",
+		"title": "My skills"
+	},
+	"StackTitles": {
+		"Databases": "Databases",
+		"Languages": "Languages",
+		"Frameworks, Platforms and Libraries": "Frameworks, Platforms and Libraries",
+		"Other": "Other"
+	},
+	"Skills": {
+		"Intermediate": "Intermediate",
+		"Basic": "Basic",
+		"Advanced": "Advanced"
 	}
 }

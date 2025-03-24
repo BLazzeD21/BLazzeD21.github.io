@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import styles from "./stackBlock.module.css";
@@ -14,6 +15,8 @@ const levelClasses = {
 };
 
 export const StackBlock = ({ name, imageSrc, level }: StackBlockProps) => {
+	const levels = useTranslations("Skills");
+
 	return (
 		<div className={styles.item}>
 			<div className={styles.img}>
@@ -22,7 +25,7 @@ export const StackBlock = ({ name, imageSrc, level }: StackBlockProps) => {
 			<Title size="20" className={styles.name}>
 				{name}
 			</Title>
-			<div className={classNames(styles.level, levelClasses[level])}>{level}</div>
+			<div className={classNames(styles.level, levelClasses[level])}>{levels(level)}</div>
 		</div>
 	);
 };
