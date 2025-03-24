@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 import styles from "./footer.module.css";
@@ -11,11 +12,15 @@ import { SocialLink } from "@/widgets";
 export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 	const year = new Date().getFullYear();
 
+	const text = useTranslations("Footer");
+
+	const [mailSubject, mailBody] = [text("mailSubject"), text("mailBody")];
+
 	return (
 		<>
 			<footer className={styles.footer} id="footer">
 				<div className="container flex">
-					<p className={styles.quote}>Living, learning, & leveling up one day at a time.</p>
+					<p className={styles.quote}>{text("quote")}</p>
 					<div className="divider"></div>
 					<div className={styles.social}>
 						{socialLinks.map((socilLink, index) => (
@@ -24,14 +29,14 @@ export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 					</div>
 					<div className={styles.buttons}>
 						<LinkButton buttonStyle="navyBlue" link="https://t.me/BlazzeD21" target="_blank">
-							Contact us
+							{text("contactButton")}
 						</LinkButton>
 						<LinkButton
 							buttonStyle="navyBlue"
-							link="mailto:sekerin.alexandr@gmail.com?subject=Your Name - Title&body=Description of your offer"
+							link={`mailto:sekerin.alexandr@gmail.com?subject=${mailSubject}&body=${mailBody}`}
 							target="_blank"
 						>
-							E-mail
+							{text("mailButton")}
 						</LinkButton>
 					</div>
 					<div className={styles.menu}>
@@ -43,7 +48,7 @@ export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
 							))}
 						</ul>
 					</div>
-					<div className={styles.copyright}>&copy; Sekerin Alexandr, {year}. All Rights Reserved.</div>
+					<div className={styles.copyright}>&copy; {text("copyright", { year: year })}</div>
 				</div>
 			</footer>
 		</>

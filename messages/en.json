@@ -48,5 +48,13 @@
 	"Portfolio": {
 		"label": "Portfolio",
 		"title": "My non-commercial projects"
+	},
+	"Footer": {
+		"quote": "Living, learning, & leveling up one day at a time.",
+		"copyright": "Sekerin Alexandr, {year}. All Rights Reserved.",
+		"contactButton": "Portfolio",
+		"mailButton": "E-mail",
+		"mailSubject": "Your Name - Title",
+		"mailBody": "Description of your offer"
 	}
 }
