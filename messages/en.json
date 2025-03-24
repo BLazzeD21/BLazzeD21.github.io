@@ -44,5 +44,9 @@
 		"Intermediate": "Intermediate",
 		"Basic": "Basic",
 		"Advanced": "Advanced"
+	},
+	"Portfolio": {
+		"label": "Portfolio",
+		"title": "My non-commercial projects"
 	}
 }
