@@ -32,6 +32,10 @@ export const viewport: Viewport = {
 	themeColor: "white",
 };
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
+
 export async function generateMetadata(props: Omit<Props, "children">) {
 	const { locale } = await props.params;
 
