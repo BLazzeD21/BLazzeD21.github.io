@@ -28,10 +28,6 @@
 	transition: border-color 0.2s ease;
 }
 
-.select::selection {
-	font-size: 1000px;
-}
-
 .select:focus {
 	outline: none;
 	border-color: var(--white-color);
