@@ -155,4 +155,30 @@ export const skillsList: Locale<SkillsListType> = {
 				"Mis cualidades personales incluyen gestión efectiva del tiempo, pensamiento creativo desarrollado, altas habilidades comunicativas, disposición para la cooperación y facilidad de adaptación.",
 		},
 	],
+	fr: [
+		{
+			title: "Développement Web",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"Je suis développeur front-end avec une expertise en HTML, CSS, préprocesseurs, bundlers de modules, frameworks CSS, architecture CSS (BEM), JS, TS, React, gestion d'état, SSR, Express, API REST et WebSocket.",
+		},
+		{
+			title: "Ingénierie Logicielle",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"J'ai développé des applications WPF et WinForms utilisant des bases de données MySQL et PostgreSQL, créant des solutions ergonomiques et fonctionnelles pour la gestion de données.",
+		},
+		{
+			title: "Polyvalence",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description:
+				"Expérience en gestion de projet, amélioration de maquettes, pilotage d'équipes et coordination des tâches pour une collaboration efficace.",
+		},
+		{
+			title: "Savoir-être",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"Mes qualités personnelles incluent une gestion du temps efficace, une forte créativité, d'excellentes compétences relationnelles, un esprit collaboratif et une grande capacité d'adaptation.",
+		},
+	],
 };

@@ -49,4 +49,12 @@ export const ratings: Locale<RatingType> = {
 		{ percentage: 80, name: "Diseño UX/UI" },
 		{ percentage: 94, name: "Habilidades blandas" },
 	],
+	fr: [
+		{ percentage: 95, name: "Développement web" },
+		{ percentage: 75, name: "Développement d'applications" },
+		{ percentage: 90, name: "SEO" },
+		{ percentage: 90, name: "Créativité" },
+		{ percentage: 80, name: "Design UX/UI" },
+		{ percentage: 94, name: "Compétences relationnelles" },
+	],
 };

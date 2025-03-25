@@ -85,6 +85,20 @@ export const higherEducation: Locale<EducationType> = {
 			body: "Especialidad: 09.03.03 Informática Aplicada en Economía.<br />Titulación: Técnico-programador.",
 		},
 	],
+	fr: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "Université des technologies de gestion et d'économie de Saint-Pétersbourg (UMTE)",
+			location: "Enseignement professionnel secondaire | Saint-Pétersbourg (2020-2023)",
+			body: "Spécialité : 09.02.05 Informatique appliquée (par secteur).<br />Qualification : technicien-programmeur.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "Université des technologies de gestion et d'économie de Saint-Pétersbourg (UMTE)",
+			location: "Enseignement supérieur | Saint-Pétersbourg (2023-2027)",
+			body: "Spécialité : 09.03.03 Informatique appliquée en économie.<br />Qualification : technicien-programmeur.",
+		},
+	],
 };
 
 export const additionalEducation: Locale<EducationType> = {
@@ -170,6 +184,20 @@ export const additionalEducation: Locale<EducationType> = {
 			name: "Universidad Estatal de Tomsk (TSU)",
 			location: "Diploma de Departamentos Digitales | Tomsk (2024-2025)",
 			body: "Habilidades adquiridas en gestión de proyectos, incluyendo el uso de metodologías Agile: Scrum, Kanban en el contexto de la economía digital y para apoyar proyectos IT en empresas.",
+		},
+	],
+	fr: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "Centre de formation continue",
+			location: "Diplôme de formation complémentaire | Saint-Pétersbourg (2015-2020)",
+			body: "Formation complétée avec succès dans les domaines : technologies de l'information et de la communication (TIC), bases de la programmation orientée objet, algorithmique et technologies de programmation, principes de construction de bases de données avec MS SQL Server, ADO.NET, développement d'applications Windows en C#, mise en page de sites web et technologies de web design.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "Université d'État de Tomsk (TSU)",
+			location: "Diplôme des départements numériques | Tomsk (2024-2025)",
+			body: "Acquisition de compétences en gestion de projet, y compris l'utilisation des méthodologies Agile : Scrum, Kanban dans le contexte de l'économie numérique et pour soutenir les projets informatiques en entreprise.",
 		},
 	],
 };

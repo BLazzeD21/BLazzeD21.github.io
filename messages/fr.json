@@ -1,0 +1,65 @@
+{
+	"LocaleSwitcher": {
+		"label": "Langue :",
+		"locale": "{locale, select, ru {Russe} en {Anglais} de {Allemand} fi {Finnois} zh {Chinois} es {Espagnol} fr {Français} other {Inconnu}}"
+	},
+	"Sidepanel": {
+		"label": "Réseaux sociaux"
+	},
+	"Header": {
+		"welcome": "Je m'appelle Sekerin Alexandr",
+		"title": "Je suis développeur à Saint-Pétersbourg",
+		"portfolioButton": "Portfolio",
+		"aboutMeButton": "À propos"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "Alexandr Sekerin | Portfolio",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portfolio",
+		"applicationName": "Portfolio",
+		"name": "Alexandr Sekerin"
+	},
+	"About": {
+		"label": "À propos",
+		"title": "Je suis développeur",
+		"description": "Salut ! Je m'appelle Alexander et je suis développeur. Je programme depuis 2017 et j'ai réalisé des projets tels que des sites web, des bots, des applications desktop pour Windows et des serveurs de jeux. Aujourd'hui, je me spécialise dans le développement web et j'apprends toujours de nouvelles technologies pour m'améliorer."
+	},
+	"Education": {
+		"label": "Formation",
+		"title": "Mes études",
+		"higherEducation": {
+			"title": "Enseignement supérieur"
+		},
+		"additionalEducation": {
+			"title": "Formation complémentaire"
+		}
+	},
+	"Stack": {
+		"label": "Compétences",
+		"title": "Mes compétences"
+	},
+	"StackTitles": {
+		"Databases": "Bases de données",
+		"Languages": "Langages",
+		"Frameworks, Platforms and Libraries": "Frameworks, plateformes et bibliothèques",
+		"Other": "Autres"
+	},
+	"Skills": {
+		"Intermediate": "Intermédiaire",
+		"Basic": "Basique",
+		"Advanced": "Avancé"
+	},
+	"Portfolio": {
+		"label": "Portfolio",
+		"title": "Mes projets non commerciaux",
+		"soon": "bientôt"
+	},
+	"Footer": {
+		"quote": "Vivre, apprendre et progresser jour après jour.",
+		"copyright": "Sekerin Alexandr, {year}. Tous droits réservés.",
+		"contactButton": "Contact",
+		"mailButton": "E-mail",
+		"mailSubject": "Votre Nom - Objet",
+		"mailBody": "Description de votre proposition"
+	}
+}

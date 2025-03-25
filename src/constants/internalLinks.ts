@@ -133,4 +133,26 @@ export const internalLinks: Locale<InternalLinkType> = {
 			name: "Contactos",
 		},
 	],
+	fr: [
+		{
+			href: "#about",
+			name: "À propos",
+		},
+		{
+			href: "#education",
+			name: "Formation",
+		},
+		{
+			href: "#stack",
+			name: "Compétences techniques",
+		},
+		{
+			href: "#portfolio",
+			name: "Portfolio",
+		},
+		{
+			href: "#footer",
+			name: "Contact",
+		},
+	],
 };
