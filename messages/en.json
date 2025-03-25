@@ -51,7 +51,8 @@
 	},
 	"Portfolio": {
 		"label": "Portfolio",
-		"title": "My non-commercial projects"
+		"title": "My non-commercial projects",
+		"soon": "soon"
 	},
 	"Footer": {
 		"quote": "Living, learning, & leveling up one day at a time.",

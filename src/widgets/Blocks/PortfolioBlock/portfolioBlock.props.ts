@@ -4,4 +4,5 @@ import { PortfolioItemType } from "@/types";
 
 export interface PortfolioBlockProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	item: PortfolioItemType;
+	soonText: string;
 }

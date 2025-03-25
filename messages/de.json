@@ -51,7 +51,8 @@
 	},
 	"Portfolio": {
 		"label": "Portfolio",
-		"title": "Meine nicht-kommerziellen Projekte"
+		"title": "Meine nicht-kommerziellen Projekte",
+		"soon": "bald"
 	},
 	"Footer": {
 		"quote": "Leben, lernen und sich jeden Tag verbessern.",

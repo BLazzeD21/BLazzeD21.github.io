@@ -6,12 +6,12 @@ import styles from "./portfolioBlock.module.css";
 
 import { PortfolioBlockProps } from "./portfolioBlock.props";
 
-export const PortfolioBlock = ({ item }: PortfolioBlockProps) => {
+export const PortfolioBlock = ({ item, soonText }: PortfolioBlockProps) => {
 	const ImageBlock = item.imageSrc ? (
 		<Image src={item.imageSrc} alt={item.altText} width={280} height={280} sizes="100%" quality={100} />
 	) : (
 		<div className={styles.soon}>
-			<p>soon</p>
+			<p>{soonText}</p>
 		</div>
 	);
 

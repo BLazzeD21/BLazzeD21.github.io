@@ -26,7 +26,7 @@ export const Portfolio = ({ portfolioItems }: PortfolioProps) => {
 					<div className="divider darkPink"></div>
 					<div className={styles.wrapper}>
 						{portfolioItems.map((item, index) => {
-							return <PortfolioBlock item={item} key={index} />;
+							return <PortfolioBlock item={item} soonText={text("soon")} key={index} />;
 						})}
 					</div>
 				</div>
