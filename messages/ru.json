@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Язык:",
-		"locale": "{locale, select, ru {Русский} en {English} other {Unknown}}"
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} other {Unknown}}"
 	},
 	"Header": {
 		"welcome": "Меня зовут Секерин Александр",

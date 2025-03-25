@@ -1,6 +1,6 @@
-import { EducationType, Locate } from "@/types";
+import { EducationType, Locale } from "@/types";
 
-export const higherEducation: Locate<EducationType> = {
+export const higherEducation: Locale<EducationType> = {
 	en: [
 		{
 			imageUrl: "icons/education/college.svg",
@@ -29,9 +29,23 @@ export const higherEducation: Locate<EducationType> = {
 			body: "Специальность: 09.03.03 Прикладная информатика в экономике.<br />Квалификация: техник-программист.",
 		},
 	],
+	de: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "Sankt Petersburger Universität für Managementtechnologien und Wirtschaft (UMTE)",
+			location: "Berufsausbildung | Sankt Petersburg (2020-2023)",
+			body: "Fachrichtung: 09.02.05 Angewandte Informatik (branchenspezifisch).<br />Abschluss: Programmiertechniker.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "Sankt Petersburger Universität für Managementtechnologien und Wirtschaft (UMTE)",
+			location: "Hochschulbildung | Sankt Petersburg (2023-2027)",
+			body: "Fachrichtung: 09.03.03 Angewandte Informatik in der Wirtschaft.<br />Abschluss: Programmiertechniker.",
+		},
+	],
 };
 
-export const additionalEducation: { en: EducationType[]; ru: EducationType[] } = {
+export const additionalEducation: { en: EducationType[]; ru: EducationType[]; de: EducationType[] } = {
 	en: [
 		{
 			imageUrl: "icons/education/courses.svg",
@@ -58,6 +72,20 @@ export const additionalEducation: { en: EducationType[]; ru: EducationType[] } =
 			name: "Томский государственный университет (ТГУ)",
 			location: "Диплом цифровых кафедр | Томск (2024-2025)",
 			body: "Приобретены навыки проектного управления, в том числе с использованием методологий Agile: Scrum, Kanban в условиях цифровой экономики и для сопровождения IT проектов в компаниях.",
+		},
+	],
+	de: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "Zentrum für Weiterbildung",
+			location: "Zusatzausbildungsdiplom | Sankt Petersburg (2015-2020)",
+			body: "Erfolgreich abgeschlossene Ausbildung in den Bereichen: Informations- und Kommunikationstechnologien (IKT), Grundlagen der objektorientierten Programmierung, Algorithmisierung und Programmiertechnologien, Grundlagen des Datenbankaufbaus mit MS SQL Server, ADO.NET, Entwicklung von Windows-Anwendungen in C#, Website-Layout und Webdesign-Technologien.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "Staatliche Universität Tomsk (TSU)",
+			location: "Diplom der Digitalen Abteilungen | Tomsk (2024-2025)",
+			body: "Erworbene Projektmanagementfähigkeiten, einschließlich der Anwendung von Agile-Methodologien: Scrum, Kanban im Kontext der digitalen Wirtschaft und zur Unterstützung von IT-Projekten in Unternehmen.",
 		},
 	],
 };

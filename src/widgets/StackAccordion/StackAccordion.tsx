@@ -26,17 +26,17 @@ export const StackAccordion = ({ stack }: StackAccordionProps) => {
 	return (
 		<div className={styles.accordion}>
 			{Object.entries(stack).map(([category, skills]) => {
-				const categoryLocate = stackTitles(category);
+				const categoryLocale = stackTitles(category);
 
 				return (
-					<div key={categoryLocate} className={styles.category}>
-						<button className={styles.header} onClick={() => toggleCategory(categoryLocate)}>
-							<h2>{categoryLocate}</h2>
-							<span className={classNames(styles.arrow, { [styles.open]: expandedCategory === categoryLocate })}>
+					<div key={categoryLocale} className={styles.category}>
+						<button className={styles.header} onClick={() => toggleCategory(categoryLocale)}>
+							<h2>{categoryLocale}</h2>
+							<span className={classNames(styles.arrow, { [styles.open]: expandedCategory === categoryLocale })}>
 								▼
 							</span>
 						</button>
-						<div className={classNames(styles.content, { [styles.open]: expandedCategory === categoryLocate })}>
+						<div className={classNames(styles.content, { [styles.open]: expandedCategory === categoryLocale })}>
 							<div className={styles.wrapper}>
 								{skills.sort(sortSkillsByLevel).map((technology, index) => (
 									<StackBlock

@@ -1,0 +1,61 @@
+{
+	"LocaleSwitcher": {
+		"label": "Sprache:",
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} other {Unknown}}"
+	},
+	"Header": {
+		"welcome": "Mein Name ist Alexandr Sekerin",
+		"title": "Ich bin Entwickler aus Sankt Petersburg",
+		"portfolioButton": "Portfolio",
+		"aboutMeButton": "Über mich"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "Alexandr Sekerin | Portfolio",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portfolio",
+		"applicationName": "Portfolio",
+		"name": "Alexandr Sekerin"
+	},
+	"About": {
+		"label": "Über mich",
+		"title": "Ich bin Entwickler",
+		"description": "Was geht! Mein Name ist Alexander und ich bin Entwickler. Ich programmiere seit 2017 und habe Projekte wie Websites, Bots, Desktop-Anwendungen für Windows und Spielserver umgesetzt. Jetzt vertiefe ich mich in die Webentwicklung und lerne immer mehr neue Technologien, um besser zu werden."
+	},
+	"Education": {
+		"label": "Bildung",
+		"title": "Meine Ausbildung",
+		"higherEducation": {
+			"title": "Hochschulbildung"
+		},
+		"additionalEducation": {
+			"title": "Zusätzliche Ausbildung"
+		}
+	},
+	"Stack": {
+		"label": "Stack",
+		"title": "Meine Fähigkeiten"
+	},
+	"StackTitles": {
+		"Databases": "Datenbanken",
+		"Languages": "Programmiersprachen",
+		"Frameworks, Platforms and Libraries": "Frameworks, Plattformen und Bibliotheken",
+		"Other": "Andere"
+	},
+	"Skills": {
+		"Intermediate": "Mittelstufe",
+		"Basic": "Grundkenntnisse",
+		"Advanced": "Fortgeschritten"
+	},
+	"Portfolio": {
+		"label": "Portfolio",
+		"title": "Meine nicht-kommerziellen Projekte"
+	},
+	"Footer": {
+		"quote": "Leben, lernen und sich jeden Tag verbessern.",
+		"copyright": "Sekerin Alexandr, {year}. Alle Rechte vorbehalten.",
+		"contactButton": "Portfolio",
+		"mailButton": "E-Mail",
+		"mailSubject": "Ihr Name - Betreff",
+		"mailBody": "Beschreibung Ihres Angebots"
+	}
+}

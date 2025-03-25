@@ -1,4 +1,4 @@
-export type Locate<T> = { en: T[]; ru: T[] };
+export type Locale<T> = { en: T[]; ru: T[]; de: T[] };
 
 export enum Levels {
 	Intermediate = "Intermediate",

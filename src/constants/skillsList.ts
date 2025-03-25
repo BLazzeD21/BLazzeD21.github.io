@@ -1,6 +1,6 @@
-import { Locate, SkillsListType } from "@/types";
+import { Locale, SkillsListType } from "@/types";
 
-export const skillsList: Locate<SkillsListType> = {
+export const skillsList: Locale<SkillsListType> = {
 	en: [
 		{
 			title: "Web-development",
@@ -51,6 +51,32 @@ export const skillsList: Locate<SkillsListType> = {
 			imageSrc: "/icons/skills/soft.svg",
 			description:
 				"Мои личные качества включают эффективное управление временем, развитое креативное мышление, высокие коммуникативные навыки, готовность к сотрудничеству и легкость адаптации.",
+		},
+	],
+	de: [
+		{
+			title: "Web-Entwicklung",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"Ich bin ein Frontend-Webentwickler mit Erfahrung in HTML, CSS, Präprozessoren, Modul-Bundlern, CSS-Frameworks, CSS-Architektur (BEM), JS, TS, React, State-Containern, SSR, Express, REST API und WebSocket.",
+		},
+		{
+			title: "Software-Entwicklung",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"Ich habe WPF- und WinForms-Anwendungen mit MySQL- und PostgreSQL-Datenbanken entwickelt und dabei benutzerfreundliche und funktionale Anwendungen zur Datenverwaltung erstellt.",
+		},
+		{
+			title: "Multitasking",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description:
+				"Erfahrung im Projektmanagement, in der Verfeinerung von Design-Entwürfen, in der Teamführung und in der Koordinierung von Aufgaben für eine effektive Zusammenarbeit.",
+		},
+		{
+			title: "Soft Skills",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"Zu meinen persönlichen Eigenschaften gehören effektives Zeitmanagement, ausgeprägtes kreatives Denken, hohe Kommunikationsfähigkeiten, Kooperationsbereitschaft und einfache Anpassungsfähigkeit.",
 		},
 	],
 };

@@ -1,6 +1,6 @@
-import { InternalLinkType, Locate } from "@/types";
+import { InternalLinkType, Locale } from "@/types";
 
-export const internalLinks: Locate<InternalLinkType> = {
+export const internalLinks: Locale<InternalLinkType> = {
 	en: [
 		{
 			href: "#about",
@@ -43,6 +43,28 @@ export const internalLinks: Locate<InternalLinkType> = {
 		{
 			href: "#footer",
 			name: "Контакты",
+		},
+	],
+	de: [
+		{
+			href: "#about",
+			name: "Über mich",
+		},
+		{
+			href: "#education",
+			name: "Bildung",
+		},
+		{
+			href: "#stack",
+			name: "Mein Stack",
+		},
+		{
+			href: "#portfolio",
+			name: "Portfolio",
+		},
+		{
+			href: "#footer",
+			name: "Kontakte",
 		},
 	],
 };

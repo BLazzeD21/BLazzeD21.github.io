@@ -63,8 +63,8 @@ export default async function LocaleLayout({ children, params }: Props) {
 	setRequestLocale(locale);
 
 	return (
-		<html lang={locale} className={locale === "en" ? "quicksand" : "ruda"}>
-			<body className={`${locale === "en" ? quicksand.variable : ruda.variable} font-sans`}>
+		<html lang={locale} className={locale !== "ru" ? "quicksand" : "ruda"}>
+			<body className={`${locale !== "ru" ? quicksand.variable : ruda.variable} font-sans`}>
 				<NextIntlClientProvider>{children}</NextIntlClientProvider>
 			</body>
 		</html>
