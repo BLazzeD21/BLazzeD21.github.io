@@ -15,7 +15,8 @@
 .beforeCircle::before {
 	content: "";
 	position: absolute;
-	top: -20%;
+	top: 50%;
+	transform: translateY(-50%);
 	left: 0;
 	z-index: -1;
 	width: 36px;
@@ -131,14 +132,12 @@
 	}
 
 	.beforeCircle::before {
-		top: -25%;
-		left: 0;
+		width: 25px;
+		height: 25px;
 	}
 
 	.center::before {
-		top: -5px;
-		left: 50%;
-		transform: translateX(-50%);
+		top: 0;
 	}
 
 	.fz72 {
