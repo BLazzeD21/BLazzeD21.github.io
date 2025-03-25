@@ -1,6 +1,7 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
 
 export interface LocaleSwitcherButtonProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-	currentLocale: string;
+	children: ReactNode;
+	defaultValue: string;
 	label: string;
 }

@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbo --port 5500 --experimental-https",
-		"build": "next build --debug",
+		"build": "next build",
 		"start": "next start",
 		"type": "tsc --noEmit",
 		"stylelint": "stylelint \"**/*.css\" --fix",

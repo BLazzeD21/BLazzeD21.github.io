@@ -11,9 +11,8 @@ import { MenuProps } from "./menu.props";
 import { SocialLink } from "@/widgets";
 
 import "@/widgets/Locale";
+import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
-
-import LocaleSwitcher from "../Locale/LocaleSwitcher/LocaleSwitcher";
 
 /* eslint-disable react-hooks/exhaustive-deps */
 
@@ -52,20 +51,24 @@ export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProp
 					<div className={styles.close} onClick={() => setIsShow(false)}>
 						<Image src="icons/close.svg" alt="close" width={30} height={30} />
 					</div>
-					<nav>
-						<ul className={styles.list}>
-							{internalLinks.map((socialLink, index) => (
-								<li key={`menu-${index}`} className={styles.link} onClick={() => setIsShow(false)}>
-									<a href={socialLink.href}>{socialLink.name}</a>
-								</li>
-							))}
-						</ul>
-					</nav>
-					<LocaleSwitcher />
-					<div className={styles.social}>
-						{socialLinks.map((socialLink, index) => (
-							<SocialLink item={socialLink} key={`menuSocialLinks-${index}`} iconType="circle" />
-						))}
+					<div className={styles.main}>
+						<nav>
+							<ul className={styles.list}>
+								{internalLinks.map((socialLink, index) => (
+									<li key={`menu-${index}`} className={styles.link} onClick={() => setIsShow(false)}>
+										<a href={socialLink.href}>{socialLink.name}</a>
+									</li>
+								))}
+							</ul>
+						</nav>
+						<div className={styles.footer}>
+							<div className={styles.social}>
+								{socialLinks.map((socialLink, index) => (
+									<SocialLink item={socialLink} key={`menuSocialLinks-${index}`} iconType="circle" />
+								))}
+							</div>
+							<LocaleSwitcher />
+						</div>
 					</div>
 				</div>
 				<MenuWave />

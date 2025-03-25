@@ -72,14 +72,26 @@
 
 .social {
 	width: 220px;
-	position: absolute;
 	bottom: 180px;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
+}
+
+.main {
+	height: calc(100vh - 180px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
 .overlay {
@@ -101,10 +113,6 @@
 
 	.social {
 		width: 150px;
-		position: absolute;
-		bottom: 180px;
-		left: 50%;
-		transform: translateX(-50%);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

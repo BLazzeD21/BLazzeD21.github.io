@@ -1,0 +1,48 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+}
+
+.label {
+	font-size: 14px;
+	line-height: 29px;
+	color: var(--white-color);
+}
+
+.selectWrapper {
+	position: relative;
+}
+
+.select {
+	padding: 6px 25px;
+	font-size: 16px;
+	border-radius: 6px;
+	background-color: var(--navy-blue-color);
+	color: var(--white-color);
+	border: none;
+	appearance: none;
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.select::selection {
+	font-size: 1000px;
+}
+
+.select:focus {
+	outline: none;
+	border-color: var(--white-color);
+	box-shadow: 0 0 0 2px rgb(59 130 246 / 20%);
+}
+
+.select:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.select option:checked {
+	background-color: var(--dark-pink-color);
+}
