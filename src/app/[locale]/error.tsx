@@ -7,7 +7,7 @@ import { LinkButton, P, Title } from "@/shared/UI";
 export default function Error() {
 	return (
 		<div className={styles.page}>
-			<P className={styles.background}>{"Err"}</P>
+			<P className={styles.background}>zZz</P>
 			<Title size="56" Tag="h1">
 				Error
 			</Title>
