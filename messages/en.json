@@ -3,6 +3,9 @@
 		"label": "Language:",
 		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} zh {中国人} other {Unknown}}"
 	},
+	"Sidepanel": {
+		"label": "Social networks"
+	},
 	"Header": {
 		"welcome": "My name is Sekerin Alexandr",
 		"title": "I'm developer from Saint-Petersburg",

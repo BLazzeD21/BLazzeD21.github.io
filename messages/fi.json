@@ -3,6 +3,9 @@
 		"label": "Kieli:",
 		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} zh {中国人} other {Unknown}}"
 	},
+	"Sidepanel": {
+		"label": "Sosiaaliset verkostot"
+	},
 	"Header": {
 		"welcome": "Nimeni on Sekerin Alexandr",
 		"title": "Olen kehittäjä Pietarista",

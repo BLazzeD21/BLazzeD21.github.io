@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const getLinebBreaks = (text: string) => {
-	const textWithLineBreaks = text.split("<br />").map(function (block) {
+export const getLinebBreaks = (text: string, separator: string) => {
+	const textWithLineBreaks = text.split(separator).map(function (block) {
 		const UUID = uuidv4();
 		return (
 			<span key={UUID}>

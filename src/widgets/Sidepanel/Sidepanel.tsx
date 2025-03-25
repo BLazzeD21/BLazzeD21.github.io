@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import styles from "./sidepanel.module.css";
 
 import { SidepanelProps } from "./sidepanel.props";
@@ -5,6 +7,8 @@ import { SidepanelProps } from "./sidepanel.props";
 import { SocialLink } from "@/widgets";
 
 export const Sidepanel = ({ socialLinks }: SidepanelProps) => {
+	const text = useTranslations("Sidepanel");
+
 	return (
 		<aside className={styles.sidepanel}>
 			{socialLinks.map((socialItem, index) => {
@@ -12,7 +16,7 @@ export const Sidepanel = ({ socialLinks }: SidepanelProps) => {
 			})}
 			<div className={styles.devider}></div>
 			<div className={styles.text}>
-				<span>Social networks</span>
+				<span>{text("label")}</span>
 			</div>
 		</aside>
 	);
