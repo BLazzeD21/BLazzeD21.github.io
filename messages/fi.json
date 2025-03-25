@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Kieli:",
-		"locale": "{locale, select, ru {Venäjä} en {Englanti} de {Saksa} fi {Suomi} zh {Kiina} es {Espanja} fr {Ranska} ar {Arabia} other {Tuntematon}}"
+		"locale": "{locale, select, ru {Venäjä} en {Englanti} de {Saksa} fi {Suomi} zh {Kiina} es {Espanja} fr {Ranska} ar {Arabia} pt {Portugali} other {Tuntematon}}"
 	},
 	"Sidepanel": {
 		"label": "Sosiaaliset verkostot"

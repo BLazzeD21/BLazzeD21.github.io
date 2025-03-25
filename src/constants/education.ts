@@ -113,6 +113,20 @@ export const higherEducation: Locale<EducationType> = {
 			body: "التخصص: 09.03.03 المعلوماتية التطبيقية في الاقتصاد.<br />المؤهل: فني برمجة.",
 		},
 	],
+	pt: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "Universidade de Tecnologias de Gestão e Economia de São Petersburgo (UMTE)",
+			location: "Ensino profissional secundário | São Petersburgo (2020-2023)",
+			body: "Especialidade: 09.02.05 Informática Aplicada (por setores).<br />Qualificação: Técnico em programação.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "Universidade de Tecnologias de Gestão e Economia de São Petersburgo (UMTE)",
+			location: "Ensino superior | São Petersburgo (2023-2027)",
+			body: "Especialidade: 09.03.03 Informática Aplicada em Economia.<br />Qualificação: Técnico em programação.",
+		},
+	],
 };
 
 export const additionalEducation: Locale<EducationType> = {
@@ -226,6 +240,20 @@ export const additionalEducation: Locale<EducationType> = {
 			name: "جامعة تومسك الحكومية (TSU)",
 			location: "دبلوم الأقسام الرقمية | تومسك (2024-2025)",
 			body: "اكتسبت مهارات إدارة المشاريع، بما في ذلك استخدام منهجيات Agile: Scrum، Kanban في سياق الاقتصاد الرقمي ودعم مشاريع تكنولوجيا المعلومات في الشركات.",
+		},
+	],
+	pt: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "Centro de Educação Continuada",
+			location: "Diploma de educação adicional | São Petersburgo (2015-2020)",
+			body: "Completei com sucesso treinamentos em: Tecnologias de Informação e Comunicação (TIC), Fundamentos de Programação Orientada a Objetos, Algoritmos e tecnologias de programação, Fundamentos de construção de bancos de dados com MS SQL Server, ADO.NET, Desenvolvimento de aplicações Windows em C#, Layout de sites e tecnologias de web design.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "Universidade Estatal de Tomsk (TSU)",
+			location: "Diploma de Departamentos Digitais | Tomsk (2024-2025)",
+			body: "Adquiri habilidades em gestão de projetos, incluindo uso de metodologias Agile: Scrum, Kanban no contexto da economia digital e para suporte a projetos de TI em empresas.",
 		},
 	],
 };

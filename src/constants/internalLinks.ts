@@ -162,4 +162,11 @@ export const internalLinks: Locale<InternalLinkType> = {
 		{ href: "#portfolio", name: "أعمالي" },
 		{ href: "#footer", name: "اتصل بي" },
 	],
+	pt: [
+		{ href: "#about", name: "Sobre mim" },
+		{ href: "#education", name: "Educação" },
+		{ href: "#stack", name: "Tecnologias" },
+		{ href: "#portfolio", name: "Portfólio" },
+		{ href: "#footer", name: "Contato" },
+	],
 };

@@ -206,4 +206,30 @@ export const skillsList: Locale<SkillsListType> = {
 				"تشمل صفاتي الشخصية الإدارة الفعالة للوقت، التفكير الإبداعي المتطور، مهارات اتصال عالية، الاستعداد للتعاون وسهولة التكيف.",
 		},
 	],
+	pt: [
+		{
+			title: "Desenvolvimento Web",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"Sou desenvolvedor front-end com experiência em HTML, CSS, pré-processadores, module bundlers, frameworks CSS, arquitetura CSS (BEM), JS, TS, React, gerenciamento de estado, SSR, Express, REST API e WebSocket.",
+		},
+		{
+			title: "Engenharia de Software",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"Desenvolvi aplicações WPF e WinForms utilizando bancos de dados MySQL e PostgreSQL, criando aplicações funcionais e com boa usabilidade para gestão de dados.",
+		},
+		{
+			title: "Multitarefa",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description:
+				"Experiência em gestão de projetos, refinamento de mockups, liderança de equipes e coordenação de tarefas para colaboração eficaz.",
+		},
+		{
+			title: "Soft skills",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"Minhas qualidades incluem gestão eficaz de tempo, pensamento criativo desenvolvido, altas habilidades de comunicação, prontidão para cooperação e facilidade de adaptação.",
+		},
+	],
 };
