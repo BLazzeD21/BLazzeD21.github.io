@@ -111,4 +111,26 @@ export const internalLinks: Locale<InternalLinkType> = {
 			name: "联系方式",
 		},
 	],
+	es: [
+		{
+			href: "#about",
+			name: "Sobre mí",
+		},
+		{
+			href: "#education",
+			name: "Educación",
+		},
+		{
+			href: "#stack",
+			name: "Mis tecnologías",
+		},
+		{
+			href: "#portfolio",
+			name: "Portafolio",
+		},
+		{
+			href: "#footer",
+			name: "Contactos",
+		},
+	],
 };

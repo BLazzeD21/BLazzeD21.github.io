@@ -1,0 +1,65 @@
+{
+	"LocaleSwitcher": {
+		"label": "Idioma:",
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} zh {中国人} es {Español} other {Unknown}}"
+	},
+	"Sidepanel": {
+		"label": "Redes sociales"
+	},
+	"Header": {
+		"welcome": "Mi nombre es Sekerin Alexandr",
+		"title": "Soy desarrollador de San Petersburgo",
+		"portfolioButton": "Portafolio",
+		"aboutMeButton": "Sobre mí"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "Alexandr Sekerin | Portafolio",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portafolio",
+		"applicationName": "Portafolio",
+		"name": "Alexandr Sekerin"
+	},
+	"About": {
+		"label": "Sobre mí",
+		"title": "Soy desarrollador",
+		"description": "¡Qué tal! Mi nombre es Alexander y soy desarrollador. Programo desde 2017 y he realizado proyectos como sitios web, bots, aplicaciones de escritorio para Windows y servidores de juegos. Ahora me estoy especializando en desarrollo web y aprendiendo cada vez más tecnologías nuevas para mejorar."
+	},
+	"Education": {
+		"label": "Educación",
+		"title": "Mi formación",
+		"higherEducation": {
+			"title": "Educación superior"
+		},
+		"additionalEducation": {
+			"title": "Formación adicional"
+		}
+	},
+	"Stack": {
+		"label": "Tecnologías",
+		"title": "Mis habilidades"
+	},
+	"StackTitles": {
+		"Databases": "Bases de datos",
+		"Languages": "Lenguajes",
+		"Frameworks, Platforms and Libraries": "Frameworks, plataformas y librerías",
+		"Other": "Otros"
+	},
+	"Skills": {
+		"Intermediate": "Intermedio",
+		"Basic": "Básico",
+		"Advanced": "Avanzado"
+	},
+	"Portfolio": {
+		"label": "Portafolio",
+		"title": "Mis proyectos no comerciales",
+		"soon": "pronto"
+	},
+	"Footer": {
+		"quote": "Viviendo, aprendiendo y mejorando un día a la vez.",
+		"copyright": "Sekerin Alexandr, {year}. Todos los derechos reservados.",
+		"contactButton": "Contacto",
+		"mailButton": "Correo",
+		"mailSubject": "Tu Nombre - Asunto",
+		"mailBody": "Descripción de tu propuesta"
+	}
+}

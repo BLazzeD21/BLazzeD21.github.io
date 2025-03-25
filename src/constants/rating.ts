@@ -41,4 +41,12 @@ export const ratings: Locale<RatingType> = {
 		{ percentage: 80, name: "UX/UI设计" },
 		{ percentage: 94, name: "软技能" },
 	],
+	es: [
+		{ percentage: 95, name: "Desarrollo de sitios web" },
+		{ percentage: 75, name: "Desarrollo de aplicaciones" },
+		{ percentage: 90, name: "SEO" },
+		{ percentage: 90, name: "Creatividad" },
+		{ percentage: 80, name: "Diseño UX/UI" },
+		{ percentage: 94, name: "Habilidades blandas" },
+	],
 };

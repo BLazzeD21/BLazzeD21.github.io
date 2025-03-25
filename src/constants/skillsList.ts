@@ -64,7 +64,7 @@ export const skillsList: Locale<SkillsListType> = {
 			title: "Software-Entwicklung",
 			imageSrc: "/icons/skills/software.svg",
 			description:
-				"Olen kehittänyt WPF- ja WinForms-sovelluksia MySQL- ja PostgreSQL-tietokantojen avulla luoden käyttäjäystävällisiä ja toimivia tiedonhallintasovelluksia.",
+				"Ich habe WPF- und WinForms-Anwendungen mit MySQL- und PostgreSQL-Datenbanken entwickelt und benutzerfreundliche, funktionale Datenverwaltungsanwendungen erstellt.",
 		},
 		{
 			title: "Multitasking",
@@ -127,6 +127,32 @@ export const skillsList: Locale<SkillsListType> = {
 			title: "软技能",
 			imageSrc: "/icons/skills/soft.svg",
 			description: "具备高效的时间管理能力、创造性思维、出色的沟通技巧、团队协作精神以及快速适应能力。",
+		},
+	],
+	es: [
+		{
+			title: "Desarrollo web",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"Soy desarrollador web front-end con experiencia en HTML, CSS, preprocesadores, empaquetadores de módulos, frameworks CSS, arquitectura CSS (BEM), JS, TS, React, gestores de estado, SSR, Express, REST API y WebSocket.",
+		},
+		{
+			title: "Ingeniería de software",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"He desarrollado aplicaciones WPF y WinForms utilizando bases de datos MySQL y PostgreSQL, creando aplicaciones de gestión de datos funcionales y fáciles de usar.",
+		},
+		{
+			title: "Multitarea",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description:
+				"Experiencia en gestión de proyectos, refinamiento de maquetas de diseño, liderazgo de equipos y coordinación de tareas para una colaboración efectiva.",
+		},
+		{
+			title: "Habilidades blandas",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"Mis cualidades personales incluyen gestión efectiva del tiempo, pensamiento creativo desarrollado, altas habilidades comunicativas, disposición para la cooperación y facilidad de adaptación.",
 		},
 	],
 };

@@ -71,6 +71,20 @@ export const higherEducation: Locale<EducationType> = {
 			body: "专业方向：09.03.03 经济应用信息技术<br />获得职称：程序员技术员",
 		},
 	],
+	es: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "Universidad de Tecnologías de Gestión y Economía de San Petersburgo (UMTE)",
+			location: "Educación profesional secundaria | San Petersburgo (2020-2023)",
+			body: "Especialidad: 09.02.05 Informática Aplicada (por industria).<br />Titulación: Técnico-programador.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "Universidad de Tecnologías de Gestión y Economía de San Petersburgo (UMTE)",
+			location: "Educación superior | San Petersburgo (2023-2027)",
+			body: "Especialidad: 09.03.03 Informática Aplicada en Economía.<br />Titulación: Técnico-programador.",
+		},
+	],
 };
 
 export const additionalEducation: Locale<EducationType> = {
@@ -142,6 +156,20 @@ export const additionalEducation: Locale<EducationType> = {
 			name: "托木斯克国立大学（TSU）",
 			location: "数字院系文凭 | 托木斯克（2024-2025）",
 			body: "掌握项目管理技能，包括在数字经济背景下运用敏捷开发方法（Scrum/Kanban）支持企业IT项目。",
+		},
+	],
+	es: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "Centro de Educación Continua",
+			location: "Diploma de educación adicional | San Petersburgo (2015-2020)",
+			body: "Formación completada con éxito en las áreas: Tecnologías de Información y Comunicación (TIC), Fundamentos de Programación Orientada a Objetos, Algoritmización y tecnologías de programación, Fundamentos de construcción de bases de datos con MS SQL Server, ADO.NET, Desarrollo de aplicaciones Windows en C#, Maquetación web y tecnologías de diseño web.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "Universidad Estatal de Tomsk (TSU)",
+			location: "Diploma de Departamentos Digitales | Tomsk (2024-2025)",
+			body: "Habilidades adquiridas en gestión de proyectos, incluyendo el uso de metodologías Agile: Scrum, Kanban en el contexto de la economía digital y para apoyar proyectos IT en empresas.",
 		},
 	],
 };
