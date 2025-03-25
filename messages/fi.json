@@ -1,0 +1,61 @@
+{
+	"LocaleSwitcher": {
+		"label": "Kieli:",
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} other {Unknown}}"
+	},
+	"Header": {
+		"welcome": "Nimeni on Sekerin Alexandr",
+		"title": "Olen kehittäjä Pietarista",
+		"portfolioButton": "Portfolio",
+		"aboutMeButton": "Minusta"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "Alexandr Sekerin | Portfolio",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portfolio",
+		"applicationName": "Portfolio",
+		"name": "Alexandr Sekerin"
+	},
+	"About": {
+		"label": "Minusta",
+		"title": "Olen kehittäjä",
+		"description": "Mitä kuuluu! Nimeni on Alexander ja olen kehittäjä. Olen ohjelmoinut vuodesta 2017 lähtien ja toteuttanut projekteja kuten verkkosivustoja, bottia, Windowsin työpäätesovelluksia ja pelipalvelimia. Nyt syvennyn web-kehitykseen ja opiskelen yhä uusia teknologioita tullakseni paremmaksi."
+	},
+	"Education": {
+		"label": "Koulutus",
+		"title": "Koulutukseni",
+		"higherEducation": {
+			"title": "Korkeakoulutus"
+		},
+		"additionalEducation": {
+			"title": "Lisäkoulutus"
+		}
+	},
+	"Stack": {
+		"label": "Teknologiat",
+		"title": "Osaamiseni"
+	},
+	"StackTitles": {
+		"Databases": "Tietokannat",
+		"Languages": "Ohjelmointikielet",
+		"Frameworks, Platforms and Libraries": "Kehykset, alustat ja kirjastot",
+		"Other": "Muut"
+	},
+	"Skills": {
+		"Intermediate": "Keskitaso",
+		"Basic": "Perustaso",
+		"Advanced": "Edistynyt"
+	},
+	"Portfolio": {
+		"label": "Portfolio",
+		"title": "Omat kaupalliset projektini"
+	},
+	"Footer": {
+		"quote": "Elän, opiskelen ja kehitän itseäni päivä kerrallaan.",
+		"copyright": "Sekerin Alexandr, {year}. Kaikki oikeudet pidätetään.",
+		"contactButton": "Yhteys",
+		"mailButton": "Sähköposti",
+		"mailSubject": "Nimesi - Otsikko",
+		"mailBody": "Tarjouksesi kuvaus"
+	}
+}

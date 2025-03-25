@@ -25,4 +25,12 @@ export const ratings: Locale<RatingType> = {
 		{ percentage: 80, name: "UX/UI Design" },
 		{ percentage: 94, name: "Soft Skills" },
 	],
+	fi: [
+		{ percentage: 95, name: "Verkkosivujen kehittäminen" },
+		{ percentage: 75, name: "Sovellusten rakentaminen" },
+		{ percentage: 90, name: "SEO" },
+		{ percentage: 90, name: "Luovuus" },
+		{ percentage: 80, name: "UX/UI-suunnittelu" },
+		{ percentage: 94, name: "Pehmeät taidot" },
+	],
 };

@@ -64,7 +64,7 @@ export const skillsList: Locale<SkillsListType> = {
 			title: "Software-Entwicklung",
 			imageSrc: "/icons/skills/software.svg",
 			description:
-				"Ich habe WPF- und WinForms-Anwendungen mit MySQL- und PostgreSQL-Datenbanken entwickelt und dabei benutzerfreundliche und funktionale Anwendungen zur Datenverwaltung erstellt.",
+				"Olen kehittänyt WPF- ja WinForms-sovelluksia MySQL- ja PostgreSQL-tietokantojen avulla luoden käyttäjäystävällisiä ja toimivia tiedonhallintasovelluksia.",
 		},
 		{
 			title: "Multitasking",
@@ -77,6 +77,32 @@ export const skillsList: Locale<SkillsListType> = {
 			imageSrc: "/icons/skills/soft.svg",
 			description:
 				"Zu meinen persönlichen Eigenschaften gehören effektives Zeitmanagement, ausgeprägtes kreatives Denken, hohe Kommunikationsfähigkeiten, Kooperationsbereitschaft und einfache Anpassungsfähigkeit.",
+		},
+	],
+	fi: [
+		{
+			title: "Web-kehitys",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"Olen frontend-web-kehittäjä, jolla on kokemusta HTML:stä, CSS:stä, esikäsittelijöistä, moduulipakkaajista, CSS-kehyksistä, CSS-arkkitehtuurista (BEM), JS:stä, TS:stä, Reactista, tilanhallinnasta, SSR:stä, Expressistä, REST API:sta ja WebSocketista.",
+		},
+		{
+			title: "Ohjelmistokehitys",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"Olen kehittänyt WPF- ja WinForms-sovelluksia käyttäen MySQL- ja PostgreSQL-tietokantoja, luoden käyttäjäystävällisiä ja toiminnallisia tietojen hallintasovelluksia.",
+		},
+		{
+			title: "Monitehtävyys",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description:
+				"Kokemusta projektien hallinnasta, suunnittelumallien tarkentamisesta, tiimien johtamisesta ja tehtävien koordinoinnista tehokkaan yhteistyön varmistamiseksi.",
+		},
+		{
+			title: "Pehmeät taidot",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"Henkilökohtaisiin ominaisuuksiini kuuluvat tehokas aikahallinta, kehittynyt luova ajattelu, erinomainen viestintätaito, yhteistyöhalu ja helppo sopeutuminen uusiin tilanteisiin.",
 		},
 	],
 };

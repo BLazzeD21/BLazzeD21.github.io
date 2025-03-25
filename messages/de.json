@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Sprache:",
-		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} other {Unknown}}"
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} other {Unknown}}"
 	},
 	"Header": {
 		"welcome": "Mein Name ist Alexandr Sekerin",
@@ -53,7 +53,7 @@
 	"Footer": {
 		"quote": "Leben, lernen und sich jeden Tag verbessern.",
 		"copyright": "Sekerin Alexandr, {year}. Alle Rechte vorbehalten.",
-		"contactButton": "Portfolio",
+		"contactButton": "Kontakt",
 		"mailButton": "E-Mail",
 		"mailSubject": "Ihr Name - Betreff",
 		"mailBody": "Beschreibung Ihres Angebots"

@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Язык:",
-		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} other {Unknown}}"
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} other {Unknown}}"
 	},
 	"Header": {
 		"welcome": "Меня зовут Секерин Александр",
@@ -51,9 +51,9 @@
 		"title": "Мои некоммерческие проекты"
 	},
 	"Footer": {
-		"quote": "Живу, учусь и совершенствуюсь с каждым днём.",
+		"quote": "Живи, учись и совершенствуйся с каждым днём.",
 		"copyright": "Секерин Александр, {year}. Все права защищены.",
-		"contactButton": "Портфолио",
+		"contactButton": "Связаться",
 		"mailButton": "Почта",
 		"mailSubject": "Ваше имя - Заголовок",
 		"mailBody": "Описание вашего предложения"

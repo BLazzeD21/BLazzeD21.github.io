@@ -18,13 +18,13 @@ export const higherEducation: Locale<EducationType> = {
 	ru: [
 		{
 			imageUrl: "icons/education/college.svg",
-			name: "Санкт-Петербургский университет технологий управления и экономики (СПБУТУиЭ)",
+			name: "Санкт-Петербургский университет технологий управления и экономики (UMTE)",
 			location: "Среднее профессиональное образование | Санкт-Петербург (2020-2023)",
 			body: "Специальность: 09.02.05 Прикладная информатика (по отраслям).<br />Квалификация: техник-программист.",
 		},
 		{
 			imageUrl: "icons/education/university.svg",
-			name: "Санкт-Петербургский университет технологий управления и экономики (СПБУТУиЭ)",
+			name: "Санкт-Петербургский университет технологий управления и экономики (UMTE)",
 			location: "Высшее образование | Санкт-Петербург (2023-2027)",
 			body: "Специальность: 09.03.03 Прикладная информатика в экономике.<br />Квалификация: техник-программист.",
 		},
@@ -43,9 +43,28 @@ export const higherEducation: Locale<EducationType> = {
 			body: "Fachrichtung: 09.03.03 Angewandte Informatik in der Wirtschaft.<br />Abschluss: Programmiertechniker.",
 		},
 	],
+	fi: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "Pietarin johtamisteknologioiden ja taloustieteen yliopisto (UMTE)",
+			location: "Ammatillinen koulutus | Pietari (2020-2023)",
+			body: "Erikoistuminen: 09.02.05 Sovellettu informatiikka (alakohtainen).<br />Pätevyys: ohjelmoija-teknikko.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "Pietarin johtamisteknologioiden ja taloustieteen yliopisto (UMTE)",
+			location: "Korkeakoulututkinto | Pietari (2023-2027)",
+			body: "Erikoistuminen: 09.03.03 Sovellettu informatiikka taloustieteessä.<br />Pätevyys: ohjelmoija-teknikko.",
+		},
+	],
 };
 
-export const additionalEducation: { en: EducationType[]; ru: EducationType[]; de: EducationType[] } = {
+export const additionalEducation: {
+	en: EducationType[];
+	ru: EducationType[];
+	de: EducationType[];
+	fi: EducationType[];
+} = {
 	en: [
 		{
 			imageUrl: "icons/education/courses.svg",
@@ -69,7 +88,7 @@ export const additionalEducation: { en: EducationType[]; ru: EducationType[]; de
 		},
 		{
 			imageUrl: "icons/education/project.svg",
-			name: "Томский государственный университет (ТГУ)",
+			name: "Томский государственный университет (TSU)",
 			location: "Диплом цифровых кафедр | Томск (2024-2025)",
 			body: "Приобретены навыки проектного управления, в том числе с использованием методологий Agile: Scrum, Kanban в условиях цифровой экономики и для сопровождения IT проектов в компаниях.",
 		},
@@ -86,6 +105,20 @@ export const additionalEducation: { en: EducationType[]; ru: EducationType[]; de
 			name: "Staatliche Universität Tomsk (TSU)",
 			location: "Diplom der Digitalen Abteilungen | Tomsk (2024-2025)",
 			body: "Erworbene Projektmanagementfähigkeiten, einschließlich der Anwendung von Agile-Methodologien: Scrum, Kanban im Kontext der digitalen Wirtschaft und zur Unterstützung von IT-Projekten in Unternehmen.",
+		},
+	],
+	fi: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "Jatkokoulutuskeskus",
+			location: "Lisäkoulutuksen diplomi | Pietari (2015-2020)",
+			body: "Suoritettu onnistuneesti koulutus seuraavissa aiheissa: tieto- ja viestintätekniikka (ICT), olio-ohjelmoinnin perusteet, algoritmointi ja ohjelmointitekniikat, tietokantojen perusteet MS SQL Serverillä, ADO.NET, Windows-sovellusten kehittäminen C#:lla, verkkosivujen ulkoasu ja web-suunnittelun tekniikat.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "Tomskin valtionyliopisto (TSU)",
+			location: "Digitaalisten osastojen diplomi | Tomsk (2024-2025)",
+			body: "Hankitut projektinhallinnan taidot, mukaan lukien Agile-menetelmien käyttö: Scrum, Kanban digitaalisen talouden kontekstissa ja IT-projektien tukemisessa yrityksissä.",
 		},
 	],
 };

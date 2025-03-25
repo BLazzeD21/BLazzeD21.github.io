@@ -67,4 +67,26 @@ export const internalLinks: Locale<InternalLinkType> = {
 			name: "Kontakte",
 		},
 	],
+	fi: [
+		{
+			href: "#about",
+			name: "Minusta",
+		},
+		{
+			href: "#education",
+			name: "Koulutus",
+		},
+		{
+			href: "#stack",
+			name: "Teknologiat",
+		},
+		{
+			href: "#portfolio",
+			name: "Portfolio",
+		},
+		{
+			href: "#footer",
+			name: "Yhteystiedot",
+		},
+	],
 };
