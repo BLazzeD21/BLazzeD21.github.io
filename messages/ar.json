@@ -1,0 +1,65 @@
+{
+	"LocaleSwitcher": {
+		"label": "اللغة:",
+		"locale": "{locale, select, ru {الروسية} en {الإنجليزية} de {الألمانية} fi {الفنلندية} zh {الصينية} es {الإسبانية} fr {الفرنسية} ar {العربية} other {غير معروف}}"
+	},
+	"Sidepanel": {
+		"label": "الشبكات الاجتماعية"
+	},
+	"Header": {
+		"welcome": "اسمي سيكيرين ألكسندر",
+		"title": "أنا مطور من سانت بطرسبرغ",
+		"portfolioButton": "الأعمال",
+		"aboutMeButton": "معلومات عني"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "ألكسندر سيكيرين | الأعمال",
+		"keywords": "BLazzeD,Sekerin,Sekerin Alexandr,Portfolio",
+		"applicationName": "الأعمال",
+		"name": "ألكسندر سيكيرين"
+	},
+	"About": {
+		"label": "معلومات عني",
+		"title": "أنا مطور",
+		"description": "مرحباً! اسمي ألكسندر وأنا مطور. أعمل في البرمجة منذ 2017 وقمت بتنفيذ مشاريع مثل المواقع الإلكترونية، البوتات، تطبيقات سطح المكتب لنظام ويندوز وخوادم الألعاب. الآن أركز على تطوير الويب وأتعلم المزيد من التقنيات الجديدة لتحسين مهاراتي."
+	},
+	"Education": {
+		"label": "التعليم",
+		"title": "تعليمي",
+		"higherEducation": {
+			"title": "التعليم العالي"
+		},
+		"additionalEducation": {
+			"title": "تعليم إضافي"
+		}
+	},
+	"Stack": {
+		"label": "المهارات",
+		"title": "مهاراتي"
+	},
+	"StackTitles": {
+		"Databases": "قواعد البيانات",
+		"Languages": "اللغات",
+		"Frameworks, Platforms and Libraries": "الأطر، المنصات والمكتبات",
+		"Other": "أخرى"
+	},
+	"Skills": {
+		"Intermediate": "متوسط",
+		"Basic": "أساسي",
+		"Advanced": "متقدم"
+	},
+	"Portfolio": {
+		"label": "الأعمال",
+		"title": "مشاريعي غير التجارية",
+		"soon": "قريباً"
+	},
+	"Footer": {
+		"quote": "أعيش، أتعلم وأتطور يوماً بعد يوم.",
+		"copyright": "ألكسندر سيكيرين، {year}. جميع الحقوق محفوظة.",
+		"contactButton": "اتصل",
+		"mailButton": "البريد",
+		"mailSubject": "اسمك - العنوان",
+		"mailBody": "وصف عرضك"
+	}
+}

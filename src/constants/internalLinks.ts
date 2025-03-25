@@ -155,4 +155,11 @@ export const internalLinks: Locale<InternalLinkType> = {
 			name: "Contact",
 		},
 	],
+	ar: [
+		{ href: "#about", name: "معلومات عني" },
+		{ href: "#education", name: "التعليم" },
+		{ href: "#stack", name: "المهارات التقنية" },
+		{ href: "#portfolio", name: "أعمالي" },
+		{ href: "#footer", name: "اتصل بي" },
+	],
 };

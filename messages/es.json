@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Idioma:",
-		"locale": "{locale, select, ru {Ruso} en {Inglés} de {Alemán} fi {Finlandés} zh {Chino} es {Español} fr {Francés} other {Desconocido}}"
+		"locale": "{locale, select, ru {Ruso} en {Inglés} de {Alemán} fi {Finés} zh {Chino} es {Español} fr {Francés} ar {Árabe} other {Desconocido}}"
 	},
 	"Sidepanel": {
 		"label": "Redes sociales"

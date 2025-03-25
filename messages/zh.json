@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "语言：",
-		"locale": "{locale, select, ru {俄语} en {英语} de {德语} fi {芬兰语} zh {中文} es {西班牙语} fr {法语} other {未知}}"
+		"locale": "{locale, select, ru {俄语} en {英语} de {德语} fi {芬兰语} zh {中文} es {西班牙语} fr {法语} ar {阿拉伯语} other {未知}}"
 	},
 	"Sidepanel": {
 		"label": "社交网络"

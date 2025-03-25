@@ -181,4 +181,29 @@ export const skillsList: Locale<SkillsListType> = {
 				"Mes qualités personnelles incluent une gestion du temps efficace, une forte créativité, d'excellentes compétences relationnelles, un esprit collaboratif et une grande capacité d'adaptation.",
 		},
 	],
+	ar: [
+		{
+			title: "تطوير الويب",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"أنا مطور واجهات أمامية بخبرة في HTML، CSS، المعالجات المسبقة، حزم الوحدات، أطر عمل CSS، هندسة CSS (BEM)، JS، TS، React، إدارة الحالة، التقديم من الخادم، Express، واجهات برمجة التطبيقات REST، وWebSocket.",
+		},
+		{
+			title: "هندسة البرمجيات",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"قمت بتطوير تطبيقات WPF وWinForms باستخدام قواعد بيانات MySQL وPostgreSQL، وإنشاء تطبيقات سهلة الاستخدام ووظيفية لإدارة البيانات.",
+		},
+		{
+			title: "تعدد المهام",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description: "خبرة في إدارة المشاريع، تحسين نماذج التصميم، قيادة الفرق، وتنسيق المهام للتعاون الفعال.",
+		},
+		{
+			title: "المهارات الناعمة",
+			imageSrc: "/icons/skills/soft.svg",
+			description:
+				"تشمل صفاتي الشخصية الإدارة الفعالة للوقت، التفكير الإبداعي المتطور، مهارات اتصال عالية، الاستعداد للتعاون وسهولة التكيف.",
+		},
+	],
 };

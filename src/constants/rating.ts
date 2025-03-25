@@ -57,4 +57,12 @@ export const ratings: Locale<RatingType> = {
 		{ percentage: 80, name: "Design UX/UI" },
 		{ percentage: 94, name: "Compétences relationnelles" },
 	],
+	ar: [
+		{ percentage: 95, name: "تطوير المواقع" },
+		{ percentage: 75, name: "تطوير التطبيقات" },
+		{ percentage: 90, name: "تحسين محركات البحث" },
+		{ percentage: 90, name: "الإبداع" },
+		{ percentage: 80, name: "تصميم واجهة المستخدم" },
+		{ percentage: 94, name: "المهارات الناعمة" },
+	],
 };

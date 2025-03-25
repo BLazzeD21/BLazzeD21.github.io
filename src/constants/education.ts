@@ -99,6 +99,20 @@ export const higherEducation: Locale<EducationType> = {
 			body: "Spécialité : 09.03.03 Informatique appliquée en économie.<br />Qualification : technicien-programmeur.",
 		},
 	],
+	ar: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "جامعة سانت بطرسبرغ لتقنيات الإدارة والاقتصاد (UMTE)",
+			location: "تعليم مهني ثانوي | سانت بطرسبرغ (2020-2023)",
+			body: "التخصص: 09.02.05 المعلوماتية التطبيقية (حسب الصناعة).<br />المؤهل: فني برمجة.",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "جامعة سانت بطرسبرغ لتقنيات الإدارة والاقتصاد (UMTE)",
+			location: "تعليم عالي | سانت بطرسبرغ (2023-2027)",
+			body: "التخصص: 09.03.03 المعلوماتية التطبيقية في الاقتصاد.<br />المؤهل: فني برمجة.",
+		},
+	],
 };
 
 export const additionalEducation: Locale<EducationType> = {
@@ -198,6 +212,20 @@ export const additionalEducation: Locale<EducationType> = {
 			name: "Université d'État de Tomsk (TSU)",
 			location: "Diplôme des départements numériques | Tomsk (2024-2025)",
 			body: "Acquisition de compétences en gestion de projet, y compris l'utilisation des méthodologies Agile : Scrum, Kanban dans le contexte de l'économie numérique et pour soutenir les projets informatiques en entreprise.",
+		},
+	],
+	ar: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "مركز التعليم المستمر",
+			location: "دبلوم التعليم الإضافي | سانت بطرسبرغ (2015-2020)",
+			body: "أكملت بنجاح التدريب في مجالات: تكنولوجيا المعلومات والاتصالات، أساسيات البرمجة الشيئية، الخوارزميات وتقنيات البرمجة، أساسيات بناء قواعد البيانات باستخدام MS SQL Server، ADO.NET، تطوير تطبيقات Windows باستخدام C#، تخطيط المواقع وتقنيات تصميم الويب.",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "جامعة تومسك الحكومية (TSU)",
+			location: "دبلوم الأقسام الرقمية | تومسك (2024-2025)",
+			body: "اكتسبت مهارات إدارة المشاريع، بما في ذلك استخدام منهجيات Agile: Scrum، Kanban في سياق الاقتصاد الرقمي ودعم مشاريع تكنولوجيا المعلومات في الشركات.",
 		},
 	],
 };
