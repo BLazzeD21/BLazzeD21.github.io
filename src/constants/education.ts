@@ -57,14 +57,23 @@ export const higherEducation: Locale<EducationType> = {
 			body: "Erikoistuminen: 09.03.03 Sovellettu informatiikka taloustieteessä.<br />Pätevyys: ohjelmoija-teknikko.",
 		},
 	],
+	zh: [
+		{
+			imageUrl: "icons/education/college.svg",
+			name: "圣彼得堡管理与经济技术大学（UMTE）",
+			location: "中等职业教育 | 圣彼得堡（2020-2023）",
+			body: "专业方向：09.02.05 应用信息技术（行业方向）<br />获得职称：程序员技术员",
+		},
+		{
+			imageUrl: "icons/education/university.svg",
+			name: "圣彼得堡管理与经济技术大学（UMTE）",
+			location: "高等教育 | 圣彼得堡（2023-2027）",
+			body: "专业方向：09.03.03 经济应用信息技术<br />获得职称：程序员技术员",
+		},
+	],
 };
 
-export const additionalEducation: {
-	en: EducationType[];
-	ru: EducationType[];
-	de: EducationType[];
-	fi: EducationType[];
-} = {
+export const additionalEducation: Locale<EducationType> = {
 	en: [
 		{
 			imageUrl: "icons/education/courses.svg",
@@ -119,6 +128,20 @@ export const additionalEducation: {
 			name: "Tomskin valtionyliopisto (TSU)",
 			location: "Digitaalisten osastojen diplomi | Tomsk (2024-2025)",
 			body: "Hankitut projektinhallinnan taidot, mukaan lukien Agile-menetelmien käyttö: Scrum, Kanban digitaalisen talouden kontekstissa ja IT-projektien tukemisessa yrityksissä.",
+		},
+	],
+	zh: [
+		{
+			imageUrl: "icons/education/courses.svg",
+			name: "继续教育中心",
+			location: "附加教育文凭 | 圣彼得堡（2015-2020）",
+			body: "已完成以下领域培训：信息通信技术（ICT）、面向对象编程基础、算法与编程技术、基于MS SQL Server的数据库构建基础、ADO.NET、C#语言Windows应用开发、网站布局与网页设计技术。",
+		},
+		{
+			imageUrl: "icons/education/project.svg",
+			name: "托木斯克国立大学（TSU）",
+			location: "数字院系文凭 | 托木斯克（2024-2025）",
+			body: "掌握项目管理技能，包括在数字经济背景下运用敏捷开发方法（Scrum/Kanban）支持企业IT项目。",
 		},
 	],
 };

@@ -2,7 +2,7 @@
 	width: 100%;
 }
 
-.notFound {
+.page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,7 +13,7 @@
 	background-color: var(--dark-pink-color);
 }
 
-.notFound .background {
+.page .background {
 	font-family: var(--font-quicksand);
 	display: flex;
 	flex-direction: column;
@@ -27,10 +27,10 @@
 	opacity: 0.2;
 }
 
-.notFound h1 {
+.page h1 {
 	margin-bottom: 30px;
 }
 
-.notFound p {
+.page p {
 	margin-bottom: 30px;
 }

@@ -4,7 +4,7 @@ import { LinkButton, P, Title } from "@/shared/UI";
 
 export default function GlobalNotFound() {
 	return (
-		<div className={styles.notFound}>
+		<div className={styles.page}>
 			<P className={styles.background}>404</P>
 			<Title size="56" Tag="h1">
 				Not Found

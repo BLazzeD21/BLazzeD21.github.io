@@ -33,4 +33,12 @@ export const ratings: Locale<RatingType> = {
 		{ percentage: 80, name: "UX/UI-suunnittelu" },
 		{ percentage: 94, name: "Pehmeät taidot" },
 	],
+	zh: [
+		{ percentage: 95, name: "网站开发" },
+		{ percentage: 75, name: "应用开发" },
+		{ percentage: 90, name: "SEO优化" },
+		{ percentage: 90, name: "创意能力" },
+		{ percentage: 80, name: "UX/UI设计" },
+		{ percentage: 94, name: "软技能" },
+	],
 };

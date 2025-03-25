@@ -105,4 +105,28 @@ export const skillsList: Locale<SkillsListType> = {
 				"Henkilökohtaisiin ominaisuuksiini kuuluvat tehokas aikahallinta, kehittynyt luova ajattelu, erinomainen viestintätaito, yhteistyöhalu ja helppo sopeutuminen uusiin tilanteisiin.",
 		},
 	],
+	zh: [
+		{
+			title: "Web开发",
+			imageSrc: "/icons/skills/web.svg",
+			description:
+				"我是一名前端开发工程师，熟练掌握HTML、CSS、预处理器、模块打包工具、CSS框架、BEM架构、JavaScript、TypeScript、React状态管理、服务端渲染(SSR)、Express框架、REST API和WebSocket等技术。",
+		},
+		{
+			title: "软件开发",
+			imageSrc: "/icons/skills/software.svg",
+			description:
+				"具有WPF和WinForms应用程序开发经验，使用MySQL和PostgreSQL数据库构建用户友好且功能完善的数据管理系统。",
+		},
+		{
+			title: "多任务处理",
+			imageSrc: "/icons/skills/multitasking.svg",
+			description: "擅长项目管理、设计稿优化、团队协作与任务协调，能够高效推进多线程工作。",
+		},
+		{
+			title: "软技能",
+			imageSrc: "/icons/skills/soft.svg",
+			description: "具备高效的时间管理能力、创造性思维、出色的沟通技巧、团队协作精神以及快速适应能力。",
+		},
+	],
 };

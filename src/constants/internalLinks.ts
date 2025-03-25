@@ -89,4 +89,26 @@ export const internalLinks: Locale<InternalLinkType> = {
 			name: "Yhteystiedot",
 		},
 	],
+	zh: [
+		{
+			href: "#about",
+			name: "关于我",
+		},
+		{
+			href: "#education",
+			name: "教育背景",
+		},
+		{
+			href: "#stack",
+			name: "技术栈",
+		},
+		{
+			href: "#portfolio",
+			name: "作品集",
+		},
+		{
+			href: "#footer",
+			name: "联系方式",
+		},
+	],
 };

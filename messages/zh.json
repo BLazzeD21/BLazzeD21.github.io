@@ -1,0 +1,61 @@
+{
+	"LocaleSwitcher": {
+		"label": "语言：",
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} zh {中国人} other {Unknown}}"
+	},
+	"Header": {
+		"welcome": "我是亚历山大·谢克林",
+		"title": "我是一名来自圣彼得堡的开发者",
+		"portfolioButton": "作品集",
+		"aboutMeButton": "关于我"
+	},
+	"MetaData": {
+		"domain": "https://blazzed.space",
+		"pageTitle": "亚历山大·谢克林 | 作品集",
+		"keywords": "BLazzeD,谢克林,亚历山大·谢克林,作品集",
+		"applicationName": "作品集",
+		"name": "亚历山大·谢克林"
+	},
+	"About": {
+		"label": "关于我",
+		"title": "我是开发者",
+		"description": "你好！我是亚历山大，一名开发者。自2017年开始编程，已完成网站、机器人、Windows桌面应用程序和游戏服务器等项目。目前正深入钻研Web开发，持续学习新技术以不断提升自己。"
+	},
+	"Education": {
+		"label": "教育背景",
+		"title": "我的教育经历",
+		"higherEducation": {
+			"title": "高等教育"
+		},
+		"additionalEducation": {
+			"title": "附加教育"
+		}
+	},
+	"Stack": {
+		"label": "技术栈",
+		"title": "我的技能"
+	},
+	"StackTitles": {
+		"Databases": "数据库",
+		"Languages": "编程语言",
+		"Frameworks, Platforms and Libraries": "框架、平台与库",
+		"Other": "其他"
+	},
+	"Skills": {
+		"Intermediate": "中等熟练",
+		"Basic": "基础掌握",
+		"Advanced": "高级精通"
+	},
+	"Portfolio": {
+		"label": "作品集",
+		"title": "我的非商业项目"
+	},
+	"Footer": {
+		"quote": "生活不息，学无止境，日有所进。",
+		"copyright": "亚历山大·谢克林，{year}。保留所有权利。",
+		"contactButton": "联系我",
+		"mailButton": "电子邮件",
+		"mailSubject": "您的姓名 - 主题",
+		"mailBody": "请描述您的需求"
+	}
+}

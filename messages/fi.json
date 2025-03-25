@@ -1,7 +1,7 @@
 {
 	"LocaleSwitcher": {
 		"label": "Kieli:",
-		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} other {Unknown}}"
+		"locale": "{locale, select, ru {Русский} en {English} de {Deutsch} fi {Finnisch} zh {中国人} other {Unknown}}"
 	},
 	"Header": {
 		"welcome": "Nimeni on Sekerin Alexandr",
