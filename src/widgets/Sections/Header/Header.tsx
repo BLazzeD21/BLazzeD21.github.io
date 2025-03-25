@@ -6,9 +6,10 @@ import { HeaderProps } from "./header.props";
 
 import { LinkButton, Title } from "@/shared/UI";
 
-import { Burger } from "@/widgets";
+// import { Burger } from "@/widgets";
 
 import { ParticlesBlock } from "@/widgets/Blocks";
+import { Burger } from "@/widgets/Burger/Burger";
 import { HeaderWave } from "@/widgets/Waves";
 
 export const Header = ({ internalLinks, socialLinks }: HeaderProps) => {

@@ -14,13 +14,15 @@
 }
 
 .notFound .background {
+	font-family: var(--font-quicksand);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 70rem;
+	font-size: 60rem;
+	line-height: 60rem;
 	position: fixed;
-	width: 100vw;
+	width: 80vw;
 	height: 100%;
 	opacity: 0.2;
 }

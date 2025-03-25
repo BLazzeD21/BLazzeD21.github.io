@@ -3,8 +3,8 @@
 	"version": "0.2.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack --port 5500 --experimental-https",
-		"build": "next build",
+		"dev": "next dev --turbo --port 5500 --experimental-https",
+		"build": "next build --debug",
 		"start": "next start",
 		"type": "tsc --noEmit",
 		"stylelint": "stylelint \"**/*.css\" --fix",
@@ -14,24 +14,24 @@
 		"pre-commit": "concurrently -p \"[{name}]\" -n \"typescript,prettier,eslint,stylelint\" -c \"cyan.bold,green.bold,red.bold,blue.bold\" \"npm run type\" \"npm run prettier\" \"npm run lint\" \"npm run stylelint\""
 	},
 	"dependencies": {
-		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
-		"@tsparticles/engine": "^3.8.1",
-		"@tsparticles/react": "^3.0.0",
-		"@tsparticles/slim": "^3.8.1",
-		"@vercel/analytics": "^1.5.0",
-		"@vercel/speed-insights": "^1.2.0",
 		"classnames": "^2.5.1",
-		"next": "15.2.2",
-		"next-intl": "^4.0.2",
+		"next": "^15.2.4",
+		"next-intl": "^4.0.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"uuid": "^11.1.0"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@tsparticles/engine": "^3.8.1",
+		"@tsparticles/react": "^3.0.0",
+		"@tsparticles/slim": "^3.8.1",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"@vercel/analytics": "^1.5.0",
+		"@vercel/speed-insights": "^1.2.0",
 		"concurrently": "^9.1.2",
 		"eslint": "^9",
 		"eslint-config-next": "15.2.2",
@@ -39,6 +39,6 @@
 		"stylelint": "^16.16.0",
 		"stylelint-config-css-modules": "^4.4.0",
 		"stylelint-config-standard": "^37.0.0",
-		"typescript": "^5"
+		"typescript": "^5.5.3"
 	}
 }

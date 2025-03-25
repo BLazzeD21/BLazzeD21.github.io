@@ -10,8 +10,10 @@ import { MenuProps } from "./menu.props";
 
 import { SocialLink } from "@/widgets";
 
-import { LocaleSwitcher } from "@/widgets/Locale";
+import "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
+
+import LocaleSwitcher from "../Locale/LocaleSwitcher/LocaleSwitcher";
 
 /* eslint-disable react-hooks/exhaustive-deps */
 

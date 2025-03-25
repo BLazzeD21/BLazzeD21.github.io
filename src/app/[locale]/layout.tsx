@@ -9,7 +9,7 @@ import "../globals.css";
 
 import { GetMetadata } from "@/config";
 
-import { routing } from "@/i18n";
+import { routing } from "@/i18n/routing";
 
 type Props = {
 	children: ReactNode;
@@ -28,13 +28,13 @@ const ruda = Ruda({
 	weight: ["400", "500", "600", "700"],
 });
 
+export function generateStaticParams() {
+	return routing.locales.map((locale) => ({ locale }));
+}
+
 export const viewport: Viewport = {
 	themeColor: "white",
 };
-
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
-}
 
 export async function generateMetadata(props: Omit<Props, "children">) {
 	const { locale } = await props.params;
@@ -54,8 +54,8 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
+	// Ensure that the incoming `locale` is valid
 	const { locale } = await params;
-
 	if (!hasLocale(routing.locales, locale)) {
 		notFound();
 	}

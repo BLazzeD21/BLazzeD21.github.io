@@ -1,9 +1,20 @@
 import { useLocale, useTranslations } from "next-intl";
 
-import { LocaleSwitcherButton } from "@/widgets/Locale";
+import { routing } from "@/i18n/routing";
 
-export const LocaleSwitcher = () => {
+import LocaleSwitcherSelect from "../LocaleSwitcherButton/LocaleSwitcherButton";
+
+export default function LocaleSwitcher() {
+	const t = useTranslations("LocaleSwitcher");
 	const locale = useLocale();
-	const text = useTranslations("LocaleSwitcher");
-	return <LocaleSwitcherButton currentLocale={locale} label={text("label")} />;
-};
+
+	return (
+		<LocaleSwitcherSelect defaultValue={locale} label={t("label")}>
+			{routing.locales.map((cur) => (
+				<option key={cur} value={cur}>
+					{t("locale", { locale: cur })}
+				</option>
+			))}
+		</LocaleSwitcherSelect>
+	);
+}
