@@ -1,6 +1,6 @@
 import { JSX } from "react";
 
-import styles from "./page.module.css";
+import styles from "./styles.module.css";
 
 import { LinkButton, P, Title } from "@/shared/UI";
 
