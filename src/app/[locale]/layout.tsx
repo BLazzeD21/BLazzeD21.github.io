@@ -4,6 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Quicksand, Ruda } from "next/font/google";
 import { notFound } from "next/navigation";
 import { JSX, ReactNode } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import "../globals.css";
 
@@ -67,6 +69,8 @@ export default async function LocaleLayout({ children, params }: Props): Promise
 		<html lang={locale} className={locale !== "ru" ? "quicksand" : "ruda"}>
 			<body className={`${locale !== "ru" ? quicksand.variable : ruda.variable} font-sans`}>
 				<NextIntlClientProvider>{children}</NextIntlClientProvider>
+				<SpeedInsights />
+				<Analytics/>
 			</body>
 		</html>
 	);
