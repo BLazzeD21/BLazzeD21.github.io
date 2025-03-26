@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { JSX } from "react";
 
 import styles from "./p.module.css";
 
@@ -14,6 +15,6 @@ const sizeClasses = {
 	"20": styles.fz20,
 };
 
-export const P = ({ className, children, color = "white", size = "20" }: PProps) => {
+export const P = ({ className, children, color = "white", size = "20" }: PProps): JSX.Element => {
 	return <p className={classNames(styles.text, className, colorsClasses[color], sizeClasses[size], {})}>{children}</p>;
 };

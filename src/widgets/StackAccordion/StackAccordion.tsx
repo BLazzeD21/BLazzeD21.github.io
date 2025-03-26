@@ -2,7 +2,7 @@
 
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { JSX, useState } from "react";
 
 import styles from "./stackAccordion.module.css";
 
@@ -14,12 +14,12 @@ import { Levels } from "@/types";
 
 import { sortSkillsByLevel } from "@/utils";
 
-export const StackAccordion = ({ stack }: StackAccordionProps) => {
+export const StackAccordion = ({ stack }: StackAccordionProps): JSX.Element => {
 	const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
 	const stackTitles = useTranslations("StackTitles");
 
-	const toggleCategory = (category: string) => {
+	const toggleCategory = (category: string): void => {
 		setExpandedCategory((prev) => (prev === category ? null : category));
 	};
 

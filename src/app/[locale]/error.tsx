@@ -1,10 +1,12 @@
 "use client";
 
+import { JSX } from "react";
+
 import styles from "./page.module.css";
 
 import { LinkButton, P, Title } from "@/shared/UI";
 
-export default function Error() {
+export default function Error(): JSX.Element {
 	return (
 		<div className={styles.page}>
 			<P className={styles.background}>zZz</P>

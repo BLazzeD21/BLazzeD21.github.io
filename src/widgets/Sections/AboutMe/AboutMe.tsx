@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { JSX } from "react";
 
 import styles from "./aboutMe.module.css";
 
@@ -8,7 +9,7 @@ import { P, Photo, Title } from "@/shared/UI";
 
 import { SkillBlock } from "@/widgets/Blocks";
 
-export const AboutMe = ({ skillsList }: AboutMeProps) => {
+export const AboutMe = ({ skillsList }: AboutMeProps): JSX.Element => {
 	const text = useTranslations("About");
 
 	return (

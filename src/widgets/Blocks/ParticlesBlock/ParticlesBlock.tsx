@@ -3,13 +3,13 @@
 import { type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useMemo, useState } from "react";
+import { JSX, useEffect, useMemo, useState } from "react";
 
 import styles from "./particlesBlock.module.css";
 
 import { ParticlesBlockProps } from "./particlesBlock.props";
 
-export const ParticlesBlock = ({ speed = 4, value = 175 }: ParticlesBlockProps) => {
+export const ParticlesBlock = ({ speed = 4, value = 175 }: ParticlesBlockProps): JSX.Element => {
 	const [init, setInit] = useState(false);
 
 	useEffect(() => {

@@ -1,10 +1,12 @@
+import { JSX } from "react";
+
 import styles from "./rating.module.css";
 
 import { RatingProps } from "./rating.props";
 
 import { RatingBlock } from "@/widgets/Blocks";
 
-export const Rating = ({ ratings }: RatingProps) => {
+export const Rating = ({ ratings }: RatingProps): JSX.Element => {
 	return (
 		<div className={styles.rating}>
 			{ratings.map((rating, index) => (

@@ -1,16 +1,16 @@
 "use client";
 
 import classNames from "classnames";
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 
 import styles from "./pageUp.module.css";
 
 import { Arrow } from "@/shared/Icons";
 
-export const PageUp = () => {
+export const PageUp = (): JSX.Element => {
 	const [isVisible, setIsVisible] = useState(false);
 
-	const scrollToTop = () => {
+	const scrollToTop = (): void => {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
@@ -18,7 +18,7 @@ export const PageUp = () => {
 	};
 
 	useEffect(() => {
-		const handleScroll = () => {
+		const handleScroll = (): void => {
 			if (window.scrollY > window.innerHeight) {
 				setIsVisible(true);
 			} else {
@@ -28,7 +28,7 @@ export const PageUp = () => {
 
 		window.addEventListener("scroll", handleScroll);
 
-		return () => window.removeEventListener("scroll", handleScroll);
+		return (): void => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	return (

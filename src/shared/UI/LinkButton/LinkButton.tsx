@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import Link from "next/link";
+import { JSX } from "react";
 
 import styles from "./linkButton.module.css";
 
@@ -10,8 +11,9 @@ export const LinkButton = ({
 	buttonStyle = "transparent",
 	className,
 	children,
+	scroll = false,
 	...props
-}: LinkButtonProps) => {
+}: LinkButtonProps): JSX.Element => {
 	return (
 		<Link
 			href={link}
@@ -20,6 +22,7 @@ export const LinkButton = ({
 				[styles.navyBlue]: buttonStyle === "navyBlue",
 				[styles.darkPink]: buttonStyle === "darkPink",
 			})}
+			scroll={scroll}
 			{...props}
 		>
 			{children}

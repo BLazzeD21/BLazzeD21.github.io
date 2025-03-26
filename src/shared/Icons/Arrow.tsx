@@ -1,4 +1,6 @@
-export const Arrow = () => {
+import { JSX } from "react";
+
+export const Arrow = (): JSX.Element => {
 	return (
 		<svg height="14" width="12.25" viewBox="0 0 448 512">
 			<path

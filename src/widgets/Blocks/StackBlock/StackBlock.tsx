@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { JSX } from "react";
 
 import styles from "./stackBlock.module.css";
 
@@ -14,7 +15,7 @@ const levelClasses = {
 	Advanced: styles.advanced,
 };
 
-export const StackBlock = ({ name, imageSrc, level }: StackBlockProps) => {
+export const StackBlock = ({ name, imageSrc, level }: StackBlockProps): JSX.Element => {
 	const levels = useTranslations("Skills");
 
 	return (

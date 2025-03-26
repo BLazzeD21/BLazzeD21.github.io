@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { JSX } from "react";
 
 import styles from "./sidepanel.module.css";
 
@@ -6,7 +7,7 @@ import { SidepanelProps } from "./sidepanel.props";
 
 import { SocialLink } from "@/widgets";
 
-export const Sidepanel = ({ socialLinks }: SidepanelProps) => {
+export const Sidepanel = ({ socialLinks }: SidepanelProps): JSX.Element => {
 	const text = useTranslations("Sidepanel");
 
 	return (

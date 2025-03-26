@@ -1,7 +1,7 @@
 "use client";
 
 import classNames from "classnames";
-import { useState } from "react";
+import { JSX, useState } from "react";
 
 import styles from "./burger.module.css";
 
@@ -9,7 +9,7 @@ import { BurgerProps } from "./burger.props";
 
 import { Menu } from "@/widgets";
 
-export const Burger = ({ internalLinks, socialLinks }: BurgerProps) => {
+export const Burger = ({ internalLinks, socialLinks }: BurgerProps): JSX.Element => {
 	const [isShowMenu, setIsShowMenu] = useState(false);
 
 	return (

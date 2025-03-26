@@ -1,21 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 
 import styles from "./customCursor.module.css";
 
 import { Cursor } from "@/shared/Icons";
 
-export const CustomCursor = () => {
+export const CustomCursor = (): JSX.Element => {
 	const [position, setPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 	const [isHovered, setIsHovered] = useState<boolean>(false);
 
 	useEffect(() => {
-		const moveCursor = (event: globalThis.MouseEvent) => {
+		const moveCursor = (event: globalThis.MouseEvent): void => {
 			setPosition({ x: event.clientX, y: event.clientY });
 		};
 
-		const handleHover = (event: globalThis.MouseEvent) => {
+		const handleHover = (event: globalThis.MouseEvent): void => {
 			const target = event.target as HTMLElement;
 
 			const interactiveTags = ["A", "BUTTON", "INPUT", "TEXTAREA", "SELECT", "LABEL"];
@@ -30,7 +30,7 @@ export const CustomCursor = () => {
 		window.addEventListener("mousemove", moveCursor);
 		window.addEventListener("mouseover", handleHover);
 
-		return () => {
+		return (): void => {
 			window.removeEventListener("mousemove", moveCursor);
 			window.removeEventListener("mouseover", handleHover);
 		};

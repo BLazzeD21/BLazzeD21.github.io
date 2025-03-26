@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { JSX } from "react";
 
 import styles from "./education.module.css";
 
@@ -9,7 +10,7 @@ import { Title } from "@/shared/UI";
 import { EducationBlock } from "@/widgets/Blocks";
 import { AboutMeWave } from "@/widgets/Waves";
 
-export const Education = ({ higherEducation, additionalEducation }: EducationProps) => {
+export const Education = ({ higherEducation, additionalEducation }: EducationProps): JSX.Element => {
 	const educationText = useTranslations("Education");
 
 	return (

@@ -2,7 +2,8 @@
 
 import classNames from "classnames";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { JSX, useEffect, useRef } from "react";
 
 import styles from "./menu.module.css";
 
@@ -14,9 +15,7 @@ import "@/widgets/Locale";
 import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
 
-/* eslint-disable react-hooks/exhaustive-deps */
-
-export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProps) => {
+export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProps): JSX.Element => {
 	const modalRef = useRef<HTMLDivElement>(null);
 
 	const handleClickOutside = (event: MouseEvent): void => {
@@ -34,7 +33,7 @@ export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProp
 	useEffect(() => {
 		document.body.addEventListener("click", handleClickOutside);
 		document.body.addEventListener("keydown", handlePressEscape);
-		return () => {
+		return (): void => {
 			document.body.removeEventListener("click", handleClickOutside);
 			document.body.removeEventListener("keydown", handlePressEscape);
 		};
@@ -56,7 +55,7 @@ export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProp
 							<ul className={styles.list}>
 								{internalLinks.map((socialLink, index) => (
 									<li key={`menu-${index}`} className={styles.link} onClick={() => setIsShow(false)}>
-										<a href={socialLink.href}>{socialLink.name}</a>
+										<Link href={socialLink.href}>{socialLink.name}</Link>
 									</li>
 								))}
 							</ul>

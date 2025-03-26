@@ -1,15 +1,17 @@
-import { Viewport } from "next";
+import { Metadata, Viewport } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Quicksand, Ruda } from "next/font/google";
 import { notFound } from "next/navigation";
-import { ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 
 import "../globals.css";
 
 import { GetMetadata } from "@/config";
 
 import { routing } from "@/i18n/routing";
+
+import { LocaleKeys } from "@/types";
 
 type Props = {
 	children: ReactNode;
@@ -28,7 +30,7 @@ const ruda = Ruda({
 	weight: ["400", "500", "600", "700"],
 });
 
-export function generateStaticParams() {
+export function generateStaticParams(): Array<{ locale: LocaleKeys }> {
 	return routing.locales.map((locale) => ({ locale }));
 }
 
@@ -36,7 +38,7 @@ export const viewport: Viewport = {
 	themeColor: "white",
 };
 
-export async function generateMetadata(props: Omit<Props, "children">) {
+export async function generateMetadata(props: Omit<Props, "children">): Promise<Metadata> {
 	const { locale } = await props.params;
 
 	const text = await getTranslations({ locale, namespace: "MetaData" });
@@ -53,7 +55,7 @@ export async function generateMetadata(props: Omit<Props, "children">) {
 	});
 }
 
-export default async function LocaleLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, params }: Props): Promise<JSX.Element> {
 	const { locale } = await params;
 	if (!hasLocale(routing.locales, locale)) {
 		notFound();

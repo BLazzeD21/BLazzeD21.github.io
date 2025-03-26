@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { JSX } from "react";
 
 import styles from "./photo.module.css";
 
-export const Photo = () => {
+export const Photo = (): JSX.Element => {
 	return (
 		<div className={styles.photo}>
 			<div className={styles.wrapper}>

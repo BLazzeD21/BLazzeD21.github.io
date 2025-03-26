@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { JSX } from "react";
 
 import styles from "./footer.module.css";
 
@@ -9,7 +10,7 @@ import { LinkButton } from "@/shared/UI";
 
 import { SocialLink } from "@/widgets";
 
-export const Footer = ({ socialLinks, internalLinks }: FooterProps) => {
+export const Footer = ({ socialLinks, internalLinks }: FooterProps): JSX.Element => {
 	const year = new Date().getFullYear();
 
 	const text = useTranslations("Footer");

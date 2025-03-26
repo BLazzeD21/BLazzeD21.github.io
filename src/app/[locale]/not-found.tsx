@@ -1,8 +1,10 @@
+import { JSX } from "react";
+
 import styles from "./page.module.css";
 
 import { LinkButton, P, Title } from "@/shared/UI";
 
-export default function GlobalNotFound() {
+export default function GlobalNotFound(): JSX.Element {
 	return (
 		<div className={styles.page}>
 			<P className={styles.background}>404</P>

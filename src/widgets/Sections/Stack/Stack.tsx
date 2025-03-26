@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { JSX } from "react";
 
 import styles from "./stack.module.css";
 
@@ -10,7 +11,7 @@ import { Rating, StackAccordion } from "@/widgets";
 
 import { EducationWave } from "@/widgets/Waves";
 
-export const Stack = ({ ratings, stack }: StackProps) => {
+export const Stack = ({ ratings, stack }: StackProps): JSX.Element => {
 	const text = useTranslations("Stack");
 
 	return (

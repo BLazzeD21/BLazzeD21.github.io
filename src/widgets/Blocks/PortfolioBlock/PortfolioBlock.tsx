@@ -1,14 +1,15 @@
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import { JSX } from "react";
 
 import styles from "./portfolioBlock.module.css";
 
 import { PortfolioBlockProps } from "./portfolioBlock.props";
 
-export const PortfolioBlock = ({ item, soonText }: PortfolioBlockProps) => {
+export const PortfolioBlock = ({ item, soonText }: PortfolioBlockProps): JSX.Element => {
 	const ImageBlock = item.imageSrc ? (
-		<Image src={item.imageSrc} alt={item.altText} width={280} height={280} sizes="100%" quality={100} />
+		<img src={item.imageSrc} alt={item.altText} />
 	) : (
 		<div className={styles.soon}>
 			<p>{soonText}</p>

@@ -1,5 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
+import { JSX, use } from "react";
 
 import { PageUp, Sidepanel } from "@/widgets";
 
@@ -20,7 +20,7 @@ type Props = {
 	params: Promise<{ locale: "ru" | "ru" }>;
 };
 
-export default function IndexPage({ params }: Props) {
+export default function IndexPage({ params }: Props): JSX.Element {
 	const { locale } = use(params);
 
 	setRequestLocale(locale);

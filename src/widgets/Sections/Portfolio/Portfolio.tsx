@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { JSX } from "react";
 
 import styles from "./portfolio.module.css";
 
@@ -9,7 +10,7 @@ import { Title } from "@/shared/UI";
 import { PortfolioBlock } from "@/widgets/Blocks";
 import { FooterWave, StackWave } from "@/widgets/Waves";
 
-export const Portfolio = ({ portfolioItems }: PortfolioProps) => {
+export const Portfolio = ({ portfolioItems }: PortfolioProps): JSX.Element => {
 	const text = useTranslations("Portfolio");
 
 	return (

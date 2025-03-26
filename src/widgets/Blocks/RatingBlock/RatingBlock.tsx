@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef, useState } from "react";
 
 import styles from "./ratingBlock.module.css";
 
@@ -8,7 +8,7 @@ import { RatingBlockProps } from "./ratingBlock.props";
 
 import { P, Title } from "@/shared/UI";
 
-export const RatingBlock = ({ percentage, name }: RatingBlockProps) => {
+export const RatingBlock = ({ percentage, name }: RatingBlockProps): JSX.Element => {
 	const spanRef = useRef<HTMLSpanElement>(null);
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -33,7 +33,7 @@ export const RatingBlock = ({ percentage, name }: RatingBlockProps) => {
 
 		observer.observe(spanElement);
 
-		return () => {
+		return (): void => {
 			observer.unobserve(spanElement);
 		};
 	}, []);

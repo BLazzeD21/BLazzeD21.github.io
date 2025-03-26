@@ -1,8 +1,9 @@
 import classNames from "classnames";
+import { JSX } from "react";
 
 import styles from "./waves.module.css";
 
-export const HeaderWave = () => {
+export const HeaderWave = (): JSX.Element => {
 	return (
 		<svg
 			className={classNames(styles.headerWave, styles.darkPink, styles.transformDown)}

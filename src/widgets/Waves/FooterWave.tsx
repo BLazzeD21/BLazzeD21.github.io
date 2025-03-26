@@ -1,8 +1,9 @@
 import classNames from "classnames";
+import { JSX } from "react";
 
 import styles from "./waves.module.css";
 
-export const FooterWave = () => {
+export const FooterWave = (): JSX.Element => {
 	return (
 		<div className={classNames(styles.footerWave, styles.transformDown)}>
 			<svg

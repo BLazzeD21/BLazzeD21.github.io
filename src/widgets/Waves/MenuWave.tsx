@@ -1,8 +1,9 @@
 import classNames from "classnames";
+import { JSX } from "react";
 
 import styles from "./waves.module.css";
 
-export const MenuWave = () => {
+export const MenuWave = (): JSX.Element => {
 	return (
 		<div className={classNames(styles.menuWave, styles.transformLeft)}>
 			<svg

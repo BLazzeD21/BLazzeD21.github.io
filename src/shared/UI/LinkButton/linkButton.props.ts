@@ -4,4 +4,5 @@ export interface LinkButtonProps extends DetailedHTMLProps<AnchorHTMLAttributes<
 	link?: string;
 	children: React.ReactNode;
 	buttonStyle?: "transparent" | "navyBlue" | "darkPink";
+	scroll?: boolean;
 }

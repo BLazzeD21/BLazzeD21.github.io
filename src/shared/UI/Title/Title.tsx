@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { JSX } from "react";
 
 import styles from "./Title.module.css";
 
@@ -24,7 +25,7 @@ export const Title = ({
 	className,
 	Tag = "h2",
 	...props
-}: subTitleProps) => {
+}: subTitleProps): JSX.Element => {
 	return (
 		<Tag
 			className={classNames(styles.title, sizeClasses[size], className, {
