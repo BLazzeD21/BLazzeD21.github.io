@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { JSX, use } from "react";
 
-import { PageUp, Sidepanel } from "@/widgets";
+import { CustomCursor, PageUp, Sidepanel } from "@/widgets";
 
 import { AboutMe, Education, Footer, Header, Portfolio, Stack } from "@/widgets/Sections";
 
@@ -27,6 +27,7 @@ export default function IndexPage({ params }: Props): JSX.Element {
 
 	return (
 		<>
+			<CustomCursor />
 			<Sidepanel socialLinks={socialLinks} />
 			<Header socialLinks={socialLinks} internalLinks={internalLinks[locale]} />
 			<AboutMe skillsList={skillsList[locale]} />

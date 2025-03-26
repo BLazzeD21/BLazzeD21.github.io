@@ -143,10 +143,6 @@
 	.fz72 {
 		font-size: 38px;
 	}
-
-	.fz18 {
-		font-size: 16px;
-	}
 }
 
 @media screen and (width <= 575px) {
@@ -164,6 +160,11 @@
 
 	.fz16 {
 		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.center {
+		line-height: 25px;
 	}
 }
 
