@@ -15,8 +15,12 @@ import "@/widgets/Locale";
 import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
 
+import { useWindowSize } from "@/hooks";
+
 export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProps): JSX.Element => {
 	const modalRef = useRef<HTMLDivElement>(null);
+
+	const { height } = useWindowSize();
 
 	const handleClickOutside = (event: MouseEvent): void => {
 		if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
@@ -45,6 +49,7 @@ export const Menu = ({ isShow, setIsShow, internalLinks, socialLinks }: MenuProp
 				className={classNames(styles.wrapper, {
 					[styles.active]: isShow,
 				})}
+				style={{ height: height }}
 			>
 				<div className={styles.menu} ref={modalRef}>
 					<div className={styles.close} onClick={() => setIsShow(false)}>
