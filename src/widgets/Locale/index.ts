@@ -1,2 +1,2 @@
 export * from "./LocaleSwitcher/LocaleSwitcher";
-export * from "./LocaleSwitcherSelect/LocaleSwitcherSelect";
+export * from "./LocaleSwitcherSelect/LocaleSwitcherItem";

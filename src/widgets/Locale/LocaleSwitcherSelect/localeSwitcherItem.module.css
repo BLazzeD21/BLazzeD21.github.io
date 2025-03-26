@@ -1,0 +1,14 @@
+.menuItem {
+	cursor: pointer;
+	width: 100%;
+	background-color: var(--navy-blue-color);
+	border: none;
+	font-size: 16px;
+	color: var(--white-color);
+	padding: 8px 16px;
+}
+
+.menuItem:hover {
+	background-color: var(--white-color);
+	color: var(--gray-color);
+}

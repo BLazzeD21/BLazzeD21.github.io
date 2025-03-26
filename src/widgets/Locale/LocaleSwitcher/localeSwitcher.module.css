@@ -1,5 +1,53 @@
-.option {
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 8px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdownToggle {
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	padding: 6px 25px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 6px;
 	background-color: var(--navy-blue-color);
 	color: var(--white-color);
+	border: none;
+	appearance: none;
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.dropdownToggle:disabled {
+	opacity: 0.5;
+}
+
+.active {
+	border-radius: 0 0 6px 6px;
+}
+
+.dropdownMenu {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	z-index: 1000;
+	width: 130px;
+	border: none;
+	border-radius: 6px 6px 0 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
