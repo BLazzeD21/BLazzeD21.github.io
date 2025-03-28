@@ -68,3 +68,9 @@ export interface SocialLinkType {
 	asideIcon: string;
 	contactsIcon: string;
 }
+
+export interface ContactFormData {
+	author: string;
+	message: string;
+	address: string;
+}
