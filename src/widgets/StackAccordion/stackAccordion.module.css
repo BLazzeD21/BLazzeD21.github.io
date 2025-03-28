@@ -45,7 +45,7 @@
 }
 
 .content.open {
-	max-height: 2000px;
+	max-height: fit-content;
 	padding: 15px;
 }
 

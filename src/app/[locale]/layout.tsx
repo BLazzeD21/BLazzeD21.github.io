@@ -1,11 +1,11 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata, Viewport } from "next";
 import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Quicksand, Ruda } from "next/font/google";
 import { notFound } from "next/navigation";
 import { JSX, ReactNode } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
 
 import "../globals.css";
 
@@ -70,7 +70,7 @@ export default async function LocaleLayout({ children, params }: Props): Promise
 			<body className={`${locale !== "ru" ? quicksand.variable : ruda.variable} font-sans`}>
 				<NextIntlClientProvider>{children}</NextIntlClientProvider>
 				<SpeedInsights />
-				<Analytics/>
+				<Analytics />
 			</body>
 		</html>
 	);
