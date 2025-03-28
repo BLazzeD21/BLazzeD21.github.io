@@ -17,9 +17,11 @@
 		"classnames": "^2.5.1",
 		"next": "^15.2.4",
 		"next-intl": "^4.0.0",
+		"nodemailer": "^6.10.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"uuid": "^11.1.0"
+		"uuid": "^11.1.0",
+		"zod": "^3.24.2"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
@@ -28,6 +30,7 @@
 		"@tsparticles/react": "^3.0.0",
 		"@tsparticles/slim": "^3.8.1",
 		"@types/node": "^20",
+		"@types/nodemailer": "^6.4.17",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"@vercel/analytics": "^1.5.0",
