@@ -9,9 +9,10 @@
 		"type": "tsc --noEmit",
 		"stylelint": "stylelint \"**/*.css\" --fix",
 		"prettier": "prettier . --write",
-		"lint": "next lint",
+		"lint": "next lint --fix",
 		"debug": "cross-env NODE_OPTIONS='--inspect' next dev",
-		"pre-commit": "concurrently -p \"[{name}]\" -n \"typescript,prettier,eslint,stylelint\" -c \"cyan.bold,green.bold,red.bold,blue.bold\" \"npm run type\" \"npm run prettier\" \"npm run lint\" \"npm run stylelint\""
+		"pre-commit": "concurrently -p \"[{name}]\" -n \"typescript,prettier,eslint,stylelint\" -c \"cyan.bold,green.bold,red.bold,blue.bold\" \"npm run type\" \"npm run prettier\" \"npm run lint\" \"npm run stylelint\"",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"classnames": "^2.5.1",
@@ -38,6 +39,7 @@
 		"concurrently": "^9.1.2",
 		"eslint": "^9",
 		"eslint-config-next": "15.2.2",
+		"husky": "^9.1.7",
 		"prettier": "3.5.3",
 		"stylelint": "^16.16.0",
 		"stylelint-config-css-modules": "^4.4.0",
