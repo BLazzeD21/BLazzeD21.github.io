@@ -1,17 +1,12 @@
 import { generateEmailHtml } from "@/utils/generateEmailHtml";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { z } from "zod";
 
 import { escapeHtml } from "@/utils";
 
-let transporter: nodemailer.Transporter;
+import { contactFormSchema } from "@/schemes";
 
-const contactFormSchema = z.object({
-	author: z.string().min(5).max(100),
-	message: z.string().min(20).max(5000),
-	address: z.string().email().max(255),
-});
+let transporter: nodemailer.Transporter;
 
 function getTransporter(): nodemailer.Transporter {
 	if (transporter) return transporter;
@@ -45,6 +40,23 @@ export async function POST(request: Request): Promise<NextResponse> {
 				{ success: false, message: "Validation failed", errors: validation.error.errors },
 				{ status: 400 },
 			);
+		}
+
+		const recaptchaResponse = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/x-www-form-urlencoded",
+			},
+			body: new URLSearchParams({
+				secret: process.env.RECAPTCHA_SECRET_KEY || "",
+				response: validation.data.recaptchaToken,
+			}),
+		});
+
+		const recaptchaData = await recaptchaResponse.json();
+
+		if (!recaptchaData.success || recaptchaData.score < 0.5) {
+			return NextResponse.json({ success: false, message: "reCAPTCHA verification failed" }, { status: 400 });
 		}
 
 		const formData = validation.data;

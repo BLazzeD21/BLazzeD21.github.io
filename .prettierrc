@@ -28,6 +28,7 @@
 		"^@/hooks$",
 		"^@/utils$",
 		"^@/constants",
+		"^@/schemes$",
 		"^@/middleware$",
 		"^.*\\.svg?url$",
 		"^.*\\.svg$",
