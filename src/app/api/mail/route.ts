@@ -2,32 +2,11 @@ import { generateEmailHtml } from "@/utils/generateEmailHtml";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-import { escapeHtml } from "@/utils";
+import { escapeHtml, getTransporter } from "@/utils";
 
 import { contactFormSchema } from "@/schemes";
 
-let transporter: nodemailer.Transporter;
-
-function getTransporter(): nodemailer.Transporter {
-	if (transporter) return transporter;
-
-	if (!process.env.EMAIL_USERNAME || !process.env.EMAIL_PASSWORD) {
-		throw new Error("Email credentials are not configured");
-	}
-
-	transporter = nodemailer.createTransport({
-		host: "smtp.rambler.ru",
-		port: 465,
-		secure: true,
-		auth: {
-			user: process.env.EMAIL_USERNAME,
-			pass: process.env.EMAIL_PASSWORD,
-		},
-		authMethod: "PLAIN",
-	});
-
-	return transporter;
-}
+let globalTransporter: nodemailer.Transporter | undefined;
 
 export async function POST(request: Request): Promise<NextResponse> {
 	try {
@@ -60,7 +39,7 @@ export async function POST(request: Request): Promise<NextResponse> {
 		}
 
 		const formData = validation.data;
-		const transporter = getTransporter();
+		const transporter = getTransporter(globalTransporter);
 
 		const mailOptions = {
 			from: `"Contact Form" <${process.env.EMAIL_USERNAME}>`,
