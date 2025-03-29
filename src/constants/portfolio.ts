@@ -30,5 +30,5 @@ export const portfolioItems: PortfolioItemType[] = [
 	},
 	{
 		altText: "soon",
-	}
+	},
 ];
