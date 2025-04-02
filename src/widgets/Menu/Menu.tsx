@@ -11,7 +11,6 @@ import { MenuProps } from "./menu.props";
 
 import { SocialLink } from "@/widgets";
 
-import "@/widgets/Locale";
 import { LocaleSwitcher } from "@/widgets/Locale";
 import { MenuWave } from "@/widgets/Waves";
 
