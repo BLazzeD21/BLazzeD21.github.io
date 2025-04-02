@@ -193,5 +193,15 @@ export const stack: StackType = {
 			imageSrc: "/icons/stack/playwright.svg",
 			level: Levels.Basic,
 		},
+		{
+			name: "Postman",
+			imageSrc: "/icons/stack/postman.svg",
+			level: Levels.Intermediate,
+		},
+		{
+			name: "Swagger",
+			imageSrc: "/icons/stack/swagger.svg",
+			level: Levels.Basic,
+		},
 	],
 };
